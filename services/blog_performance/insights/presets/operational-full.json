@@ -1,0 +1,29 @@
+{
+  "$schema": "insights-pipeline-config-v1",
+  "schema_version": "insights-pipeline-config-v1",
+  "preset_id": "operational-full",
+  "description": "Full operational 34-query pipeline (7 common + 27 product queries, depth 30)",
+  "test_only": false,
+  "execution": {
+    "mode": "offline",
+    "start_step": "preflight",
+    "stop_step": "activation",
+    "depth": 30,
+    "max_retries": 1
+  },
+  "panel": {
+    "type": "catalog_full",
+    "queries": null,
+    "limit": 34
+  },
+  "inputs": {
+    "common_json": null,
+    "products_json": null,
+    "ai_decisions_json": null
+  },
+  "qa": {
+    "check_browser": true,
+    "min_tables": 1,
+    "require_top5_audit": true
+  }
+}

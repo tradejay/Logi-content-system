@@ -1,0 +1,19 @@
+knowledge_packs:
+- id: KNW-PROD-LOGI-RALLYPLUS
+  name: Logitech Rally Plus
+  knowledge_type: product
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-PROD-LOGI-RALLYPLUS.yaml
+- id: KNW-PROD-LOGI-MICPOD
+  name: Logitech Rally Mic Pod
+  knowledge_type: product
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-PROD-LOGI-MICPOD.yaml
+- id: KNW-PROD-LOGI-RALLYBAR
+  name: Logitech Rally Bar
+  knowledge_type: product
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-PROD-LOGI-RALLYBAR.yaml

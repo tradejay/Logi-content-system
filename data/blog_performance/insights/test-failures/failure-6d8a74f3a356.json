@@ -1,0 +1,12 @@
+{
+  "schema_version": "insights-test-failure-v1",
+  "test_id": "tests/test_policy_api.py::PolicyApiTests::test_page_and_list_and_edit",
+  "stable_hash": "6d8a74f3a356",
+  "config_ref": "unspecified",
+  "failed_step": "unknown",
+  "error_type": "AssertionError",
+  "error": "404 != 200",
+  "duration_seconds": 0.053,
+  "evidence_paths": [],
+  "recorded_at": "2026-10-25T10:48:12.905332+00:00"
+}

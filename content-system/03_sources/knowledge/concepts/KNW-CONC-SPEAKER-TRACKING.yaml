@@ -1,0 +1,85 @@
+knowledge_id: KNW-CONC-SPEAKER-TRACKING
+name: "화자 추적 카메라 (Speaker Tracking Camera)"
+knowledge_type: concept
+status: VERIFIED
+last_verified: "2026-09-23"
+
+definition:
+  core_definition: >
+    회의실 내에서 현재 발언하는 사람의 위치와 음향을 감지하여 자동으로 해당 인물을 화면 중앙에 클로즈업하는 지능형 카메라 기술.
+  distinction_from_auto_framing: >
+    자동 프레이밍(Auto-Framing/Group View)은 공간 내 사람들의 전체 물리적 경계를 하나의 프레임으로 묶는 반면,
+    화자 추적(Speaker Tracking/Speaker View)은 실제 음성을 발화하는 개별 인물의 안면과 상반신에 시선을 집중시킴.
+  distinction_from_ptz: >
+    PTZ(Pan-Tilt-Zoom)는 카메라 모터와 렌즈의 기계적 구동 방식 자체를 뜻하며,
+    화자 추적은 마이크 음향 센서 및 컴퓨터 비전 센서 데이터를 바탕으로 PTZ 렌즈를 자동 제어하는 상위 AI 알고리즘임.
+
+core_technologies:
+  acoustic_localization:
+    term: "TDoA (Time Difference of Arrival)"
+    meaning: "배치된 다수의 마이크 캡슐 간에 음파가 도달하는 미세한 시간차를 마이크로초 단위로 계산하여 음원의 방위각을 삼각측량"
+  visual_detection:
+    term: "Computer Vision Face & Body Tracking"
+    meaning: "광각 카메라 센서를 통해 공간 내 인물의 안면 랜드마크와 인체 윤곽을 추출하여 음원 좌표와 결합"
+  sensor_fusion:
+    meaning: "음향 방향(Audio)과 시각 좌표(Vision)를 교차 검증하여 단순 컵 소리나 박수 소리 등에 카메라가 잘못 회전하는 오작동을 필터링"
+
+facts:
+  - id: FACT-CONC-ST-001
+    subject: SpeakerTracking.CoreMechanism
+    property: mechanism_definition
+    canonical_property: acoustic_localization
+    value: "Acoustic TDoA + Computer Vision Face/Body Tracking"
+    scope:
+      applies_to:
+        - ALL_SPEAKER_TRACKING_CAMERAS
+    source:
+      source_id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "What is Speaker Tracking?"
+        section: "Audio-Visual Fusion"
+        captured_at: "2026-09-23"
+
+  - id: FACT-CONC-ST-002
+    subject: SpeakerTracking.AcousticTDoA
+    property: time_difference_of_arrival
+    canonical_property: acoustic_localization
+    value: "Microsecond-level audio arrival time delta triangulation"
+    scope:
+      applies_to:
+        - ALL_SPEAKER_TRACKING_CAMERAS
+    source:
+      source_id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "Acoustic Localization with TDoA"
+        section: "Microphone Array Processing"
+        captured_at: "2026-09-23"
+
+  - id: FACT-CONC-ST-003
+    subject: SpeakerTracking.Distinction
+    property: framing_difference
+    canonical_property: camera_framing_distance
+    value: "Speaker Tracking isolates individual speaker face/torso; Auto-Framing frames all attendees"
+    scope:
+      applies_to:
+        - ALL_SPEAKER_TRACKING_CAMERAS
+    source:
+      source_id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "Auto-Framing vs Speaker Tracking"
+        section: "Framing Paradigms"
+        captured_at: "2026-09-23"
+
+derived_knowledge:
+  - id: DKNW-CONC-001
+    type: DERIVED_RELATION
+    subject: SpeakerTracking.Algorithm
+    relation: controls
+    object: Camera.PTZMotor
+    statement: "화자 추적 카메라는 단순 모터 구동 PTZ 카메라가 아니라 센서 퓨전 소프트웨어 알고리즘으로 동작한다."
+    derived_from:
+      - FACT-CONC-ST-001
+      - FACT-CONC-ST-002
+    derivation_type: conceptual_abstraction
+    confidence: VERIFIED
+    rationale: "PTZ는 렌즈 이동 기구물에 불과하며, 실제 추적 여부는 음향 TDoA와 비전 센서의 실시간 결합 여부로 결정됨."

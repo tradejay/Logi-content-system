@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.1.0",
+  "status": "design_only",
+  "node_type": "product_companion",
+  "label": "제품 보조 설명",
+  "required": false,
+  "sequence_role": "companion",
+  "counts_as_main_step": false,
+  "choices": [
+    {
+      "id": "none",
+      "label": "넣지 않음",
+      "purpose": "주제와 관련된 제품이 없거나 설명이 중복될 때 생략",
+      "required_content": []
+    },
+    {
+      "id": "product_awareness",
+      "label": "제품 알아보기",
+      "purpose": "관련 제품의 이름·역할을 알림",
+      "required_content": [
+        "product_ids",
+        "name",
+        "role_description",
+        "fact_source_bindings",
+        "product_blog_link"
+      ],
+      "must_not_imply": [
+        "purchase_required_to_solve",
+        "unverified_problem_solution"
+      ]
+    },
+    {
+      "id": "product_recommendation",
+      "label": "제품 추천",
+      "purpose": "독자의 확인된 요구에 맞는 제품·조합을 권함",
+      "required_content": [
+        "product_ids",
+        "name",
+        "role_description",
+        "recommendation_reason",
+        "fit_conditions",
+        "compatibility_limits",
+        "fact_source_bindings",
+        "product_blog_link"
+      ],
+      "must_not_imply": [
+        "unverified_problem_solution"
+      ]
+    }
+  ],
+  "selection_precedence": [
+    "explicit_user_choice",
+    "article_plan_choice",
+    "template_default"
+  ],
+  "template_defaults": {
+    "troubleshooting": "product_awareness",
+    "feature-explanation": "product_recommendation",
+    "room-configuration": "product_recommendation",
+    "product-comparison": "product_recommendation",
+    "product-introduction": "none"
+  },
+  "placement": {
+    "anchor_required_when_enabled": true,
+    "anchor_kind": "stable_section_id",
+    "allowed_positions": [
+      "after_explanation",
+      "after_solution",
+      "after_recommendation",
+      "in_closing_next_action"
+    ],
+    "display": "unnumbered_companion_block",
+    "flow_diagram": "branch_from_anchor",
+    "never_place": [
+      "inside_greeting",
+      "after_closing_banner"
+    ],
+    "choices": [
+      {
+        "id": "body_anchor",
+        "label": "점검·조치 또는 본문 설명에 배치",
+        "anchor": "selected_body_section",
+        "position": "after_explanation"
+      },
+      {
+        "id": "next_action_consultation",
+        "label": "다음 행동·상담에 배치",
+        "anchor": "closing.next_action",
+        "position": "in_closing_next_action"
+      }
+    ],
+    "closing_order": "답 회수·다음 행동 → 제품 보조 설명 → 상담·맺음 인사 → 문의 배너"
+  },
+  "selection_contract": {
+    "fields": [
+      "node_id",
+      "selected_choice",
+      "selection_origin",
+      "selection_reason",
+      "anchor_section_id",
+      "position",
+      "product_ids",
+      "binding_status",
+      "unresolved_items"
+    ],
+    "binding_statuses": [
+      "not_required",
+      "pending",
+      "ready",
+      "blocked"
+    ],
+    "missing_source_or_blog_link": "keep_selection_and_add_unresolved_item",
+    "unsupported_recommendation": "mark_blocked_and_propose_awareness_or_none_without_silent_switch",
+    "none_removes_only_companion": true,
+    "main_recommendation_handled_separately": true
+  },
+  "pipeline_responsibilities": {
+    "planner": "본문의 요구와 관련성을 바탕으로 선택 이유·연결 위치를 계획",
+    "writer": "선택된 역할만 작성하고 구매 권유를 임의로 추가하지 않음",
+    "qa": "주제 관련성·출처·링크·선택과 내용의 일치를 확인",
+    "renderer": "보조 노드를 본문 번호에서 제외해 지정 위치에 표시"
+  },
+  "recommendation_design": {
+    "guide": "product-recommendation.md",
+    "plan_schema": "recommendation-plan.schema.json",
+    "product_count": "not_fixed",
+    "relationships": [
+      "alternatives",
+      "configuration",
+      "conditional_additions"
+    ],
+    "awareness_relationship": "awareness",
+    "existing_product_ids_support_multiple": true,
+    "runtime_integration": "pending"
+  }
+}

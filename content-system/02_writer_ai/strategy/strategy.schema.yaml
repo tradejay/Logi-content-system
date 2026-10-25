@@ -1,0 +1,75 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "WritingStrategySchema"
+description: "Schema for writing strategy artifacts produced by Writing Planner AI"
+type: object
+required:
+  - content_id
+  - strategy_version
+  - primary_playbook
+  - reader
+  - article_goal
+  - must_cover
+  - technical_depth
+properties:
+  content_id:
+    type: string
+    pattern: "^CNT-\\d{4}W\\d{2}-\\d{3}$"
+  strategy_version:
+    type: integer
+    minimum: 1
+  primary_playbook:
+    type: string
+  secondary_playbooks:
+    type: array
+    items:
+      type: string
+    maxItems: 2
+  reader:
+    type: object
+    required:
+      - state
+      - questions
+    properties:
+      state:
+        type: string
+      questions:
+        type: array
+        items:
+          type: string
+        minItems: 1
+  article_goal:
+    type: string
+  suggested_flow:
+    type: array
+    items:
+      type: string
+  must_cover:
+    type: array
+    items:
+      type: string
+    minItems: 1
+  can_omit:
+    type: array
+    items:
+      type: string
+  avoid:
+    type: array
+    items:
+      type: string
+  technical_depth:
+    type: object
+    required:
+      - overall
+    properties:
+      overall:
+        type: string
+        enum: ["low", "medium", "high", "beginner", "intermediate", "advanced"]
+  asset_strategy:
+    type: object
+    properties:
+      preferred_roles:
+        type: array
+        items:
+          type: string
+  cta_intent:
+    type: string

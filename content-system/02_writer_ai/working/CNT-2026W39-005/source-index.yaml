@@ -1,0 +1,13 @@
+sources:
+- id: SRC-LOGI-LOGI_RALLY_PLUS
+  title: Logitech Rally Plus (랠리 플러스) 공식 기술 데이터시트
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-LOGI_RALLY_PLUS.md
+- id: SRC-LOGI-DOC-MIC-POD-COMPAT
+  title: Logitech 랠리 마이크 팟 연결 및 토폴로지 가이드
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-DOC-MIC-POD-COMPAT.md

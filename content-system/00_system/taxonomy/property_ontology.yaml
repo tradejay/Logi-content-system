@@ -1,0 +1,52 @@
+# property_ontology.yaml (v1.1.2 Property Ontology & Disjoint Constraints)
+# 상호 배타적이거나 혼동되기 쉬운 하드웨어/소프트웨어 속성 간의 관계를 정의합니다.
+
+properties:
+  microphone_pickup_range:
+    subject_domain: "audio.microphone"
+    unit: "m"
+    keywords: ["마이크", "수음", "픽업", "음성 인식 반경", "마이크 팟"]
+    disjoint_with:
+      - "camera_framing_distance"
+      - "speaker_tracking_recommended_distance"
+    disjoint_rationale: "마이크의 음향 픽업 반경(수음 거리)과 카메라의 영상 프레이밍/화자추적 유효 거리는 물리적으로 다른 측정치임."
+
+  speaker_tracking_recommended_distance:
+    subject_domain: "video.speaker_tracking"
+    unit: "m"
+    keywords: ["화자 추적", "화자 뷰", "Speaker View", "발언자 추적", "스피커 뷰"]
+    disjoint_with:
+      - "microphone_pickup_range"
+    disjoint_rationale: "화자 추적 권장 거리는 안면/상반신 컴퓨터 비전 매핑 유효 거리이며, 마이크 픽업 거리보다 보수적으로 제한됨."
+
+  camera_framing_distance:
+    subject_domain: "video.auto_framing"
+    unit: "m"
+    keywords: ["그룹 뷰", "Group View", "자동 프레이밍", "화각 크롭"]
+    disjoint_with:
+      - "microphone_pickup_range"
+    disjoint_rationale: "전체 룸 그룹 프레이밍 거리는 단독 발언자 클로즈업 거리보다 넓은 범위를 커버함."
+
+  optical_zoom:
+    subject_domain: "optics.lens"
+    unit: "배"
+    keywords: ["광학 줌", "optical zoom", "무손실 줌"]
+    disjoint_with:
+      - "digital_zoom"
+    disjoint_rationale: "물리적 유리 렌즈 광학 구동 배율과 센서 픽셀 크롭 디지털 배율을 구분함."
+
+  speaker_rated_power:
+    subject_domain: "audio.speaker"
+    unit: "W"
+    keywords: ["스피커", "정격 출력", "사운드 출력", "우퍼"]
+    disjoint_with:
+      - "system_power_consumption"
+    disjoint_rationale: "스피커 사운드 정격 출력(W)과 기기 전체 소비 전력(W)을 구분함."
+
+  system_power_consumption:
+    subject_domain: "electrical.power"
+    unit: "W"
+    keywords: ["소비 전력", "전원 어댑터", "정격 전력", "전력 소비"]
+    disjoint_with:
+      - "speaker_rated_power"
+    disjoint_rationale: "기기 전체 전원 어댑터 정격 전력과 스피커 유닛 출력을 구분함."

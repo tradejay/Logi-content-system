@@ -1,0 +1,10 @@
+{
+  "active_product_panel_profile": "product-search-competitiveness-v1",
+  "entrypoint": "services.blog_performance.product_competitiveness",
+  "scale": [0, 100],
+  "legacy_40_25_20_15": "diagnostic_only",
+  "historical_grade_mapping": false,
+  "auxiliary_metrics_affect_score": false,
+  "partial_collection_blocks_score": true,
+  "temporal_stability": "not_measured_until_comparable_history"
+}

@@ -1,0 +1,257 @@
+{
+  "schema_version": "1.0.0",
+  "guide_version": "3.1.0",
+  "guides": [
+    {
+      "id": "GUIDE-CORE-SAFETY",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "../core/SAFETY_CORE.md",
+      "kind": "core",
+      "description": "핵심 안전성 및 진실성 검증 원칙 (근거 없는 주장 차단)",
+      "owner": "content-team",
+      "change_note": "v3.0 core guide registration",
+      "stages": [
+        "strategy",
+        "write",
+        "feedback",
+        "official"
+      ],
+      "intents": [],
+      "required": true,
+      "severity": "blocking",
+      "priority": 10,
+      "depends_on": [],
+      "references_rule_ids": [
+        "RULE-EVIDENCE-BOUNDARY",
+        "RULE-NUMERIC-SCOPE"
+      ]
+    },
+    {
+      "id": "GUIDE-CORE-STYLE",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "../core/STYLE_CORE.md",
+      "kind": "style",
+      "description": "오션텍 표준 문체 및 톤앤매너 원칙",
+      "owner": "content-team",
+      "change_note": "v3.0 core style registration",
+      "stages": [
+        "write",
+        "feedback"
+      ],
+      "intents": [],
+      "required": true,
+      "severity": "review",
+      "priority": 20,
+      "depends_on": [],
+      "references_rule_ids": [
+        "RULE-READER-STYLE"
+      ]
+    },
+    {
+      "id": "GUIDE-CORE-WRITING",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "../core/WRITING_CORE.md",
+      "kind": "core",
+      "description": "문단 집필 핵심 공통 구조 및 흐름 규칙",
+      "owner": "content-team",
+      "change_note": "v3.0 core writing registration",
+      "stages": [
+        "write",
+        "feedback"
+      ],
+      "intents": [],
+      "required": true,
+      "severity": "blocking",
+      "priority": 15,
+      "depends_on": [
+        "GUIDE-CORE-SAFETY"
+      ],
+      "references_rule_ids": [
+        "RULE-COMPONENT-ROLE",
+        "RULE-OCEANTECH-BRAND-LINKS"
+      ]
+    },
+    {
+      "id": "GUIDE-01-TOPIC",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "01-topic-and-keywords.md",
+      "kind": "stage",
+      "description": "주제 및 키워드 선정, 브리프 반영 지침",
+      "owner": "content-team",
+      "change_note": "v3.0 modular stage guide",
+      "stages": [
+        "strategy"
+      ],
+      "intents": [],
+      "required": true,
+      "severity": "blocking",
+      "priority": 30,
+      "depends_on": [],
+      "references_rule_ids": []
+    },
+    {
+      "id": "GUIDE-02-FACTS",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "02-facts-and-cautions.md",
+      "kind": "stage",
+      "description": "팩트 및 주의사항 배치, 근거 범위 연계 지침",
+      "owner": "content-team",
+      "change_note": "v3.0 modular stage guide",
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "intents": [],
+      "required": true,
+      "severity": "blocking",
+      "priority": 40,
+      "depends_on": [
+        "GUIDE-CORE-SAFETY"
+      ],
+      "references_rule_ids": [
+        "RULE-EVIDENCE-BOUNDARY",
+        "RULE-NUMERIC-SCOPE",
+        "RULE-CONFIGURATION-SOURCE"
+      ]
+    },
+    {
+      "id": "GUIDE-03-STRUCTURE",
+      "version": "1.1.0",
+      "status": "active",
+      "path": "03-opening-body-closing.md",
+      "kind": "stage",
+      "description": "서론-본론-결론 문단 구성 및 전개 지침",
+      "owner": "content-team",
+      "change_note": "2026-10-02 테스트베드 피드백: 중심 구매 결정과 기능 설명 구분, 개요·비교·공식 자료, 내부 검토 문장 분리",
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "intents": [],
+      "required": true,
+      "severity": "blocking",
+      "priority": 50,
+      "depends_on": [
+        "GUIDE-CORE-WRITING"
+      ],
+      "references_rule_ids": [
+        "RULE-READER-STYLE"
+      ]
+    },
+    {
+      "id": "GUIDE-04-IMAGES",
+      "version": "1.1.0",
+      "status": "active",
+      "path": "04-images.md",
+      "kind": "stage",
+      "description": "에셋 배치 및 이미지 캡션 연계 지침",
+      "owner": "content-team",
+      "change_note": "2026-10-02 테스트베드 피드백: 문단별 자산 연결, 공식 사진·실제 GIF·생성 상황/한글 카드 역할 구분",
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "intents": [],
+      "required": false,
+      "severity": "review",
+      "priority": 60,
+      "depends_on": [],
+      "references_rule_ids": [
+        "RULE-ASSET-TRUTH"
+      ]
+    },
+    {
+      "id": "GUIDE-05-FEEDBACK",
+      "version": "1.1.0",
+      "status": "active",
+      "path": "05-feedback-and-review.md",
+      "kind": "stage",
+      "description": "검토 피드백 및 부분 교정 지침",
+      "owner": "content-team",
+      "change_note": "2026-10-02 테스트베드 피드백: 구매 판단 지원 설명의 보존, 내부 지시 노출 및 문단별 자산 재검토",
+      "stages": [
+        "feedback"
+      ],
+      "intents": [],
+      "required": true,
+      "severity": "blocking",
+      "priority": 70,
+      "depends_on": [
+        "GUIDE-CORE-SAFETY"
+      ],
+      "references_rule_ids": []
+    },
+    {
+      "id": "GUIDE-06-COMPLETION",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "06-completion-and-console.md",
+      "kind": "stage",
+      "description": "완료 검증 및 운영 콘솔 관리 지침",
+      "owner": "content-team",
+      "change_note": "v3.0 modular stage guide",
+      "stages": [
+        "feedback",
+        "official"
+      ],
+      "intents": [],
+      "required": false,
+      "severity": "review",
+      "priority": 80,
+      "depends_on": [],
+      "references_rule_ids": []
+    },
+    {
+      "id": "GUIDE-07-CONTRACTS",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "07-contracts-and-integration.md",
+      "kind": "stage",
+      "description": "봉투 계약 및 데이터 연동 규격",
+      "owner": "content-team",
+      "change_note": "v3.0 modular stage guide",
+      "stages": [
+        "strategy",
+        "write",
+        "feedback",
+        "official"
+      ],
+      "intents": [],
+      "required": false,
+      "severity": "review",
+      "priority": 90,
+      "depends_on": [],
+      "references_rule_ids": []
+    },
+    {
+      "id": "GUIDE-08-RUNTIME",
+      "version": "1.1.0",
+      "status": "active",
+      "path": "08-runtime.md",
+      "kind": "stage",
+      "description": "런타임 제약 및 장애 격리 지침",
+      "owner": "content-team",
+      "change_note": "2026-10-02 테스트베드 피드백: 원본 수정과 활성 릴리스 적용의 차이 및 배포 절차 명시",
+      "stages": [
+        "strategy",
+        "write",
+        "feedback",
+        "official"
+      ],
+      "intents": [],
+      "required": false,
+      "severity": "review",
+      "priority": 100,
+      "depends_on": [],
+      "references_rule_ids": []
+    }
+  ]
+}

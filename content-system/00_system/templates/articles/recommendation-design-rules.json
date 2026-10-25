@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0.0",
+  "status": "design_only",
+  "rules": [
+    {
+      "id": "REC-DESIGN-01",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "제품 수의 하한·상한을 고정하지 않는다. 각 제품이 같은 결정 질문에 기여하는 이유가 있어야 하며, 개수를 채우기 위해 후보를 추가하지 않는다.",
+      "applies_to_elements": [
+        "body.comparison",
+        "body.configuration",
+        "body.extension",
+        "closing.next_action"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    },
+    {
+      "id": "REC-DESIGN-02",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "여러 제품은 **대안**, **함께 쓰는 구성**, **조건부 추가** 중 어떤 관계인지 묶음별로 명시한다. 같은 목록에서 관계가 다른 제품을 동급 추천으로 섞지 않는다.",
+      "applies_to_elements": [
+        "body.comparison",
+        "body.configuration",
+        "body.extension"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    },
+    {
+      "id": "REC-DESIGN-03",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "대안은 동일한 질문·비교 기준으로 구분한다. 각 후보의 적합 조건과 선택 이유를 설명하며 모두 구매하라는 의미를 만들지 않는다. 근거가 없으면 ‘최고’, ‘무조건 추천’ 등의 순위를 붙이지 않는다.",
+      "applies_to_elements": [
+        "body.comparison"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    },
+    {
+      "id": "REC-DESIGN-04",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "구성은 도입할 제품과 재사용할 장비, 각 역할을 구분한다. 함께 쓸 수 있다는 주장은 별도의 구성·호환 근거에 연결한다.",
+      "applies_to_elements": [
+        "body.configuration"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    },
+    {
+      "id": "REC-DESIGN-05",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "조건부 추가는 먼저 기본 구성을 설명한 뒤, 남는 문제와 추가 조건을 붙인다. 필요하지 않은 독자가 기본 구성의 필수품으로 오해하지 않게 쓴다.",
+      "applies_to_elements": [
+        "body.extension",
+        "closing.next_action"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    },
+    {
+      "id": "REC-DESIGN-06",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "제품별로 이름·역할·질문과의 관계·추천 이유·적합 조건·중요 제약·Fact/출처·등록 소개 링크를 연결한다. 근거가 부족하면 추천 완료로 표시하지 않는다.",
+      "applies_to_elements": [
+        "body.definition",
+        "body.comparison",
+        "body.configuration",
+        "body.extension",
+        "closing.next_action"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    },
+    {
+      "id": "REC-DESIGN-07",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "제품 인지는 이름·역할·주제와의 관련성을 설명하는 선택이다. 인지만으로 구매 필요성이나 문제 해결 효과를 암시하지 않는다. 추천으로 변경하려면 추천 이유와 적합 조건을 추가 검증한다.",
+      "applies_to_elements": [
+        "body.definition",
+        "body.explanation",
+        "closing.next_action"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    },
+    {
+      "id": "REC-DESIGN-08",
+      "lifecycle": "draft",
+      "enabled": false,
+      "text": "본문 추천을 보조 노드에서 길게 반복하지 않는다. 본문에서 이미 설명했다면 간단히 회수하거나 생략한다. 새 제품은 그 위치에서 역할·추천 조건·근거를 설명한다.",
+      "applies_to_elements": [
+        "body.explanation",
+        "body.extension",
+        "closing.next_action"
+      ],
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "tags": [
+        "product_recommendation",
+        "placement"
+      ],
+      "source": "product-recommendation.md"
+    }
+  ]
+}

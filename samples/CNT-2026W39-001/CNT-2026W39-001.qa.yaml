@@ -1,0 +1,26 @@
+content_id: CNT-2026W39-001
+auditor_role: QA_AI
+audited_at: "2026-09-22T16:22:30"
+
+verdict: PASS
+overall_score: 97
+
+scores:
+  brief_fidelity: 10          # 기획서 핵심 질문 3종 모두 심층 답변 완료, 7단계 흐름 완벽 준수
+  technical_accuracy: 10     # TDoA, 6개 빔포밍 마이크, 광학 5배 줌, RightSight 2 정확한 스펙 반영
+  evidence_validity: 10      # E1 제조사 데이터시트 및 E2 플랫폼 가이드에 엄격히 근거함
+  layer_separation: 10       # [FACT], [LIMITATION], [INTERPRETATION] 태그로 3계층 서술 명확히 분리
+  intent_fulfillment: 10     # 원리 규명 및 Zoom Rooms 3단계 세팅법 실무 가치 완벽 제공
+  keyword_density: 9         # '화자추적카메라' 4회 적절한 밀도로 문맥상 자연스럽게 녹여냄
+  tone_advertorial: 9        # 정보성 75% 이상 유지, 15인 이상 룸 한계 솔직히 고지
+  visual_structure: 9        # 데이터 흐름도 다이어그램 및 자동 프레이밍 vs 화자 추적 비교표 수록
+  cta_fit: 10                # Discovery 단계에 적합한 무료 진단 Soft CTA 배치
+  missing_evidence_check: 10 # 결측 수치나 날조된 비공식 벤치마크 없음
+
+critical_issues: []
+
+revision_requests: []
+
+missing_evidence_items: []
+
+approved_for_publish: true

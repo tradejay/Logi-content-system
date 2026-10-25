@@ -1,0 +1,122 @@
+{
+  "created_at": "2026-10-06T16:26:00Z",
+  "workspace_revision": 6,
+  "total_atoms": 2038,
+  "enabled_atoms": 885,
+  "normative_atoms": 565,
+  "reference_atoms": 320,
+  "assembled_file_hashes": {
+    "content-system/02_writer_ai/authoring/rules/oceantech-brand-and-links.md": "64d303e182964df2ad989616a6b42851c35bc552469f18cc110c8ecc6d92ad16",
+    "content-system/02_writer_ai/authoring/rules/evidence-boundary.md": "a183e8d337f652141591d2d8a6fc09f46f9730d675cfaa7889aec50d51d13675",
+    "content-system/02_writer_ai/authoring/rules/numeric-scope.md": "e576df03d7d969628ba31b68b9c55dc419998b599de674a49178bcc4fb68b26f",
+    "content-system/02_writer_ai/authoring/rules/component-role.md": "b8bfa059954c63dd5a542d781fb5cf4d689a58f6b98b7e061f1af3d15538d790",
+    "content-system/02_writer_ai/authoring/rules/platform-scope.md": "3f1f7c936205ec9cb9cf51c2905f7c8779f3b011a6dc76c44357f54c77af7a2a",
+    "content-system/02_writer_ai/authoring/rules/configuration-source.md": "9210e53f1980468b7c0349ba5d06938e32ac14e523219bb41c99f0c857ff309c",
+    "content-system/02_writer_ai/authoring/rules/experience-and-business.md": "2c59a402fbc33cdc32890e9ff5f0fbd73ad95866c93eae81d0d9a9ff0e901aed",
+    "content-system/02_writer_ai/authoring/rules/asset-truth.md": "002fc99c8304fdce023b830a16f6ecb8832d325166e564af82d3fa817645fb41",
+    "content-system/02_writer_ai/authoring/rules/reader-and-style.md": "51d874e1b9ac1d64d99ba7db925e0c40c2daf0948019ed19865204ce7c742c40",
+    "content-system/02_writer_ai/core/SAFETY_CORE.md": "5310a6ed6684b2c7e81851f979c0baafc46dcbae26fa0d5675292c1487e4c49b",
+    "content-system/02_writer_ai/core/STYLE_CORE.md": "71f6717d6d542886b8d798d5eec8365e4370fd660684639afb4655f628c2d499",
+    "content-system/02_writer_ai/core/WRITING_CORE.md": "ee89c1129026678729c85c1e58bac3eb834670e953c0006501c47091f409c7f7",
+    "content-system/02_writer_ai/authoring/01-topic-and-keywords.md": "b42c942516b7512989f9b630f54f6a5723a6366c955752fbb773b86f8f240e32",
+    "content-system/02_writer_ai/authoring/02-facts-and-cautions.md": "a466272cbea6b5798a98093bc435aac0f905ab609fdf74e3d3d68878bec2d2fc",
+    "content-system/02_writer_ai/authoring/03-opening-body-closing.md": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454",
+    "content-system/02_writer_ai/authoring/04-images.md": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e",
+    "content-system/02_writer_ai/authoring/05-feedback-and-review.md": "e32c677877fca4d14c269631985c139d70a8ff0ff41f0dc76082d1849e348410",
+    "content-system/02_writer_ai/authoring/06-completion-and-console.md": "322ee4380bfc80b4e61a17e748582a74eaa2ff55732fe77ffee00bcec70352bb",
+    "content-system/02_writer_ai/authoring/07-contracts-and-integration.md": "95bccc5bbb353cbf2b32a5314cbfdc69673ab7e6f271040d17ed7a4965cb2bd3",
+    "content-system/02_writer_ai/authoring/08-runtime.md": "c25bfcd565f8954a465c54bb624ecd78423c999d4575fe27d331cacbcd0c83e2",
+    "content-system/02_writer_ai/authoring/prompts/feedback.md": "fa4a8cd0f95387d5de12bda3f3d0c34a01d99dfabca44976d75953b7d2430ecb",
+    "content-system/02_writer_ai/authoring/prompts/official.md": "aca6417fae4b57b2e7a243c6f35d82ee7ab9da893ac9b4a24bfd5cb69bc0de96",
+    "content-system/02_writer_ai/authoring/prompts/strategy.md": "f31e2487568b2b5d6197119fa560a55854287266695a7f64a7a85218c90e4424",
+    "content-system/02_writer_ai/authoring/prompts/write.md": "cda8f18bf4a6321e2649478274c30bf747322e9e5ebd708af3d213ee5e298027"
+  },
+  "keyword_matches": {
+    "추천": {
+      "count": 2,
+      "atom_ids": [
+        "RULE-READER-STYLE-V2N0057",
+        "GUIDE-05-FEEDBACK-V2N0103"
+      ]
+    },
+    "대안": {
+      "count": 7,
+      "atom_ids": [
+        "RULE-READER-STYLE-V2N0067",
+        "GUIDE-03-STRUCTURE-V2N0055",
+        "GUIDE-03-STRUCTURE-V2N0065",
+        "GUIDE-03-STRUCTURE-V2N0081",
+        "GUIDE-03-STRUCTURE-V2N0083",
+        "GUIDE-03-STRUCTURE-V2N0116",
+        "GUIDE-03-STRUCTURE-V2N0166"
+      ]
+    },
+    "비교군": {
+      "count": 4,
+      "atom_ids": [
+        "GUIDE-03-STRUCTURE-V2N0049",
+        "GUIDE-03-STRUCTURE-V2N0058",
+        "GUIDE-03-STRUCTURE-V2N0063",
+        "GUIDE-03-STRUCTURE-V2N0116"
+      ]
+    },
+    "추가 장비": {
+      "count": 2,
+      "atom_ids": [
+        "GUIDE-03-STRUCTURE-V2N0089",
+        "GUIDE-03-STRUCTURE-V2N0207"
+      ]
+    },
+    "부속": {
+      "count": 10,
+      "atom_ids": [
+        "RULE-READER-STYLE-V2N0037",
+        "RULE-READER-STYLE-V2N0059",
+        "RULE-READER-STYLE-V2N0061",
+        "RULE-READER-STYLE-V2N0063",
+        "GUIDE-03-STRUCTURE-V2N0051",
+        "GUIDE-03-STRUCTURE-V2N0063",
+        "GUIDE-03-STRUCTURE-V2N0091",
+        "GUIDE-03-STRUCTURE-V2N0230",
+        "GUIDE-04-IMAGES-V2N0102",
+        "GUIDE-05-FEEDBACK-V2N0031"
+      ]
+    },
+    "호환": {
+      "count": 6,
+      "atom_ids": [
+        "RULE-CONFIGURATION-SOURCE-V2N0004",
+        "RULE-READER-STYLE-V2N0027",
+        "GUIDE-02-FACTS-V2N0035",
+        "GUIDE-03-STRUCTURE-V2N0067",
+        "GUIDE-03-STRUCTURE-V2N0164",
+        "GUIDE-08-RUNTIME-V2N0006"
+      ]
+    },
+    "제품 소개": {
+      "count": 6,
+      "atom_ids": [
+        "RULE-OCEANTECH-BRAND-LINKS-V2N0000",
+        "RULE-OCEANTECH-BRAND-LINKS-V2N0040",
+        "RULE-OCEANTECH-BRAND-LINKS-V2N0044",
+        "GUIDE-03-STRUCTURE-V2N0091",
+        "GUIDE-03-STRUCTURE-V2N0232",
+        "GUIDE-04-IMAGES-V2N0098"
+      ]
+    },
+    "재사용": {
+      "count": 9,
+      "atom_ids": [
+        "RULE-NUMERIC-SCOPE-V2N0006",
+        "RULE-READER-STYLE-V2N0027",
+        "RULE-READER-STYLE-V2N0047",
+        "RULE-READER-STYLE-V2N0103",
+        "GUIDE-03-STRUCTURE-V2N0085",
+        "GUIDE-03-STRUCTURE-V2N0095",
+        "GUIDE-03-STRUCTURE-V2N0118",
+        "GUIDE-05-FEEDBACK-V2N0015",
+        "GUIDE-05-FEEDBACK-V2N0115"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+knowledge_packs:
+- id: KNW-PROD-LOGI-MICPOD
+  name: Logitech Rally Mic Pod
+  knowledge_type: product
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-PROD-LOGI-MICPOD.yaml
+- id: KNW-PROD-LOGI-RALLYBAR
+  name: Logitech Rally Bar
+  knowledge_type: product
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-PROD-LOGI-RALLYBAR.yaml
+- id: KNW-CONC-SPEAKER-TRACKING
+  name: 화자 추적 카메라 (Speaker Tracking Camera)
+  knowledge_type: concept
+  vendor: null
+  status: VERIFIED
+  local_path: knowledge/KNW-CONC-SPEAKER-TRACKING.yaml

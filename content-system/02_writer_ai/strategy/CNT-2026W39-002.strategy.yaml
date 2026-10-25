@@ -1,0 +1,44 @@
+content_id: CNT-2026W39-002
+strategy_version: 1
+created_at: '2026-09-23'
+primary_playbook: PB-PRODUCT-SELECTION
+secondary_playbooks:
+- PB-CONFIG-HOWTO
+- PB-PROBLEM-DIAGNOSIS
+reader:
+  state: 3~5인 소형 회의실(허들룸)에서 카메라 화각이 좁아 양옆 사람이 잘리고 배선이 복잡한 고충을 겪고 있음
+  questions:
+  - 테이블이 카메라와 가까워 양옆 사람이 화면에서 잘리는데 해결 방법이 있나요? (초광각 화각)
+  - 카메라, 마이크, 스피커가 하나로 합쳐진 올인원 비디오 바는 소형 룸에 어떻게 설치하나요?
+  - 로지텍 MeetUp 2는 기존 밋업 대비 무엇이 달라졌나요?
+  - 노트북 하나만 USB로 꽂아서 쓰는 BYOD 모드 세팅은 어떻게 하나요?
+  - 우리 허들룸에 설치할 때 벽걸이나 모니터 거치는 어떻게 구성하나요?
+article_goal: 3~5인 소형 회의실에서 양옆 사람 잘림 없이 깔끔하게 화상회의를 세팅하는 방식을 안내한다.
+suggested_flow:
+- 소형 허들룸의 고질적 불편 (양옆 사람 잘림, 어지러운 케이블) 공감
+- 허들룸 맞춤 화각 기준 제시 (초광각 120° 시야각의 필요성)
+- 콤팩트 올인원 비디오 바 MeetUp 2의 핵심 강점 (오디오/비전 통합)
+- 개인 노트북 원케이블 직결(USB-C BYOD) 연결 1분 세팅 가이드
+- 소형 회의실 공간 최적화 체크리스트 및 무상 상담 안내
+must_cover:
+- 허들룸 양옆 사람 잘림 현상 공감
+- 초광각 시야각과 자동 프레이밍
+- MeetUp 2 올인원 폼팩터
+- USB-C 원케이블 BYOD 연결법
+- 소형 회의실 거치 및 설치 팁
+can_omit:
+- 대형 룸 전용 마이크 팟 확장 스펙
+- 외부 DSP 믹서 연결
+- 소비전력 세부 수치
+avoid:
+- 기계적 레이블 박스
+- 완벽한/최적의 등 상투적 수식어
+- 소형 룸에 대형 장비 강요
+technical_depth:
+  overall: beginner
+asset_strategy:
+  preferred_roles:
+  - DEMONSTRATE
+  - PROVE
+  - EXPLAIN
+cta_intent: huddle_room_consultation

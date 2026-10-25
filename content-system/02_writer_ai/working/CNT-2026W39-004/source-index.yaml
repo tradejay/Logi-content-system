@@ -1,0 +1,13 @@
+sources:
+- id: SRC-LOGI-LOGI_TAP
+  title: Logitech Logitech Tap (로지텍 탭) 공식 기술 데이터시트
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-LOGI_TAP.md
+- id: SRC-LOGI-LOGI_TAP_IP
+  title: Logitech Logitech Tap IP (로지텍 탭 IP) 공식 기술 데이터시트
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-LOGI_TAP_IP.md

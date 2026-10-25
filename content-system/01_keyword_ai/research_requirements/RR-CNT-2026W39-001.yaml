@@ -1,0 +1,62 @@
+content_id: CNT-2026W39-001
+topic_id: speaker_tracking
+primary_keyword: "화자추적카메라"
+canonical_topic: "speaker_tracking_camera"
+product_candidate: "Logitech Rally Bar"
+
+must_resolve:
+  - id: RQ-01
+    question: "RightSight 2란 정확히 무엇이며 지원 모드(Group, Speaker, Grid)의 정의는 무엇인가?"
+    category: concept
+    priority: critical
+    resolved_by: KNW-FEAT-LOGI-RIGHTSIGHT2
+    status: RESOLVED
+
+  - id: RQ-02
+    question: "RightSight 2를 지원하는 제품군과 제품별 렌즈 아키텍처 차이는 무엇인가?"
+    category: compatibility
+    priority: critical
+    resolved_by: KNW-FEAT-LOGI-RIGHTSIGHT2
+    status: RESOLVED
+
+  - id: RQ-03
+    question: "Speaker View와 Group View의 권장 동작 거리는 각각 몇 미터인가?"
+    category: operating_condition
+    priority: critical
+    resolved_by: KNW-FEAT-LOGI-RIGHTSIGHT2
+    status: RESOLVED
+
+  - id: RQ-04
+    question: "Rally Bar의 Speaker View는 어떤 입력 센서(TDoA 마이크, AI 뷰파인더)로 화자를 특정하는가?"
+    category: mechanism
+    priority: high
+    resolved_by: KNW-FEAT-LOGI-RIGHTSIGHT2
+    status: RESOLVED
+
+  - id: RQ-05
+    question: "Rally Bar의 물리 단자(HDMI, USB, 전원) 및 기본 박스 구성품은 무엇인가?"
+    category: product_spec
+    priority: high
+    resolved_by: KNW-PROD-LOGI-RALLYBAR
+    status: RESOLVED
+
+  - id: RQ-06
+    question: "어떤 환경(유리벽, 높은 잔향, 4.5m 초과 거리)에서 성능이 저하될 수 있으며 해결책은 무엇인가?"
+    category: limitation
+    priority: high
+    resolved_by: KNW-FEAT-LOGI-RIGHTSIGHT2
+    status: RESOLVED
+
+  - id: RQ-07
+    question: "Zoom Rooms 및 CollabOS 상에서 화자 추적을 켜는 정확한 관리자 메뉴 경로는 무엇인가?"
+    category: configuration
+    priority: critical
+    resolved_by: KNW-FEAT-LOGI-RIGHTSIGHT2
+    status: RESOLVED
+
+  - id: RQ-08
+    question: "Zoom Rooms의 'Multi-Stream/Smart Gallery'와 디바이스 자체의 'Speaker View'의 차이는 무엇인가?"
+    category: platform
+    priority: high
+    resolved_by: KNW-PLAT-ZOOM-ROOMS
+    status: RESOLVED

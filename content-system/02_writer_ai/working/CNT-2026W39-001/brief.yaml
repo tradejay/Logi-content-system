@@ -1,0 +1,185 @@
+content_id: CNT-2026W39-001
+batch_id: BATCH-2026W39
+status: READY_FOR_WRITING
+created_at: '2026-09-22'
+updated_at: '2026-09-23'
+topic: 회의실 화상회의 화자 추적 카메라 원리와 실무 세팅 가이드
+canonical_topic: speaker_tracking_camera
+one_line_purpose: 회의실에서 말하는 사람을 자동으로 찾아 비춰주는 화자 추적 카메라의 작동 원리와 줌(Zoom) 환경 세팅법을 안내한다.
+funnel_stage: discovery
+audience:
+  level: beginner_to_intermediate
+  roles:
+  - IT 관리자
+  - 총무 담당자
+  - 회의실 구축 TF 담당자
+search:
+  primary_keyword: 화자추적카메라
+  supporting_keywords:
+  - 회의실카메라
+  - PTZ카메라
+  - 줌화상회의
+  - 회의실세팅
+  layman_terms:
+  - 말하는 사람 따라가는 카메라
+  - 발표자 자동으로 비춰주는 카메라
+  - 회의실 화면 자동 확대
+  technical_terms:
+  - Speaker Tracking
+  - Auto Framing
+  - Acoustic TDoA
+  - RightSight 2
+intent:
+- problem_solving
+- concept_understanding
+- configuration
+content_type_mix:
+  problem: 20
+  mechanism: 35
+  howto: 30
+  comparison: 10
+  review: 5
+title_candidates:
+- 말하는 사람 알아서 비춰주는 화자추적 카메라 원리와 회의실 세팅법
+- 회의실 줌(Zoom) 회의할 때 발표자 자동으로 따라가는 카메라의 비밀
+- 화자추적 카메라(Speaker Tracking) 기술 원리와 8인 회의실 최적 구성
+questions:
+- 화자 추적 카메라는 마이크 소리와 카메라 영상 중 무엇을 기준으로 사람을 찾는가?
+- 전체 화면을 맞추는 자동 프레이밍(Group View)과 화자 추적(Speaker View)의 차이는 무엇인가?
+- 로지텍 랠리바(Rally Bar)와 줌 룸스(Zoom Rooms) 환경에서 화자 추적 옵션은 어떻게 설정하는가?
+flow:
+- 1. 회의실에서 발화자가 멀리 보여 표정이 안 보이고 집중도가 흐트러지는 문제 (Hook)
+- 2. 3줄 빠른 요약 결론: 빔포밍 마이크 TDoA 음향 위치 + AI 비전 안면 인식 결합 (Quick Answer)
+- 3. 화자 추적 메커니즘과 일반 자동 프레이밍 비교표 (Concept & Mechanism)
+- 4. 로지텍 Rally Bar의 듀얼 렌즈 및 RightSight 2 하드웨어 구현 (Product Bridge)
+- 5. Zoom Rooms 및 Logitech Sync 실무 관리자 설정 3단계 (How-to)
+- 6. 15인 이상 대형 회의실에서의 단독 수음 한계 및 Mic Pod 확장 권장 (Limitations)
+- 7. 맞춤형 회의실 카메라 화각 및 마이크 무료 진단 컨설팅 (Soft CTA)
+required_sources:
+- SRC-LOGI-RALLYBAR
+- SRC-LOGI-RIGHTSIGHT2
+- SRC-ZOOM-CAMERA-MODES
+required_assets:
+- ASSET-LOGI-RALLYBAR-SPEAKER-VIEW
+product_bridge:
+  product: Logitech Rally Bar
+  reason: 전동 PTZ 광학 렌즈와 상시 감시용 AI 뷰파인더 듀얼 카메라 및 6개 빔포밍 마이크로 화자 추적을 일체형으로 구현한 대표 장비
+  limitations: 단독 수음 반경은 7m(8~10인 룸)에 최적화되어 있으며, 15인 이상 대형 룸에서는 테이블 중앙에 확장 Rally Mic Pod 추가 배치가 필수적임
+cta:
+  level: soft
+  target: 당사 전문 엔지니어와 우리 회사 회의실 면적에 맞는 카메라 화각 무료 진단 상담
+internal_links:
+  target_content: []
+
+research_requirements_ref: RR-CNT-2026W39-001
+
+knowledge_packs:
+- KNW-FEAT-LOGI-RIGHTSIGHT2
+- KNW-PROD-LOGI-RALLYBAR
+- KNW-PLAT-ZOOM-ROOMS
+- KNW-CONC-SPEAKER-TRACKING
+
+sections:
+- id: SEC-01
+  type: hook
+  objective: 회의실에서 발표자가 작게 보이는 문제를 독자가 자신의 문제로 인식
+  audience_question: 말하는 사람을 자동으로 보여주는 카메라가 있는가?
+  required_knowledge: []
+  asset:
+    type: gif
+    priority: high
+
+- id: SEC-02
+  type: concept
+  objective: PTZ와 화자추적의 차이 이해
+  questions:
+  - PTZ란?
+  - Speaker Tracking이란?
+  - 두 개는 어떤 관계인가?
+  - 오디오 빔포밍 TDoA와 비전 센서의 결합 원리
+  required_knowledge:
+  - KNW-FEAT-LOGI-RIGHTSIGHT2
+  - KNW-CONC-SPEAKER-TRACKING
+
+- id: SEC-03
+  type: feature
+  objective: RightSight 2의 세 가지 View 차이를 이해
+  must_cover:
+  - Group View
+  - Speaker View
+  - Grid View
+  asset:
+    type: comparison_image
+
+- id: SEC-04
+  type: operating_conditions
+  objective: 설치 전에 알아야 할 거리 및 환경 조건 설명
+  must_cover:
+  - recommended_distance
+  - seating
+  - reverberation
+  - glass
+
+- id: SEC-05
+  type: platform
+  objective: Zoom/Teams 기능과 RightSight 2를 혼동하지 않도록 설명
+  must_cover:
+  - device_feature
+  - zoom_rooms
+  - teams_rooms
+  - BYOD
+
+- id: SEC-06
+  type: howto
+  objective: 관리자 스스로 기능을 켜고 검증할 수 있게 안내
+  must_cover:
+  - prerequisite
+  - menu_path
+  - options
+  - verification
+  - troubleshooting
+
+- id: SEC-07
+  type: product_bridge
+  objective: Rally Bar에서 이 기술이 어떻게 구현되는지 연결
+  must_cover:
+  - dual_camera_hardware
+  - mic_array
+  - physical_ports
+  - packaging_and_mounts
+  required_knowledge:
+  - KNW-PROD-LOGI-RALLYBAR
+
+- id: SEC-08
+  type: cta
+  objective: 장비 선정/구축 상담으로 자연스럽게 연결
+
+asset_plan:
+- asset_need_id: AN-001
+  section: SEC-01
+  type: gif
+  purpose: Speaker View의 실제 발언자 전환을 보여줌
+  priority: critical
+- asset_need_id: AN-002
+  section: SEC-03
+  type: comparison_image
+  purpose: Group/Speaker/Grid View 차이 설명 비교표
+  priority: high
+- asset_need_id: AN-003
+  section: SEC-06
+  type: screenshot
+  purpose: RightSight 2 및 Zoom Rooms 카메라 제어 설정 위치 표시
+  priority: high
+- asset_need_id: AN-004
+  section: SEC-07
+  type: image
+  purpose: 로지텍 Rally Bar 듀얼 광학 렌즈(AI Viewfinder) 및 후면 인터페이스
+  priority: medium
+
+history:
+- date: '2026-09-22'
+  role: KEYWORD
+  action: CREATED
+- date: '2026-09-23'
+  role: SYSTEM
+  action: UPGRADED_TO_V1_1_SECTION_PLAN

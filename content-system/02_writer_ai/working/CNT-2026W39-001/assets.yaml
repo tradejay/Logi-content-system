@@ -1,0 +1,34 @@
+asset_plan:
+- asset_need_id: AN-001
+  section: SEC-01
+  type: gif
+  purpose: Speaker View의 실제 발언자 전환을 보여줌
+  priority: critical
+- asset_need_id: AN-002
+  section: SEC-03
+  type: comparison_image
+  purpose: Group/Speaker/Grid View 차이 설명 비교표
+  priority: high
+- asset_need_id: AN-003
+  section: SEC-06
+  type: screenshot
+  purpose: RightSight 2 및 Zoom Rooms 카메라 제어 설정 위치 표시
+  priority: high
+- asset_need_id: AN-004
+  section: SEC-07
+  type: image
+  purpose: 로지텍 Rally Bar 듀얼 광학 렌즈(AI Viewfinder) 및 후면 인터페이스
+  priority: medium
+asset_placeholders:
+- id: AN-001
+  section: SEC-01
+  purpose: Speaker View의 실제 발언자 전환을 보여줌
+- id: AN-002
+  section: SEC-03
+  purpose: Group/Speaker/Grid View 차이 설명 비교표
+- id: AN-003
+  section: SEC-06
+  purpose: RightSight 2 및 Zoom Rooms 카메라 제어 설정 위치 표시
+- id: AN-004
+  section: SEC-07
+  purpose: 로지텍 Rally Bar 듀얼 광학 렌즈(AI Viewfinder) 및 후면 인터페이스

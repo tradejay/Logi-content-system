@@ -1,0 +1,236 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "ContentBriefSchema"
+description: "Keyword AI가 생성하는 Content Brief YAML의 표준 스키마 명세"
+type: object
+required:
+  - content_id
+  - batch_id
+  - status
+  - created_at
+  - topic
+  - canonical_topic
+  - one_line_purpose
+  - funnel_stage
+  - audience
+  - search
+  - intent
+  - content_type_mix
+  - title_candidates
+  - questions
+  - flow
+  - required_sources
+  - product_bridge
+  - cta
+
+properties:
+  content_id:
+    type: string
+    pattern: "^CNT-\\d{4}W\\d{2}-\\d{3}$"
+    description: "불변 영구 콘텐츠 ID (예: CNT-2026W39-001)"
+
+  batch_id:
+    type: string
+    pattern: "^BATCH-\\d{4}W\\d{2}$"
+    description: "주간 배치 ID (예: BATCH-2026W39)"
+
+  status:
+    type: string
+    enum:
+      - NEW
+      - KEYWORD_RESEARCH
+      - PLANNING
+      - RESEARCH_REQUIRED
+      - RESEARCHING
+      - KNOWLEDGE_REVIEW
+      - READY_FOR_WRITING
+      - WRITING
+      - READY_FOR_QA
+      - REVISION_REQUIRED
+      - READY_TO_PUBLISH
+      - PUBLISHED
+      - ARCHIVED
+      - NEEDS_EVIDENCE
+      - BLOCKED
+      - CANCELLED
+      - DUPLICATE
+
+  created_at:
+    type: string
+    format: date
+
+  updated_at:
+    type: string
+    format: date
+
+  topic:
+    type: string
+    description: "선정된 콘텐츠 주제 한글 명칭"
+
+  canonical_topic:
+    type: string
+    description: "중복 판별용 표준 토픽 코드 (예: speaker_tracking_camera)"
+
+  one_line_purpose:
+    type: string
+    description: "이 글이 독자에게 제공하는 핵심 가치 한 줄 요약"
+
+  funnel_stage:
+    type: string
+    enum: [discovery, evaluation, decision]
+
+  audience:
+    type: object
+    required: [level, roles]
+    properties:
+      level:
+        type: string
+        enum: [beginner, beginner_to_intermediate, intermediate, advanced]
+      roles:
+        type: array
+        items:
+          type: string
+
+  search:
+    type: object
+    required: [primary_keyword, supporting_keywords, layman_terms, technical_terms]
+    properties:
+      primary_keyword:
+        type: string
+      supporting_keywords:
+        type: array
+        items:
+          type: string
+      layman_terms:
+        type: array
+        items:
+          type: string
+      technical_terms:
+        type: array
+        items:
+          type: string
+
+  intent:
+    type: array
+    items:
+      type: string
+      enum: [problem_solving, concept_understanding, configuration, comparison, evaluation]
+
+  content_type_mix:
+    type: object
+    required: [problem, mechanism, howto, comparison, review]
+    properties:
+      problem: { type: integer, minimum: 0, maximum: 100 }
+      mechanism: { type: integer, minimum: 0, maximum: 100 }
+      howto: { type: integer, minimum: 0, maximum: 100 }
+      comparison: { type: integer, minimum: 0, maximum: 100 }
+      review: { type: integer, minimum: 0, maximum: 100 }
+
+  title_candidates:
+    type: array
+    minItems: 3
+    items:
+      type: string
+
+  questions:
+    type: array
+    minItems: 3
+    items:
+      type: string
+
+  flow:
+    type: array
+    minItems: 5
+    items:
+      type: string
+
+  required_sources:
+    type: array
+    minItems: 1
+    items:
+      type: string
+      pattern: "^SRC-"
+
+  required_assets:
+    type: array
+    items:
+      type: string
+
+  product_bridge:
+    type: object
+    required: [product, reason, limitations]
+    properties:
+      product: { type: string }
+      reason: { type: string }
+      limitations: { type: string }
+
+  cta:
+    type: object
+    required: [level, target]
+    properties:
+      level: { type: string, enum: [soft, medium, hard] }
+      target: { type: string }
+
+  internal_links:
+    type: object
+    properties:
+      target_content:
+        type: array
+        items: { type: string }
+
+  research_requirements_ref:
+    type: string
+    pattern: "^RR-CNT-\\d{4}W\\d{2}-\\d{3}$"
+    description: "Phase B 기술 조사 요구서 ID"
+
+  knowledge_packs:
+    type: array
+    description: "글 작성에 주입되는 공인 Knowledge Pack 목록"
+    items:
+      type: string
+      pattern: "^KNW-"
+
+  sections:
+    type: array
+    description: "v1.1 Section Plan 중심 모듈형 섹션 구성"
+    items:
+      type: object
+      required: [id, type, objective]
+      properties:
+        id: { type: string }
+        type: { type: string }
+        objective: { type: string }
+        audience_question: { type: string }
+        questions:
+          type: array
+          items: { type: string }
+        must_cover:
+          type: array
+          items: { type: string }
+        required_knowledge:
+          type: array
+          items: { type: string }
+        asset:
+          type: object
+
+  asset_plan:
+    type: array
+    description: "섹션별 시각 자료(사진/다이어그램/GIF/스크린샷) 계획"
+    items:
+      type: object
+      required: [asset_need_id, section, type, purpose, priority]
+      properties:
+        asset_need_id: { type: string }
+        section: { type: string }
+        type: { type: string, enum: [image, diagram, gif, screenshot, comparison_image, chart] }
+        purpose: { type: string }
+        priority: { type: string, enum: [critical, high, medium, low] }
+
+  history:
+    type: array
+    items:
+      type: object
+      required: [date, role, action]
+      properties:
+        date: { type: string }
+        role: { type: string }
+        action: { type: string }

@@ -1,0 +1,130 @@
+knowledge_id: KNW-PROD-LOGI-MICPOD
+name: "Logitech Rally Mic Pod"
+vendor: "Logitech"
+knowledge_type: product
+status: VERIFIED
+last_verified: "2026-09-23"
+
+overview:
+  tier: "medium_to_large_expansion_mic"
+  form_factor: "Table/Ceiling Expansion Microphone (4개 빔포밍 마이크, AEC 에코 캔슬링, 터치 음소거)"
+  target_room_size: "10인 이상 중대형 회의실, 긴 회의 테이블, U자형 회의실"
+
+scope:
+  applies_to:
+    - LOGI-RALLY-MIC-POD
+    - LOGI-RALLY-MIC-POD-HUB
+  does_not_imply:
+    - MeetUp 또는 MeetUp 2와 호환됨 (단자 규격 미지원으로 연결 불가)
+    - 스피커 기능 포함 (순수 마이크 수음 전용 하드웨어)
+
+facts:
+  - id: FACT-RMP-001
+    subject: RallyMicPod.Dimensions
+    property: diameter
+    value: 102.0
+    unit: mm
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "직경"
+
+  - id: FACT-RMP-002
+    subject: RallyMicPod.Dimensions
+    property: height
+    value: 21.0
+    unit: mm
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "높이"
+
+  - id: FACT-RMP-003
+    subject: RallyMicPod.Dimensions
+    property: weight
+    value: 0.3
+    unit: kg
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "무게"
+
+  - id: FACT-RMP-004
+    subject: RallyMicPod.Audio
+    property: beamforming_elements
+    value: 4.0
+    unit: 개
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "오디오 스펙"
+        section: "마이크"
+
+  - id: FACT-RMP-005
+    subject: RallyMicPod.Audio
+    property: pickup_diameter
+    canonical_property: microphone_pickup_range
+    value: 4.5
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "오디오 스펙"
+        section: "수음 범위"
+
+  - id: FACT-RMP-006
+    subject: RallyMicPod.Audio
+    property: frequency_min
+    value: 90.0
+    unit: Hz
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "오디오 스펙"
+        section: "주파수 응답"
+
+  - id: FACT-RMP-007
+    subject: RallyMicPod.Audio
+    property: frequency_max
+    value: 16.0
+    unit: kHz
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "오디오 스펙"
+        section: "주파수 응답"
+
+  - id: FACT-RMP-008
+    subject: RallyMicPod.System
+    property: max_pods_rally_bar
+    value: 4.0
+    unit: 개
+    source:
+      id: SRC-LOGI-DOC-MIC-POD-COMPAT
+      locator:
+        heading: "호환성 매트릭스"
+        section: "Rally Bar"
+
+  - id: FACT-RMP-009
+    subject: RallyMicPod.System
+    property: max_pods_rally_plus
+    value: 7.0
+    unit: 개
+    source:
+      id: SRC-LOGI-DOC-MIC-POD-COMPAT
+      locator:
+        heading: "호환성 매트릭스"
+        section: "Rally Plus"
+
+  - id: FACT-RMP-010
+    subject: RallyMicPod.Connectivity
+    property: integrated_cable_length
+    value: 2.95
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_RALLY_MIC_POD
+      locator:
+        heading: "케이블 사양"

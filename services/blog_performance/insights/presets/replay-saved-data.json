@@ -1,0 +1,29 @@
+{
+  "$schema": "insights-pipeline-config-v1",
+  "schema_version": "insights-pipeline-config-v1",
+  "preset_id": "replay-saved-data",
+  "description": "Offline replay from saved common and products json",
+  "test_only": true,
+  "execution": {
+    "mode": "offline",
+    "start_step": "common_import",
+    "stop_step": "activation",
+    "depth": 30,
+    "max_retries": 1
+  },
+  "panel": {
+    "type": "catalog_full",
+    "queries": null,
+    "limit": 34
+  },
+  "inputs": {
+    "common_json": "data/blog_performance/insights/INSIGHTS-20261023T065737Z/common/input.json",
+    "products_json": "data/blog_performance/insights/INSIGHTS-20261023T065737Z/products/input.json",
+    "ai_decisions_json": null
+  },
+  "qa": {
+    "check_browser": false,
+    "min_tables": 1,
+    "require_top5_audit": true
+  }
+}

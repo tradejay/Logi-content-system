@@ -1,0 +1,43 @@
+content_id: CNT-2026W39-003
+strategy_version: 1
+created_at: '2026-09-23'
+primary_playbook: PB-PROBLEM-DIAGNOSIS
+secondary_playbooks:
+- PB-TROUBLESHOOTING
+- PB-PRODUCT-SELECTION
+reader:
+  state: 10인 이상 긴 회의실에서 끝자리 목소리가 작게 들리거나 울려 화상회의 집중도가 떨어짐
+  questions:
+  - 왜 카메라 내장 마이크로는 회의실 끝자리 발언자의 목소리가 작게 들릴까요?
+  - 통유리벽이나 긴 테이블에서 소리가 울리는 근본 원인은 무엇인가요?
+  - 테이블 중앙에 놓는 확장 마이크 팟(Mic Pod)은 몇 개까지 연결할 수 있나요?
+  - 테이블 위 배선을 지저분하지 않고 깔끔하게 정리하는 방법(마이크 팟 허브)은 무엇인가요?
+  - 지금 당장 우리 회의실에서 해볼 수 있는 음향 점검 요령은 무엇인가요?
+article_goal: 긴 회의실 테이블에서 말소리가 작거나 울리는 문제를 랠리 마이크 팟 배치로 해결하도록 돕는다.
+suggested_flow:
+- 중대형 회의실에서 끝자리 목소리가 안 들리는 현장 고충 공감
+- 거리와 실내 반사음(잔향)이 마이크 수음에 미치는 메커니즘
+- '단독 마이크 한계 극복: 랠리 마이크 팟(Rally Mic Pod) 데이지체인 토폴로지'
+- 깔끔한 인테리어를 위한 Mic Pod Hub 분기 배선 가이드
+- 회의실 길이별 마이크 증설 체크리스트 및 음향 무료 진단 (CTA)
+must_cover:
+- 끝자리 목소리 픽업 저하 원인 (거리 및 유리벽 잔향)
+- Rally Mic Pod 빔포밍 마이크 확장성
+- 데이지체인 직렬 연결 및 마이크 팟 허브(Hub) 분기 구성
+- 회의실 규모별 마이크 권장 수량
+can_omit:
+- 카메라 PTZ 모터 스펙
+- 비디오 해상도 세부 스펙
+- 전력 소비량
+avoid:
+- 기계적 레이블 박스
+- 음향 논문 수준의 수식 나열
+- 장비 교체만 능사라는 식의 서술
+technical_depth:
+  overall: intermediate
+asset_strategy:
+  preferred_roles:
+  - EXPLAIN
+  - PROVE
+  - COMPARE
+cta_intent: acoustic_diagnostic_consultation

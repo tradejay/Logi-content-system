@@ -1,0 +1,149 @@
+knowledge_id: KNW-PLAT-ZOOM-ROOMS
+name: "Zoom Rooms Intelligent Camera Integration"
+vendor: "Zoom"
+knowledge_type: platform
+status: VERIFIED
+last_verified: "2026-09-23"
+
+overview:
+  platform: "Zoom Rooms"
+  client_types:
+    - "Zoom Rooms Appliance (CollabOS)"
+    - "Zoom Rooms for Windows"
+    - "Zoom Rooms for macOS"
+
+camera_control_modes:
+  manual:
+    description: "사용자가 컨트롤러(Tap)에서 PTZ 화각을 수동으로 프리셋 지정 및 조작"
+  auto_framing:
+    description: "회의실 내 인원을 감지하여 전원이 잘리지 않게 프레이밍 (디바이스 Group View와 연동)"
+  speaker_focus:
+    description: "발화자를 감지하여 해당 인물 중심의 단독 클로즈업 뷰로 자동 전환 (디바이스 Speaker View와 연동)"
+  multi_stream:
+    description: "Smart Gallery 모드로 참석자별 개별 스트림을 클라우드로 전송 (Zoom Rooms 전용 라이선스 필요)"
+
+admin_settings_procedure:
+  web_portal:
+    step_1: "zoom.us 포털에 관리자 계정으로 로그인"
+    step_2: "Room Management ➔ Zoom Rooms 메뉴 진입"
+    step_3: "설정할 대상 룸 선택 후 'Devices' 탭 클릭"
+    step_4: "Camera Control 옵션을 켜고 기본 모드를 'Speaker Focus' 또는 'Auto-Framing'으로 지정"
+  in_room_controller:
+    step_1: "테이블 위 Logitech Tap 화면의 좌측 '카메라 제어' 아이콘 터치"
+    step_2: "RightSight 2 모드(그룹 뷰 / 화자 뷰) 즉각 토글 변경 가능"
+
+prerequisites:
+  - "Zoom Rooms 5.9 이상 권장"
+  - "CollabOS 1.5 이상 펌웨어 업데이트 권장"
+
+facts:
+  - id: FACT-ZR-001
+    subject: ZoomRooms.CameraControl
+    property: supported_control_modes
+    canonical_property: camera_framing_distance
+    value: "Manual, Auto-Framing, Speaker Focus, Multi-Stream"
+    scope:
+      platforms:
+        - ZOOM_ROOMS
+    source:
+      source_id: SRC-ZOOM-CAMERA-MODES
+      locator:
+        heading: "Camera control modes in Zoom Rooms"
+        section: "Overview"
+        captured_at: "2026-09-23"
+
+  - id: FACT-ZR-002
+    subject: ZoomRooms.SpeakerFocus
+    property: device_feature_mapping
+    canonical_property: speaker_tracking_recommended_distance
+    value: "Maps directly to hardware device Speaker View (e.g. RightSight 2 Speaker View)"
+    scope:
+      platforms:
+        - ZOOM_ROOMS
+    source:
+      source_id: SRC-ZOOM-CAMERA-MODES
+      locator:
+        heading: "Speaker Focus Mode"
+        section: "Device Integration"
+        captured_at: "2026-09-23"
+
+  - id: FACT-ZR-003
+    subject: ZoomRooms.AutoFraming
+    property: device_feature_mapping
+    canonical_property: camera_framing_distance
+    value: "Maps directly to hardware device Group View (e.g. RightSight 2 Group View)"
+    scope:
+      platforms:
+        - ZOOM_ROOMS
+    source:
+      source_id: SRC-ZOOM-CAMERA-MODES
+      locator:
+        heading: "Auto-Framing Mode"
+        section: "Device Integration"
+        captured_at: "2026-09-23"
+
+  - id: FACT-ZR-004
+    subject: ZoomRooms.AdminPortal
+    property: menu_path
+    canonical_property: menu_path
+    value: "Room Management > Zoom Rooms > Devices > Camera Control"
+    scope:
+      platforms:
+        - ZOOM_ROOMS
+    source:
+      source_id: SRC-ZOOM-CAMERA-MODES
+      locator:
+        heading: "Configuring Camera Control in Web Portal"
+        section: "Room Management"
+        captured_at: "2026-09-23"
+
+  - id: FACT-ZR-005
+    subject: ZoomRooms.InRoomController
+    property: menu_path
+    canonical_property: menu_path
+    value: "Tap Controller > Camera Control"
+    scope:
+      platforms:
+        - ZOOM_ROOMS
+    source:
+      source_id: SRC-ZOOM-CAMERA-MODES
+      locator:
+        heading: "In-room Camera Control via Controller"
+        section: "Touch Controller"
+        captured_at: "2026-09-23"
+
+  - id: FACT-ZR-006
+    subject: ZoomRooms.Prerequisites
+    property: minimum_version
+    canonical_property: minimum_version
+    value: "5.9"
+    scope:
+      platforms:
+        - ZOOM_ROOMS
+    source:
+      source_id: SRC-ZOOM-CAMERA-MODES
+      locator:
+        heading: "Prerequisites"
+        section: "Software Versions"
+        captured_at: "2026-09-23"
+
+derived_knowledge:
+  - id: DKNW-ZR-001
+    type: DERIVED_RELATION
+    subject: ZoomRooms.SpeakerFocus
+    relation: integrates_with
+    object: RightSight2.SpeakerView
+    statement: "Zoom Rooms의 'Speaker Focus'는 플랫폼 고유의 가상 화자 분할이 아니라 디바이스의 RightSight 2 Speaker View 명령을 전달하는 브릿지 역할을 한다."
+    derived_from:
+      - FACT-ZR-002
+      - FACT-RS2-001
+    derivation_type: platform_device_abstraction
+    scope:
+      platforms:
+        - ZOOM_ROOMS
+      products:
+        - LOGI-RALLY-BAR
+        - LOGI-RALLY-BAR-MINI
+        - LOGI-MEETUP-2
+    confidence: VERIFIED
+    rationale: "클라우드 소프트웨어 UI 모드 선택과 룸 하드웨어 온디바이스 AI의 매핑 관계 정립."

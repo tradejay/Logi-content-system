@@ -1,0 +1,32 @@
+provider_id: LOGITECH_LOCAL
+
+name: Logitech Official Manuals Local Corpus
+
+authority: official_vendor
+
+access_type: cli
+
+cli_path: "C:\\Users\\Choijay\\Desktop\\오우션교육\\Logitech Quick Manual-2\\manual_cli.py"
+
+document_count: 1471
+
+capabilities:
+  search: true
+  get_document: true
+  filter_product: true
+  filter_tab_type: true
+
+document_types:
+  - FAQ & Troubleshooting
+  - Guide
+  - Release Note
+  - Compatibility
+  - Product Documentation
+
+adapter:
+  implementation: scripts/providers/logitech_provider.py
+  entrypoint: providers.logitech_provider.LogitechManualProvider
+
+source_policy:
+  search_result_is_fact: false
+  detail_required_for_fact_creation: true

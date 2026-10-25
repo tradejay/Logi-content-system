@@ -1,0 +1,171 @@
+knowledge_id: KNW-PROD-LOGI-RALLYPLUS
+name: "Logitech Rally Plus"
+vendor: "Logitech"
+knowledge_type: product
+status: VERIFIED
+last_verified: "2026-09-23"
+
+overview:
+  tier: "large_to_very_large_room"
+  form_factor: "Modular Enterprise Conference System (독립형 4K PTZ 카메라, 듀얼 스피커, 분리형 Table/Display Hub, 최대 7개 마이크)"
+  target_room_size: "15~46인 대형 이사회실, 대회의실, 다목적 강당"
+
+scope:
+  applies_to:
+    - LOGI-RALLY-PLUS
+  does_not_imply:
+    - Rally Bar와 같은 일체형 비디오 바 폼팩터 (독립 분리형 모듈러 아키텍처임)
+    - 올인원 바처럼 테이블 위 단일 기기로 작동 (Table Hub와 Display Hub 간 Cat6A 포설 필수)
+
+facts:
+  - id: FACT-RP-001
+    subject: RallyPlus.Camera
+    property: optical_zoom
+    value: 5.0
+    unit: 배
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "카메라 사양"
+        section: "줌"
+
+  - id: FACT-RP-002
+    subject: RallyPlus.Camera
+    property: total_hd_zoom
+    value: 15.0
+    unit: 배
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "카메라 사양"
+        section: "줌"
+
+  - id: FACT-RP-003
+    subject: RallyPlus.Camera
+    property: diagonal_field_of_view
+    canonical_property: field_of_view
+    value: 90.0
+    unit: °
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "카메라 사양"
+        section: "대각선 시야각 (DFOV)"
+
+  - id: FACT-RP-004
+    subject: RallyPlus.Camera
+    property: horizontal_field_of_view
+    canonical_property: field_of_view
+    value: 82.1
+    unit: °
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "카메라 사양"
+        section: "수평 시야각 (HFOV)"
+
+  - id: FACT-RP-005
+    subject: RallyPlus.Camera
+    property: vertical_field_of_view
+    canonical_property: field_of_view
+    value: 52.2
+    unit: °
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "카메라 사양"
+        section: "수직 시야각 (VFOV)"
+
+  - id: FACT-RP-006
+    subject: RallyPlus.Audio
+    property: speaker_driver_size
+    value: 76.0
+    unit: mm
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "오디오 사양"
+        section: "스피커 (풀레인지)"
+
+  - id: FACT-RP-007
+    subject: RallyPlus.Audio
+    property: speaker_power
+    value: 20.0
+    unit: W
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "오디오 사양"
+        section: "정격 출력"
+
+  - id: FACT-RP-008
+    subject: RallyPlus.System
+    property: default_mic_pods
+    value: 2.0
+    unit: 개
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "오디오 사양"
+        section: "마이크"
+
+  - id: FACT-RP-009
+    subject: RallyPlus.System
+    property: max_mic_pods
+    value: 7.0
+    unit: 개
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "오디오 사양"
+        section: "마이크"
+
+  - id: FACT-RP-010
+    subject: RallyPlus.System
+    property: max_hub_distance
+    value: 50.0
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_RALLY_PLUS
+      locator:
+        heading: "포트 및 인터페이스"
+        section: "허브 간 연결"
+
+  - id: FACT-RP-011
+    subject: RallyPlus.Audio
+    property: cat_coupler_max_length
+    canonical_property: max_cable_length
+    value: 20.0
+    unit: m
+    notes: "Rally Mic Pod CAT Coupler 사용 시 Table Hub에서 최대 CAT 케이블 길이 20m"
+    source:
+      id: SRC-LOGI-DOC-MIC-POD-COMPAT
+      locator:
+        heading: "배선 연장 솔루션 및 제한 사항"
+        section: "Rally / Rally Plus"
+
+  - id: FACT-RP-012
+    subject: RallyPlus.Audio
+    property: cat_cable_type
+    canonical_property: cable_type
+    value: "CAT6a SFTP/SSTP"
+    notes: "CAT Coupler 연장 시 공식 권장 케이블 규격"
+    source:
+      id: SRC-LOGI-DOC-MIC-POD-COMPAT
+      locator:
+        heading: "배선 연장 솔루션 및 제한 사항"
+        section: "지원 케이블 타입"
+
+  - id: FACT-RP-013
+    subject: RallyPlus.Audio
+    property: cat_coupler_max_mic_and_hub_total
+    canonical_property: max_device_count
+    value: 7.0
+    unit: 개
+    notes: "CAT Coupler 연장 시 Mic Pod와 Mic Pod Hub의 합산 최대 7개 제한"
+    source:
+      id: SRC-LOGI-DOC-MIC-POD-COMPAT
+      locator:
+        heading: "호환 메인 기기 및 최대 연결 대수"
+        section: "Rally Plus"
+

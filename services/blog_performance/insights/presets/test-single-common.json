@@ -1,0 +1,39 @@
+{
+  "$schema": "insights-pipeline-config-v1",
+  "schema_version": "insights-pipeline-config-v1",
+  "preset_id": "test-single-common",
+  "description": "Mini test run with 1 common keyword (화상회의, depth 30)",
+  "test_only": true,
+  "execution": {
+    "mode": "offline",
+    "start_step": "preflight",
+    "stop_step": "activation",
+    "depth": 30,
+    "max_retries": 1
+  },
+  "panel": {
+    "type": "explicit_queries",
+    "queries": [
+      {
+        "panel": "common",
+        "keyword": "화상회의",
+        "product_id": null,
+        "brand": null,
+        "product": null,
+        "report_group": "common",
+        "catalog_group": null
+      }
+    ],
+    "limit": 1
+  },
+  "inputs": {
+    "common_json": null,
+    "products_json": null,
+    "ai_decisions_json": null
+  },
+  "qa": {
+    "check_browser": false,
+    "min_tables": 1,
+    "require_top5_audit": true
+  }
+}

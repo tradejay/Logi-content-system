@@ -1,0 +1,123 @@
+content_id: CNT-2026W39-005
+batch_id: BATCH-2026W39
+status: READY_FOR_WRITING
+created_at: "2026-09-22"
+topic: "20인 이상 대형 이사회실을 위한 모듈형 화상회의 시스템 구성 가이드"
+canonical_topic: "large_boardroom_conference_system"
+one_line_purpose: "15~30인 이상 대형 회의실에서 일체형 바의 물리적 한계를 극복하고 분리형 카메라와 듀얼 스피커, 다중 마이크를 구축하는 랠리 플러스 설계법을 제시한다."
+funnel_stage: discovery
+audience:
+  level: intermediate
+  roles:
+    - 전산 총괄 책임자(CIO)
+    - 엔터프라이즈 인프라 엔지니어
+    - 대기업 회의실 시공 PM
+search:
+  primary_keyword: "대회의실 화상회의"
+  supporting_keywords:
+    - "이사회실 화상회의 시스템"
+    - "로지텍 랠리 플러스"
+    - "대형 회의실 음향 영상 분리"
+  layman_terms:
+    - "큰 회의실 화상회의 장비"
+    - "스피커 마이크 분리형 카메라"
+  technical_terms:
+    - "Table Hub & Display Hub"
+    - "Cat6A 단일 인터링크"
+    - "Ultra-low distortion speakers"
+intent:
+  - problem_solving
+  - configuration
+content_type_mix:
+  problem: 20
+  mechanism: 35
+  howto: 30
+  comparison: 10
+  review: 5
+title_candidates:
+  - "대회의실 화상회의 구축 시 일체형 비디오바가 실패하는 이유와 모듈형 해결책"
+  - "20인 이상 대형 이사회실을 위한 로지텍 랠리 플러스(Rally Plus) 풀 세트 구성법"
+  - "디스플레이 허브와 테이블 허브를 활용한 대회의실 무결점 케이블링 가이드"
+questions:
+  - "왜 15인 이상 대회의실에서는 올인원 비디오바를 쓰면 음향과 영상 모두 한계가 올까요?"
+  - "로지텍 랠리 플러스는 디스플레이 허브와 테이블 허브 사이에 단 한 가닥의 케이블로 어떻게 모든 신호를 전송하나요?"
+  - "최대 7개 마이크 팟과 2대 랠리 카메라를 연결할 때의 전원 및 신호 설계는 어떻게 하나요?"
+flow:
+  - "1. [HOOK] 15인 이상 대형 보드룸에서 올인원 바 도입 후 겪는 소리 왜곡과 화각 한계"
+  - "2. [CONCEPT] 일체형 비디오 바 vs 모듈형 분리 아키텍처의 음향 영상 분리 메커니즘"
+  - "3. [FEATURE] 로지텍 Rally Plus 핵심 하드웨어 스펙 (4K PTZ 15배 줌, 듀얼 스피커)"
+  - "4. [OPERATING_CONDITIONS] 대형 공간 시야각 및 Table/Display Hub 간 최대 50.0m 거리"
+  - "5. [PLATFORM] 대형 룸 전용 룸 PC(Windows/Mac) 및 RoomMate 연동 환경"
+  - "6. [HOWTO] Table Hub와 Display Hub 단일 Cat6A 인터링크 3단계 시공 매뉴얼"
+  - "7. [LIMITATIONS] 벽면 매립 배선 사전 시공 요건 및 올인원 바 대비 설치 복잡도"
+  - "8. [CTA] 대형 이사회실 음향 영상 도면 무료 엔지니어링 진단"
+required_sources:
+  - SRC-LOGI-LOGI_RALLY_PLUS
+  - SRC-LOGI-DOC-MIC-POD-COMPAT
+product_bridge:
+  product: "Logitech Rally Plus"
+  reason: "15~30인 이상 대형 보드룸을 위한 독립형 4K PTZ 카메라, 듀얼 고출력 스피커, 분리형 허브 시스템"
+  limitations: "모듈형 구성으로 인해 디스플레이 허브와 테이블 허브 간 사전 매립 배선(Cat6A) 필요"
+cta:
+  level: soft
+  target: "당사 대형 음향영상 공인 엔지니어와 대회의실 평면도 기반 맞춤형 시스템 무료 설계 상담"
+
+research_requirements_ref: RR-CNT-2026W39-005
+
+knowledge_packs:
+  - KNW-PROD-LOGI-RALLYPLUS
+  - KNW-PROD-LOGI-MICPOD
+  - KNW-PROD-LOGI-RALLYBAR
+
+sections:
+  - id: SEC-01
+    type: hook
+    objective: "15인 이상 대형 회의실에서 올인원 바 도입 후 발생하는 음향과 영상의 한계 환기"
+    audience_question: "왜 넓은 대회의실에 일체형 화상회의 바를 설치하면 소리가 웅웅거리고 맨 뒤 사람이 안 보일까?"
+    required_knowledge: []
+
+  - id: SEC-02
+    type: concept
+    objective: "일체형 비디오 바와 분리형 모듈러 시스템의 음향학적/광학적 구조 비교"
+    questions:
+      - "대형 회의실에서 카메라와 스피커가 왜 물리적으로 분리되어야 하는가?"
+      - "Table Hub와 Display Hub의 역할 분담 원리"
+      - "단일 케이블 인터링크 전송 메커니즘"
+    required_knowledge:
+      - KNW-PROD-LOGI-RALLYBAR
+
+  - id: SEC-03
+    type: feature
+    objective: "로지텍 Rally Plus 핵심 하드웨어 스펙 (4K 전동 PTZ 15.0배 줌, 듀얼 스피커, 마이크 팟)"
+    required_facts:
+      - FACT-RP-001
+      - FACT-RP-002
+      - FACT-RP-003
+      - FACT-RP-004
+      - FACT-RP-005
+      - FACT-RP-006
+      - FACT-RP-007
+
+  - id: SEC-04
+    type: operating_conditions
+    objective: "15~46인 대형 룸 커버리지 및 허브 간 최대 50.0m 배선 허용 거리"
+    required_facts:
+      - FACT-RP-008
+      - FACT-RP-009
+      - FACT-RP-010
+
+  - id: SEC-05
+    type: platform
+    objective: "Zoom Rooms / Teams Rooms 전용 룸 PC 및 RoomMate 연동 환경"
+
+  - id: SEC-06
+    type: howto
+    objective: "Display Hub와 Table Hub 단일 Cat6A 3단계 시공 및 마이크 증설 매뉴얼"
+
+  - id: SEC-07
+    type: product_bridge
+    objective: "후면 인터페이스 구성 및 사전 케이블 매립 공사 고려사항"
+
+  - id: SEC-08
+    type: cta
+    objective: "대형 이사회실 맞춤형 음향영상 도면 무료 컨설팅 안내"

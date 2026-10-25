@@ -1,0 +1,68 @@
+# Technical Query Types Taxonomy for Research & Source Resolution
+# Standard categorization for query generation and provider search routing
+
+query_types:
+  CONCEPT:
+    description: "기초 기술 개념, 원리 및 정의"
+    preferred_docs: ["GUIDE", "WHITE_PAPER"]
+    ttl_tier: "long"
+
+  SPEC:
+    description: "물리적 규격, 치수, 전력, 음향/광학 정량적 제원"
+    preferred_docs: ["SPEC", "DATA_SHEET"]
+    ttl_tier: "long"
+
+  FEATURE:
+    description: "주요 소프트웨어/하드웨어 기능 및 모드 사양"
+    preferred_docs: ["GUIDE", "FEATURE_BRIEF"]
+    ttl_tier: "medium"
+
+  COMPATIBILITY:
+    description: "OS, 화상회의 플랫폼(Zoom/Teams/Google), 하드웨어 간 인증 및 호환성"
+    preferred_docs: ["COMPATIBILITY_MATRIX", "SUPPORT"]
+    ttl_tier: "medium"
+
+  MECHANISM:
+    description: "알고리즘, 빔포밍/추적 트리거 등 내부 동작 메커니즘"
+    preferred_docs: ["WHITE_PAPER", "TECH_GUIDE"]
+    ttl_tier: "medium"
+
+  OPERATING_CONDITION:
+    description: "권장 수음 거리, 최적 화자 거리, 조도, 룸 음향(RT60) 등 물리적 사용 환경"
+    preferred_docs: ["DEPLOYMENT_GUIDE", "INSTALLATION_MANUAL"]
+    ttl_tier: "medium"
+
+  INSTALLATION:
+    description: "벽면 마운트, 테이블 배치, 케이블 토폴로지, 전원 연결"
+    preferred_docs: ["INSTALLATION_MANUAL", "QUICK_START"]
+    ttl_tier: "long"
+
+  CONFIGURATION:
+    description: "관리자 포털(Sync, CollabOS, Zoom/Teams Admin) 메뉴 경로 및 파라미터 세팅"
+    preferred_docs: ["ADMIN_GUIDE", "CONFIG_MANUAL"]
+    ttl_tier: "short"
+
+  PLATFORM_INTEGRATION:
+    description: "특정 회의 플랫폼 고유 기능 연동 (예: Zoom Intelligent Director)"
+    preferred_docs: ["PLATFORM_GUIDE", "INTEGRATION_NOTE"]
+    ttl_tier: "short"
+
+  VERSION_HISTORY:
+    description: "펌웨어 및 소프트웨어 버전별 변경점 및 릴리스 히스토리"
+    preferred_docs: ["RELEASE_NOTE"]
+    ttl_tier: "medium"
+
+  RELEASE_NOTE:
+    description: "최신 패치, 버그 수정, 신규 기능 릴리스 공지"
+    preferred_docs: ["RELEASE_NOTE"]
+    ttl_tier: "short"
+
+  LIMITATION:
+    description: "기술적/물리적 제약사항, 지원 불가 모드, 네거티브 바운더리"
+    preferred_docs: ["KNOWN_ISSUES", "LIMITATION_DOC"]
+    ttl_tier: "medium"
+
+  TROUBLESHOOTING:
+    description: "장애 증상(울림, 트래킹 실패, 끊김) 진단 및 복구 절차"
+    preferred_docs: ["KB_ARTICLE", "TROUBLESHOOTING_GUIDE"]
+    ttl_tier: "medium"

@@ -1,0 +1,126 @@
+content_id: CNT-2026W39-003
+batch_id: BATCH-2026W39
+status: READY_FOR_WRITING
+created_at: "2026-09-22"
+topic: "회의실 울림과 끝자리 목소리 픽업을 해결하는 빔포밍 확장 마이크 가이드"
+canonical_topic: "meeting_room_microphone_acoustics"
+one_line_purpose: "긴 회의실 테이블에서 말소리가 작게 들리거나 울리는 문제를 해결하는 랠리 마이크 팟 데이지체인 및 허브 배치법을 안내한다."
+funnel_stage: discovery
+audience:
+  level: intermediate
+  roles:
+    - IT 인프라 매니저
+    - 회의실 음향 담당자
+    - 시설관리팀
+search:
+  primary_keyword: "회의실 마이크"
+  supporting_keywords:
+    - "회의용 마이크 추천"
+    - "로지텍 랠리 마이크 팟"
+    - "회의실 에코 하울링"
+  layman_terms:
+    - "테이블 마이크"
+    - "회의실 소리 안 울리는 마이크"
+  technical_terms:
+    - "Beamforming Microphones"
+    - "RightSound AEC"
+    - "Daisy-chain 토폴로지"
+intent:
+  - problem_solving
+  - configuration
+content_type_mix:
+  problem: 20
+  mechanism: 35
+  howto: 30
+  comparison: 10
+  review: 5
+title_candidates:
+  - "회의실 마이크 끝자리 소리가 안 들릴 때 해결하는 빔포밍 확장 마이크 배치법"
+  - "회의실 울림과 하울링 잡는 로지텍 랠리 마이크 팟(Rally Mic Pod) 설치와 배선 가이드"
+  - "10인 이상 긴 테이블 회의실을 위한 마이크 팟 데이지체인 및 허브 구성 팁"
+questions:
+  - "회의실에서 왜 끝자리에 앉은 사람 목소리만 작게 들리고 울리나요?"
+  - "로지텍 랠리 마이크 팟은 어떤 기술로 주변 소음을 거르고 목소리만 증폭하나요?"
+  - "마이크 팟을 여러 개 연결할 때 직렬 데이지 체인과 허브 분기 방식 중 무엇이 좋은가요?"
+flow:
+  - "1. [HOOK] 긴 회의 테이블에서 반복되는 끝자리 목소리 전달 불량 문제"
+  - "2. [CONCEPT] 빔포밍 어레이와 RightSound 음향 에코 캔슬링(AEC) 메커니즘"
+  - "3. [FEATURE] 로지텍 Rally Mic Pod 하드웨어 규격 및 4방향 MEMS 센서"
+  - "4. [OPERATING_CONDITIONS] 테이블 길이별 수음 직경 4.5m 커버리지와 배치 기준"
+  - "5. [PLATFORM] Rally Bar 및 Rally Plus 시스템 연동 및 CollabOS 통합 제어"
+  - "6. [HOWTO] 데이지체인 vs Mic Pod Hub 스타형 배선 3단계 설치 매뉴얼"
+  - "7. [LIMITATIONS] 단독 사용 불가 안내 및 MeetUp 호환 불가 경계"
+  - "8. [CTA] 회의실 도면 기반 마이크 최적 수량 및 배선 무료 진단"
+required_sources:
+  - SRC-LOGI-LOGI_RALLY_MIC_POD
+  - SRC-LOGI-DOC-MIC-POD-COMPAT
+  - SRC-LOGI-LOGI_RALLY_MIC_POD_HUB
+product_bridge:
+  product: "Logitech Rally Mic Pod"
+  reason: "테이블 위 참석자 반경 4.5m를 완벽 커버하는 4방향 적응형 빔포밍 마이크"
+  limitations: "단독 직렬 연결 시 최대 허용 개수 및 배선 거리 제약 존재 (MeetUp 제품군 호환 불가)"
+cta:
+  level: soft
+  target: "당사 전문 음향 엔지니어와 우리 회사 테이블 길이에 맞춘 마이크 팟 수량 무료 진단 상담"
+
+research_requirements_ref: RR-CNT-2026W39-003
+
+knowledge_packs:
+  - KNW-PROD-LOGI-MICPOD
+  - KNW-PROD-LOGI-RALLYBAR
+  - KNW-CONC-SPEAKER-TRACKING
+
+sections:
+  - id: SEC-01
+    type: hook
+    objective: "긴 회의실 테이블에서 끝자리 소리가 멀게 들리는 음향 사각지대 문제 인식"
+    audience_question: "왜 긴 테이블 끝자리에 앉은 사람의 목소리는 멀리서 울리듯이 들리는가?"
+    required_knowledge: []
+
+  - id: SEC-02
+    type: concept
+    objective: "무지향성 일반 마이크와 빔포밍 적응형 마이크의 음향학적 차이 및 AEC 원리"
+    questions:
+      - "AEC(Acoustic Echo Cancellation)란 무엇인가?"
+      - "4방향 빔포밍이 어떻게 발언자를 찾아내는가?"
+      - "유리벽 회의실의 반사음 억제 메커니즘"
+    required_knowledge:
+      - KNW-CONC-SPEAKER-TRACKING
+
+  - id: SEC-03
+    type: feature
+    objective: "로지텍 Rally Mic Pod 핵심 스펙과 터치식 음소거 제어"
+    required_facts:
+      - FACT-RMP-001
+      - FACT-RMP-002
+      - FACT-RMP-003
+      - FACT-RMP-004
+      - FACT-RMP-006
+      - FACT-RMP-007
+
+  - id: SEC-04
+    type: operating_conditions
+    objective: "수음 직경 4.5m 커버리지와 테이블 길이별 마이크 팟 수량 공식"
+    required_facts:
+      - FACT-RMP-005
+
+  - id: SEC-05
+    type: platform
+    objective: "Rally Bar 및 Rally Plus 호환성 매트릭스와 최대 증설 규격"
+    required_facts:
+      - FACT-RMP-008
+      - FACT-RMP-009
+
+  - id: SEC-06
+    type: howto
+    objective: "직렬 데이지체인 vs 허브 분기 배선 3단계 시공 매뉴얼"
+    required_facts:
+      - FACT-RMP-010
+
+  - id: SEC-07
+    type: product_bridge
+    objective: "인터페이스 단자 구성 및 MeetUp 시리즈 연결 불가 주의사항"
+
+  - id: SEC-08
+    type: cta
+    objective: "회의실 도면 기반 마이크 수량 무료 음향 진단 컨설팅 유도"

@@ -1,0 +1,48 @@
+audience:
+  level: beginner
+  roles:
+  - IT
+batch_id: BATCH-2026W39
+canonical_topic: fake
+content_id: CNT-2026W39-887
+content_type_mix:
+  comparison: 10
+  howto: 30
+  mechanism: 30
+  problem: 20
+  review: 10
+created_at: '2026-09-22'
+cta:
+  level: soft
+  target: c
+flow:
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+funnel_stage: discovery
+intent:
+- problem_solving
+one_line_purpose: fake
+product_bridge:
+  limitations: c
+  product: a
+  reason: b
+questions:
+- '1'
+- '2'
+- '3'
+required_sources:
+- SRC-NON-EXISTENT-FAKE
+search:
+  layman_terms: []
+  primary_keyword: fake
+  supporting_keywords: []
+  technical_terms: []
+status: READY_FOR_WRITING
+title_candidates:
+- '1'
+- '2'
+- '3'
+topic: Fake source brief

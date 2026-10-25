@@ -1,0 +1,272 @@
+[
+  {
+    "product_id": "VC-001",
+    "group": "bar",
+    "brand": "Logitech",
+    "product": "Rally Bar",
+    "queries": [
+      "로지텍 랠리바",
+      "Logitech Rally Bar"
+    ]
+  },
+  {
+    "product_id": "VC-002",
+    "group": "bar",
+    "brand": "HP Poly",
+    "product": "Studio X52",
+    "queries": [
+      "폴리 스튜디오 X52",
+      "Poly Studio X52"
+    ]
+  },
+  {
+    "product_id": "VC-003",
+    "group": "bar",
+    "brand": "Yealink",
+    "product": "MeetingBar A50",
+    "queries": [
+      "예링크 A50",
+      "Yealink MeetingBar A50"
+    ]
+  },
+  {
+    "product_id": "VC-004",
+    "group": "bar",
+    "brand": "Neat",
+    "product": "Bar Pro",
+    "queries": [
+      "니트 바 프로",
+      "Neat Bar Pro"
+    ]
+  },
+  {
+    "product_id": "VC-005",
+    "group": "bar",
+    "brand": "Cisco",
+    "product": "Room Bar Pro",
+    "queries": [
+      "시스코 룸바 프로",
+      "Cisco Room Bar Pro"
+    ]
+  },
+  {
+    "product_id": "VC-006",
+    "group": "bar",
+    "brand": "AVer",
+    "product": "VB350",
+    "queries": [
+      "에버 VB350",
+      "AVer VB350"
+    ]
+  },
+  {
+    "product_id": "VC-007",
+    "group": "small",
+    "brand": "Logitech",
+    "product": "MeetUp 2",
+    "queries": [
+      "로지텍 밋업 2",
+      "Logitech MeetUp 2"
+    ]
+  },
+  {
+    "product_id": "VC-008",
+    "group": "small",
+    "brand": "Logitech",
+    "product": "Rally Bar Huddle",
+    "queries": [
+      "로지텍 랠리바 허들",
+      "Logitech Rally Bar Huddle"
+    ]
+  },
+  {
+    "product_id": "VC-009",
+    "group": "small",
+    "brand": "Logitech",
+    "product": "Rally Bar Mini",
+    "queries": [
+      "로지텍 랠리바 미니",
+      "Logitech Rally Bar Mini"
+    ]
+  },
+  {
+    "product_id": "VC-010",
+    "group": "small",
+    "brand": "HP Poly",
+    "product": "Studio X32",
+    "queries": [
+      "폴리 스튜디오 X32",
+      "Poly Studio X32"
+    ]
+  },
+  {
+    "product_id": "VC-011",
+    "group": "small",
+    "brand": "Yealink",
+    "product": "MeetingBar A40",
+    "queries": [
+      "예링크 A40",
+      "Yealink MeetingBar A40"
+    ]
+  },
+  {
+    "product_id": "VC-012",
+    "group": "small",
+    "brand": "Yealink",
+    "product": "UVC34",
+    "queries": [
+      "예링크 UVC34",
+      "Yealink UVC34"
+    ]
+  },
+  {
+    "product_id": "VC-013",
+    "group": "small",
+    "brand": "Yealink",
+    "product": "UVC40 E2",
+    "queries": [
+      "예링크 UVC40 E2",
+      "Yealink UVC40 E2"
+    ]
+  },
+  {
+    "product_id": "VC-014",
+    "group": "small",
+    "brand": "Neat",
+    "product": "Bar Gen 2",
+    "queries": [
+      "니트 바 2",
+      "Neat Bar Gen 2"
+    ]
+  },
+  {
+    "product_id": "VC-015",
+    "group": "small",
+    "brand": "Cisco",
+    "product": "Room Bar",
+    "queries": [
+      "시스코 룸바",
+      "Cisco Room Bar"
+    ]
+  },
+  {
+    "product_id": "VC-016",
+    "group": "small",
+    "brand": "Jabra",
+    "product": "PanaCast 50",
+    "queries": [
+      "자브라 파나캐스트 50",
+      "Jabra PanaCast 50"
+    ]
+  },
+  {
+    "product_id": "VC-017",
+    "group": "small",
+    "brand": "Jabra",
+    "product": "PanaCast 50 Video Bar System",
+    "queries": [
+      "자브라 파나캐스트 50 비디오바 시스템",
+      "Jabra PanaCast 50 Video Bar System"
+    ]
+  },
+  {
+    "product_id": "VC-018",
+    "group": "small",
+    "brand": "AVer",
+    "product": "VB130",
+    "queries": [
+      "에버 VB130",
+      "AVer VB130"
+    ]
+  },
+  {
+    "product_id": "VC-019",
+    "group": "modular",
+    "brand": "Logitech",
+    "product": "Rally",
+    "queries": [
+      "로지텍 랠리",
+      "Logitech Rally"
+    ]
+  },
+  {
+    "product_id": "VC-020",
+    "group": "modular",
+    "brand": "Logitech",
+    "product": "Rally Plus",
+    "queries": [
+      "로지텍 랠리 플러스",
+      "Logitech Rally Plus"
+    ]
+  },
+  {
+    "product_id": "VC-021",
+    "group": "modular",
+    "brand": "HP Poly",
+    "product": "Studio G62",
+    "queries": [
+      "폴리 스튜디오 G62",
+      "Poly Studio G62"
+    ]
+  },
+  {
+    "product_id": "VC-022",
+    "group": "modular",
+    "brand": "Yealink",
+    "product": "UVC84",
+    "queries": [
+      "예링크 UVC84",
+      "Yealink UVC84"
+    ]
+  },
+  {
+    "product_id": "VC-023",
+    "group": "modular",
+    "brand": "Yealink",
+    "product": "UVC86",
+    "queries": [
+      "예링크 UVC86",
+      "Yealink UVC86"
+    ]
+  },
+  {
+    "product_id": "VC-024",
+    "group": "modular",
+    "brand": "Cisco",
+    "product": "Room Kit EQ",
+    "queries": [
+      "시스코 룸킷 EQ",
+      "Cisco Room Kit EQ"
+    ]
+  },
+  {
+    "product_id": "VC-025",
+    "group": "modular",
+    "brand": "AVer",
+    "product": "VC520 Pro3",
+    "queries": [
+      "에버 VC520 Pro3",
+      "AVer VC520 Pro3"
+    ]
+  },
+  {
+    "product_id": "VC-026",
+    "group": "modular",
+    "brand": "AVer",
+    "product": "CAM550",
+    "queries": [
+      "에버 CAM550",
+      "AVer CAM550"
+    ]
+  },
+  {
+    "product_id": "VC-027",
+    "group": "modular",
+    "brand": "AVer",
+    "product": "CAM570",
+    "queries": [
+      "에버 CAM570",
+      "AVer CAM570"
+    ]
+  }
+]

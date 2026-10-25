@@ -1,0 +1,77 @@
+content_id: CNT-2026W39-002
+title: 소형 회의실 카메라 고를 때 양옆 사람이 잘리지 않는 120도 초광각 세팅법 (로지텍 밋업 2 완벽 분석)
+updated_at: '2026-09-28 14:37:39'
+tier1_logitech_ai:
+  engine: Logitech Official Support AI (Kapa RAG Engine)
+  last_checked: '2026-09-28 14:37:39'
+  summary: MeetUp 2 초광각 시야각(120°), RightSight 2 뷰 모드(Speaker/Group/Grid View 및 Camera
+    Zone), 마이크 6개, 외장 마이크 미지원 제약 등 로지텍 공식 스펙 전수 일치 확인.
+  verified_specs:
+  - id: AI-SPEC-01
+    title: 초광각 시야각 사양 (120° DFOV, 113° HFOV, 80° VFOV)
+    detail: 소형 룸에서 뒤로 물러서지 않고 1.0m 근접 거리에서 전원 포착
+    source_doc: Logitech MeetUp 2 Specifications
+    status: PASS
+  - id: AI-SPEC-02
+    title: RightSight 2 프레이밍 모드 지원 (Group View, Speaker View, Grid View, Camera Zone)
+    detail: 온디바이스 AI 뷰 모드 지원 및 회의실 유리벽 방지 Camera Zone 기능
+    source_doc: RightSight 2 & MeetUp 2 Integration Guide
+    status: PASS
+  - id: AI-SPEC-03
+    title: 디지털 줌 배율 (4.0배 HD 디지털 줌)
+    detail: 컴팩트 허들룸 내 발언자 클로즈업 지원
+    source_doc: MeetUp 2 Optical & Sensor Guide
+    status: PASS
+  - id: AI-SPEC-04
+    title: 6개 빔포밍 마이크 어레이 및 55mm 스피커
+    detail: 6개 디지털 MEMS 마이크 음성 수음 및 진동 억제 55mm 스피커
+    source_doc: MeetUp 2 Audio Architecture
+    status: PASS
+  - id: AI-SPEC-05
+    title: BYOD 동봉 3.0m USB-C 케이블 직결 운용 (별매 5.0m 액티브 케이블 지원)
+    detail: 기본 패키지 동봉 3.0m 케이블을 통한 영상/음향/제어 신호 통합 전송 및 옵션 배선 명확화
+    source_doc: Logitech MeetUp 2 Package & Cable Specs
+    status: PASS
+  - id: AI-SPEC-06
+    title: RightSight 2 모드별 유효 거리 규격 (Group 7m / Speaker 4.5m / Grid 6m)
+    detail: 모드별 작동 최대 거리를 공식 가이드 규격에 맞추어 명시 완료
+    source_doc: Logitech RightSight 2 Recommended Distances
+    status: PASS
+  - id: AI-SPEC-07
+    title: 외장 마이크 확장 불가 제약 고지
+    detail: MeetUp 2는 콤팩트 전용 설계로 Rally Mic Pod 외장 확장 미지원 (정확한 한계 고지)
+    source_doc: Hardware Limitations & Scope
+    status: PASS
+tier2_admin_review_queue:
+  description: 로지텍 RAG 범위 외 현장 인테리어 흡음 시공 팁, 마운트 틸트 실무, 오우션테크놀러지 자체 무료 화각 진단 CTA 목록입니다.
+    관리자가 2차 승인합니다.
+  items:
+  - item_id: ADM-FACT-01
+    category: 실무 음향 노하우 (Interior & Acoustics)
+    claim: 통유리벽/대리석 소형 룸의 반사음 억제를 위한 흡음 패널 및 패브릭 블라인드 배치 권장
+    ai_limitation_reason: 로지텍 공식 지원 지식베이스에는 음향 잔향의 줌 영향만 명시되며, 인테리어 시공재(블라인드/패널) 팁은
+      제조사 매뉴얼 범위 외
+    admin_check_point: 실제 허들룸 현장 시공 시 잔향 감소 효과 및 고객 가이드 권장 유효성 확인
+    status: PENDING
+    recommendation: APPROVE (독자 실무에 필수적인 파트너 엔지니어링 팁)
+    reviewer: null
+    reviewed_at: null
+  - item_id: ADM-FACT-02
+    category: 설치/운영 실무 (Mount & Tilt Guide)
+    claim: 디스플레이 하단 거치 시 카메라 각도를 테이블 중앙을 향하도록 아래로 틸트 조절 권장
+    ai_limitation_reason: 하드웨어 번들 브래킷의 물리적 틸트 조작 팁으로 RAG 공식 매뉴얼 검색 미포함
+    admin_check_point: 실제 번들 마운트의 틸트 가동 범위 및 허들룸 최적 시야각 적합성 확인
+    status: PENDING
+    recommendation: APPROVE (실제 설치 시 유용한 시공 팁)
+    reviewer: null
+    reviewed_at: null
+  - item_id: ADM-FACT-03
+    category: 파트너 마케팅 CTA (Partner Consulting)
+    claim: 오우션테크놀러지 소형 회의실 화상회의 기술지원팀 허들룸 화각 시뮬레이션 및 무료 진단 안내
+    ai_limitation_reason: 로지텍 본사 지원봇은 본사 서포트 페이지만 공식 지원처로 인식하므로 국내 공식 파트너사 무료 진단 서비스는
+      미인지
+    admin_check_point: 공식 리셀러 엔지니어링 상담 문의 링크 및 리드 접수 채널 정상 연결 확인
+    status: PENDING
+    recommendation: APPROVE (공식 파트너사 네이버 블로그 필수 비즈니스 리드 획득 CTA)
+    reviewer: null
+    reviewed_at: null

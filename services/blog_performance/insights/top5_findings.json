@@ -1,0 +1,52 @@
+{
+  "dsideaee50/224439052905": {
+    "category": "software",
+    "topic": "네이버 웨일온 사용법",
+    "reason": "하드웨어 장비 브랜드 비교 대상이 아닌 화상회의 앱 설정 글"
+  },
+  "dig_a_bit_deeper/224434829347": {
+    "category": "language",
+    "topic": "화상회의 비즈니스 영어",
+    "reason": "장비 소개가 아닌 회의 영어 표현 학습 글"
+  },
+  "livingchanger/224444650951": {
+    "category": "software",
+    "topic": "Microsoft Teams 설정",
+    "reason": "팀즈 장치 설정·회의 기능 안내. HP Poly 장비 글이 아님"
+  },
+  "iotspace/224391608984": {
+    "category": "generic_av",
+    "topic": "회의실 장비 선택 일반 가이드",
+    "reason": "장비 이야기는 있지만 특정 모델 설명은 아님. 맥스허브·클릭쉐어는 회사소개 링크 문구에만 등장"
+  },
+  "aagg8989/224401781128": {
+    "category": "generic_av",
+    "topic": "대회의실 AV 시스템 설계",
+    "reason": "카메라·마이크·음향 구성 설명. 수집 본문 텍스트에 비교 7개 브랜드 없음"
+  },
+  "dfinemedia/224380594650": {
+    "category": "generic_av",
+    "topic": "대회의실 PTZ·마이크·화자 추적 설계",
+    "reason": "장비 구성 설명은 있으나 특정 제조사·모델을 명시하지 않은 본문"
+  },
+  "dpimediatech4904/224357461393": {
+    "category": "generic_av",
+    "topic": "대회의실 화상회의 시스템 구성",
+    "reason": "PTZ 카메라·믹서·스피커 등의 구성 예시. 특정 제조사·모델 명시 없음"
+  },
+  "kang3ku/224432926665": {
+    "category": "outside_brand",
+    "topic": "MAXHUB XBar U50",
+    "reason": "장비 글이 맞지만 현재 7개 비교 브랜드에 MAXHUB가 없어 미표시"
+  },
+  "kang3ku/224398383186": {
+    "category": "outside_brand",
+    "topic": "MAXHUB Video Bar / XBar U50",
+    "reason": "장비 글이 맞지만 현재 7개 비교 브랜드에 MAXHUB가 없어 미표시"
+  },
+  "ajooav/224442188073": {
+    "category": "outside_brand",
+    "topic": "Roland VR 시리즈·PTZ 카메라",
+    "reason": "장비 글이 맞지만 현재 7개 비교 브랜드에 Roland가 없어 미표시"
+  }
+}

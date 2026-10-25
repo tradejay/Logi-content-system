@@ -1,0 +1,77 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "QAReportSchema"
+description: "QA AI가 초안 검수 후 발행하는 QA Report 표준 스키마 명세"
+type: object
+required:
+  - content_id
+  - auditor_role
+  - audited_at
+  - verdict
+  - overall_score
+  - scores
+  - approved_for_publish
+
+properties:
+  content_id:
+    type: string
+    pattern: "^CNT-\\d{4}W\\d{2}-\\d{3}$"
+
+  auditor_role:
+    type: string
+    enum: [QA_AI]
+
+  audited_at:
+    type: string
+
+  verdict:
+    type: string
+    enum: [PASS, REVISION_REQUIRED, BLOCKED]
+
+  overall_score:
+    type: integer
+    minimum: 0
+    maximum: 100
+
+  scores:
+    type: object
+    required:
+      - brief_fidelity
+      - technical_accuracy
+      - evidence_validity
+      - layer_separation
+      - intent_fulfillment
+      - keyword_density
+      - tone_advertorial
+      - visual_structure
+      - cta_fit
+      - missing_evidence_check
+    properties:
+      brief_fidelity: { type: integer, minimum: 0, maximum: 10 }
+      technical_accuracy: { type: integer, minimum: 0, maximum: 10 }
+      evidence_validity: { type: integer, minimum: 0, maximum: 10 }
+      layer_separation: { type: integer, minimum: 0, maximum: 10 }
+      intent_fulfillment: { type: integer, minimum: 0, maximum: 10 }
+      keyword_density: { type: integer, minimum: 0, maximum: 10 }
+      tone_advertorial: { type: integer, minimum: 0, maximum: 10 }
+      visual_structure: { type: integer, minimum: 0, maximum: 10 }
+      cta_fit: { type: integer, minimum: 0, maximum: 10 }
+      missing_evidence_check: { type: integer, minimum: 0, maximum: 10 }
+
+  critical_issues:
+    type: array
+    items: { type: string }
+
+  revision_requests:
+    type: array
+    items: { type: string }
+
+  missing_evidence_items:
+    type: array
+    items:
+      type: object
+      properties:
+        claim: { type: string }
+        required_source: { type: string }
+
+  approved_for_publish:
+    type: boolean

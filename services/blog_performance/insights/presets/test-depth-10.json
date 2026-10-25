@@ -1,0 +1,48 @@
+{
+  "$schema": "insights-pipeline-config-v1",
+  "schema_version": "insights-pipeline-config-v1",
+  "preset_id": "test-depth-10",
+  "description": "Mini test run with depth=10 (화상회의, 로지텍 랠리바 미니)",
+  "test_only": true,
+  "execution": {
+    "mode": "offline",
+    "start_step": "preflight",
+    "stop_step": "activation",
+    "depth": 10,
+    "max_retries": 1
+  },
+  "panel": {
+    "type": "explicit_queries",
+    "queries": [
+      {
+        "panel": "common",
+        "keyword": "화상회의",
+        "product_id": null,
+        "brand": null,
+        "product": null,
+        "report_group": "common",
+        "catalog_group": null
+      },
+      {
+        "panel": "products",
+        "keyword": "로지텍 랠리바 미니",
+        "product_id": "VC-009",
+        "brand": "Logitech",
+        "product": "Rally Bar Mini",
+        "report_group": "medium",
+        "catalog_group": "small"
+      }
+    ],
+    "limit": 2
+  },
+  "inputs": {
+    "common_json": null,
+    "products_json": null,
+    "ai_decisions_json": null
+  },
+  "qa": {
+    "check_browser": false,
+    "min_tables": 1,
+    "require_top5_audit": false
+  }
+}

@@ -1,0 +1,310 @@
+available_assets:
+- asset_id: AST-PHOTO-ROOM-SCENE-001
+  file_name: photo_modern_meeting_room.jpg
+  asset_type: corporate_photo
+  storage_type: local_static
+  url: /static/assets/images/photo_modern_meeting_room.jpg
+  product: ALL
+  feature: Corporate.Visual
+  view_mode: CorporatePhoto
+  platform: ALL
+  purpose: 현대식 프리미엄 스마트 회의실 및 이사회실 전경 실사
+  caption: 단일 케이블 매립과 화상회의 전용 바가 완벽히 구축된 엔터프라이즈 스마트 회의실 전경
+  alt: 단일 케이블 매립과 화상회의 전용 바가 완벽히 구축된 엔터프라이즈 스마트 회의실 전경
+  customer_message: 배선 노출 없는 깔끔한 마감과 고성능 올인원 비디오 시스템이 프리미엄 회의 환경을 완성합니다.
+  status: ACTIVE
+- asset_id: AST-PHOTO-TEAM-DISCUSS-001
+  file_name: photo_team_discussion.jpg
+  asset_type: corporate_photo
+  storage_type: local_static
+  url: /static/assets/images/photo_team_discussion.jpg
+  product: ALL
+  feature: VisualAsset
+  view_mode: NativeKoreanVisual
+  platform: ALL
+  purpose: 회의 테이블에서 자유롭고 활발하게 소통하는 팀원들의 토론 실사
+  caption: 테이블 중앙 확장 마이크와 광각 카메라를 통해 전 좌석 참석자가 자연스럽게 의견을 교환하는 팀 토론
+  alt: 테이블 중앙 확장 마이크와 광각 카메라를 통해 전 좌석 참석자가 자연스럽게 의견을 교환하는 팀 토론
+  customer_message: ''
+  status: ACTIVE
+- asset_id: AST-PHOTO-PRESENTER-001
+  file_name: photo_presenter_meeting.jpg
+  asset_type: corporate_photo
+  storage_type: local_static
+  url: /static/assets/images/photo_presenter_meeting.jpg
+  product: ALL
+  feature: Corporate.Visual
+  view_mode: CorporatePhoto
+  platform: ALL
+  purpose: 회의실 대형 디스플레이 앞에서 프리젠테이션을 진행하는 모습
+  caption: 대형 회의실 디스플레이와 연동하여 효과적인 전략 프레젠테이션을 진행하는 회의 현장
+  alt: 대형 회의실 디스플레이와 연동하여 효과적인 전략 프레젠테이션을 진행하는 회의 현장
+  customer_message: 원터치 화면 공유와 선명한 줌 디스플레이 환경이 비즈니스 발표의 완성도를 높여줍니다.
+  status: ACTIVE
+- asset_id: AST-PHOTO-WOMAN-MEET-001
+  file_name: photo_career_woman_meeting.jpg
+  asset_type: corporate_photo
+  storage_type: local_static
+  url: /static/assets/images/photo_career_woman_meeting.jpg
+  product: ALL
+  feature: VisualAsset
+  view_mode: NativeKoreanVisual
+  platform: ALL
+  purpose: 회의실에서 열정적으로 토론을 주도하는 전문 커리어 우먼 실사
+  caption: 스마트 화상회의 시스템을 통해 원격 팀원들과 생생하게 의견을 나누며 회의를 주도하는 모습
+  alt: 스마트 화상회의 시스템을 통해 원격 팀원들과 생생하게 의견을 나누며 회의를 주도하는 모습
+  customer_message: ''
+  status: ACTIVE
+- asset_id: AST-COMPANY-OCEAN-001
+  file_name: company_oceantech_intro.jpg
+  asset_type: company_intro_card
+  storage_type: google_drive_cdn
+  url: https://drive.google.com/thumbnail?id=1XZ80n6Ufe3w73TTYj2jSVF7_NWr4Pmyg&sz=w1600
+  product: ALL
+  feature: VisualAsset
+  view_mode: NativeKoreanVisual
+  platform: ALL
+  purpose: 로지텍 화상회의 공식 수입 총판 (주)오우션테크놀러지 공식 배너
+  caption: 로지텍 화상회의(VC) 공식 수입 총판 (주)오우션테크놀러지 (서울시 강남구 삼성동 소재 ｜ 기업 납품 및 데모 제품 무상 대여
+    지원)
+  alt: 로지텍 화상회의(VC) 공식 수입 총판 (주)오우션테크놀러지 (서울시 강남구 삼성동 소재 ｜ 기업 납품 및 데모 제품 무상 대여 지원)
+  customer_message: ''
+  status: ACTIVE
+- asset_id: AST-PAIN-HUDDLE-001
+  file_name: pain_huddle_cutoff.jpg
+  asset_type: pain_situation_illustration
+  storage_type: local_static
+  url: /static/assets/images/pain_huddle_cutoff.jpg
+  product: ALL
+  feature: VisualAsset
+  view_mode: NativeKoreanVisual
+  platform: ALL
+  purpose: 소형 회의실 좁은 화각으로 인한 양옆 사람 잘림 불편 상황 (100% 네이티브 한글)
+  caption: 소형 회의실에서 일반 웹캠 사용 시 카메라 화각에 들어가기 위해 억지로 몸을 기울여야 하는 불편한 상황
+  alt: 소형 회의실에서 일반 웹캠 사용 시 카메라 화각에 들어가기 위해 억지로 몸을 기울여야 하는 불편한 상황
+  customer_message: ''
+  status: ACTIVE
+- asset_id: AST-PAIN-TRACKING-001
+  file_name: pain_sound_tracking_fail.jpg
+  asset_type: pain_situation_illustration
+  storage_type: local_static
+  url: /static/assets/images/pain_sound_tracking_fail.jpg
+  product: ALL
+  feature: VisualAsset
+  view_mode: NativeKoreanVisual
+  platform: ALL
+  purpose: 구형 음향 추적 카메라의 유리벽 반사 오작동 상황 (100% 네이티브 한글)
+  caption: 구형 음향 단독 추적 카메라가 유리벽 반사음 때문에 발표자를 놓치고 엉뚱한 빈 벽을 비추는 오작동 모습
+  alt: 구형 음향 단독 추적 카메라가 유리벽 반사음 때문에 발표자를 놓치고 엉뚱한 빈 벽을 비추는 오작동 모습
+  customer_message: ''
+  status: ACTIVE
+- asset_id: AST-CONCEPT-FOV-001
+  file_name: concept_huddle_fov.jpg
+  asset_type: concept_presentation
+  storage_type: local_static
+  url: /static/assets/images/concept_huddle_fov.jpg
+  product: ALL
+  feature: VisualAsset
+  view_mode: NativeKoreanVisual
+  platform: ALL
+  purpose: 소형 회의실 FOV 화각 한계 및 120도 초광각 비교 PPT (100% 네이티브 한글 슬라이드)
+  caption: 소형 회의실 카메라 화각(FOV) 한계와 120도 초광각 커버리지 비교 (오우션테크놀러지 기술 분석)
+  alt: 소형 회의실 카메라 화각(FOV) 한계와 120도 초광각 커버리지 비교 (오우션테크놀러지 기술 분석)
+  customer_message: ''
+  status: ACTIVE
+- asset_id: AST-CONCEPT-TRACK-001
+  file_name: concept_speaker_tracking.jpg
+  asset_type: concept_presentation
+  storage_type: local_static
+  url: /static/assets/images/concept_speaker_tracking.jpg
+  product: ALL
+  feature: VisualAsset
+  view_mode: NativeKoreanVisual
+  platform: ALL
+  purpose: '지능형 화자 추적 메커니즘: 단순 음향 감지 vs AI 비전 융합 (100% 네이티브 한글 슬라이드)'
+  caption: 구형 음향 단독 추적 한계 vs 듀얼 카메라 AI 비전 및 빔포밍 융합 트래킹 메커니즘 비교
+  alt: 구형 음향 단독 추적 한계 vs 듀얼 카메라 AI 비전 및 빔포밍 융합 트래킹 메커니즘 비교
+  customer_message: ''
+  status: ACTIVE
+- asset_id: AST-RS2-GROUP-001
+  file_name: device/logi-rally-bar-sub_sections-1-media-1778038135176.gif
+  asset_type: gif
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=17wdN8HFEb3BiM0zEM-1QDaLk9QkTNWCc&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: RightSight2.GroupView
+  view_mode: GroupView
+  platform: ALL
+  purpose: 회의실 전체 참석자를 화각 내에 균형 있게 담아내는 그룹 뷰 자동 프레이밍
+  caption: 참석자 구성이나 위치가 달라져도 회의실 전체를 자동으로 한 화면에 맞춰주는 Group View 동작
+  alt: 로지텍 랠리바 RightSight 2 Group View 그룹 자동 프레이밍 동작
+  customer_message: 회의 시작 전 리모컨으로 카메라 각도를 맞출 필요 없이, 참석자 전원이 자연스럽게 화면에 들어옵니다.
+  status: ACTIVE
+- asset_id: AST-RS2-SPEAKER-001
+  file_name: device/logi-rally-bar-sub_sections-1-media-1778038144627.png
+  asset_type: screenshot
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=1uRsmaue97yJ3VkL8_5n6w1tv05B7VsW1&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: RightSight2.SpeakerView
+  view_mode: SpeakerView
+  platform: ALL
+  purpose: Speaker View에서 활성 발언자를 선명하게 클로즈업하고 회의실 전경을 PiP로 송출하는 공식 화면
+  caption: 발언자의 표정과 제스처를 선명하게 클로즈업하고 룸 전경을 동시에 제공하는 Speaker View 화면
+  alt: 로지텍 랠리바 Speaker View 실제 화자 클로즈업 및 룸 전경 PiP 뷰
+  customer_message: 발표자나 핵심 발언자의 표정까지 생생하게 전달되어 대면 회의와 같은 집중감을 제공합니다.
+  status: ACTIVE
+- asset_id: AST-FEAT-SMARTSWITCHING-001
+  file_name: device/smartswitching.gif
+  asset_type: gif
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=1qNIp8RHSg74kN8Z4wFEw_s8ksXy67FGa&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: Sight.SmartSwitching
+  view_mode: SmartSwitching
+  platform: ALL
+  purpose: 전면 카메라와 테이블 중앙 카메라 간의 발언자 각도 자동 전환(스마트 스위칭) 동작
+  caption: 테이블 중앙 카메라와 전면 카메라 간 최적 시야각을 자동 스위칭하는 Smart Switching 동작
+  alt: 로지텍 스마트 스위칭 카메라 자동 전환 동작
+  customer_message: 다중 카메라 환경에서 고개를 돌려도 정면 얼굴을 자동으로 유지합니다.
+  status: ACTIVE
+- asset_id: AST-RS2-GRID-001
+  file_name: device/logi-rally-bar-sub_sections-1-media-1778038150779.gif
+  asset_type: gif
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=137pYfx1DJZPocID_Mrnve0DdzgunLVA3&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: RightSight2.GridView
+  view_mode: GridView
+  platform: ALL
+  purpose: 각 참석자를 개별 얼굴 타일로 분할하여 동등한 크기로 배치하는 Grid View
+  caption: 각 참석자를 개별 타일로 감지하여 균등하게 배치하는 Grid View 다인 프레이밍
+  alt: 로지텍 RightSight 2 Grid View 인물별 그리드 타일 분할 프레이밍
+  customer_message: 테이블 끝자리에 앉은 사람도 앞자리 사람과 동일한 크기의 타일로 표시되어 회의 평등성이 확보됩니다.
+  status: ACTIVE
+- asset_id: AST-RS2-GRID-HD-001
+  file_name: device/logi-rally-bar-sub_sections-1-media-1778034075338.gif
+  asset_type: gif
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=11tB--D__nH9YWZo7nsq0UJQFvvHLjRrt&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: RightSight2.GridView
+  view_mode: GridView
+  platform: ALL
+  purpose: AI Viewfinder가 회의실 참석자 전원을 감지해 개별 바운딩 박스를 형성하는 고해상도 시연
+  caption: AI 뷰파인더가 공간 내 인원들을 실시간 감지하여 최적의 타일 구도를 생성하는 원리
+  alt: RightSight 2 AI 인물 감지 및 그리드 바운딩 박스 생성 화면
+  customer_message: 서브 렌즈가 공간 전체를 쉬지 않고 모니터링하기 때문에 누구도 화면 밖으로 누락되지 않습니다.
+  status: ACTIVE
+- asset_id: AST-RS2-COMPARE-001
+  file_name: device/logi-rally-bar-RightSight2-1777528481052.png
+  asset_type: photo
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=1rq04hHyM06giPjcjemg3lEdhOE3nq4dI&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: RightSight2.AutoFraming
+  view_mode: ALL
+  platform: ALL
+  purpose: 회의실 내 모든 참석자를 실시간으로 감지하고 최적 화각으로 잡아주는 RightSight 2 오토 프레이밍
+  caption: 룸 안의 참석자들을 AI로 실시간 감지하여 균형 있는 화면을 구성하는 RightSight 2 오토 프레이밍
+  alt: 로지텍 RightSight 2 지능형 참석자 프레이밍 화면
+  customer_message: 참석자가 추가로 들어오거나 자리를 이동해도 AI가 즉각 화각을 재조정합니다.
+  status: ACTIVE
+- asset_id: AST-RS2-HARDWARE-001
+  file_name: device/logi-rally-bar-pan-1777516255175.png
+  asset_type: diagram
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=14Z6PQjIwUFFvzcrSuFfC5PGymVLW-KuG&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: RightSight2.AIFinder
+  view_mode: ALL
+  platform: ALL
+  purpose: Rally Bar의 메인 PTZ 렌즈와 AI 뷰파인더 듀얼 렌즈 구조도
+  caption: 메인 4K PTZ 카메라와 인원 감지 전용 AI 뷰파인더의 듀얼 렌즈 퓨전 아키텍처
+  alt: 로지텍 랠리바 AI 뷰파인더 듀얼 렌즈 하드웨어 구조
+  customer_message: 카메라가 화자를 비추는 동안에도 AI 뷰파인더가 룸 전체를 감시하므로 움직임에 딜레이 없이 반응합니다.
+  status: ACTIVE
+- asset_id: AST-PROD-RALLY-BAR-001
+  file_name: assets/images/device/logi-rally-bar.png
+  asset_type: image
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=110ejegS6SJgh6OFxzSAZLUA00Pf-91eY&sz=w1600
+  product: LOGI-RALLY-BAR
+  feature: Hardware.Overview
+  view_mode: NONE
+  platform: ALL
+  purpose: Logitech Rally Bar 공식 제품 외관 및 마운트 샷
+  caption: 중대형 회의실을 위한 올인원 비디오 바 로지텍 랠리바 (Rally Bar)
+  alt: 로지텍 랠리바 올인원 화상회의 카메라 시스템
+  customer_message: 스피커, 빔포밍 마이크, 듀얼 카메라가 하나로 통합되어 배선과 설치가 깔끔합니다.
+  status: ACTIVE
+- asset_id: AST-PROD-MEETUP2-001
+  file_name: assets/images/device/logi-meetup-2.png
+  asset_type: image
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=1rTXqWatn5SDXutecHNWJ942PGi9btJ9E&sz=w1600
+  product: LOGI-MEETUP-2
+  feature: Hardware.Overview
+  view_mode: NONE
+  platform: ALL
+  purpose: Logitech MeetUp 2 소형 룸 전용 올인원 USB 바 외관
+  caption: 소형 회의실 및 포커스 룸을 위한 차세대 AI 비디오 바 MeetUp 2
+  alt: 로지텍 밋업 2 AI 화상회의 올인원 바
+  customer_message: 소형 룸에서도 USB 연결 하나로 최신 RightSight AI 기능을 바로 활용할 수 있습니다.
+  status: ACTIVE
+- asset_id: AST-PROD-MIC-POD-001
+  file_name: assets/images/device/logi-rally-mic-pod.png
+  asset_type: image
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=11X-ZyaTQ2v9kgOLtHQdyQ_eRBQSHet68&sz=w1600
+  product: LOGI-RALLY-MIC-POD
+  feature: Audio.Extension
+  view_mode: NONE
+  platform: ALL
+  purpose: 랠리 마이크 팟 확장 유닛 외관
+  caption: 긴 테이블이나 대형 룸에서 음성 수음 범위를 확장하는 Rally Mic Pod
+  alt: 로지텍 랠리 마이크 팟 확장 마이크
+  customer_message: 카메라에서 먼 좌석의 목소리도 마이크 팟을 통해 깨끗하게 전달되어 화자 추적 정확도가 높아집니다.
+  status: ACTIVE
+- asset_id: AST-PROD-MIC-HUB-001
+  file_name: device/logi-rally-mic-pod-hub.png
+  asset_type: product_image
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=17X9KnWaTXNt8HB96goc0lr0xBehUheVP&sz=w1600
+  product: LOGI-RALLY-MIC-POD-HUB
+  feature: MicPod.HubWiring
+  view_mode: ALL
+  platform: ALL
+  purpose: 랠리 마이크 팟 허브(Mic Pod Hub) 하단 3방향 케이블 분기 및 매립 구조
+  caption: 테이블 밑 3방향 스타형 배선을 지원하는 로지텍 랠리 마이크 팟 허브(Mic Pod Hub)
+  alt: 로지텍 랠리 마이크 팟 허브 테이블 케이블 분기 하드웨어
+  customer_message: 마이크 팟 허브를 사용하면 긴 테이블에서도 배선 노출 없이 깔끔하게 마이크를 확장할 수 있습니다.
+  status: ACTIVE
+- asset_id: AST-PROD-TAP-IP-001
+  file_name: assets/images/device/logi-tap-ip.png
+  asset_type: image
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=1LMWNVIK5o0ERZTL-ajzqNRfUw8hbjQNC&sz=w1600
+  product: LOGI-TAP-IP
+  feature: Controller.Touch
+  view_mode: NONE
+  platform: ALL
+  purpose: 터치 컨트롤러 Tap IP를 통한 원터치 회의 참여 및 카메라 모드 설정
+  caption: 네트워크 PoE 기반 터치 컨트롤러 로지텍 Tap IP
+  alt: 로지텍 탭 IP 터치 컨트롤러 회의 제어 화면
+  customer_message: 회의실 테이블에서 터치 한 번으로 미팅에 참여하고 카메라 모드를 간편하게 변경할 수 있습니다.
+  status: ACTIVE
+- asset_id: AST-PROD-RALLY-PLUS-001
+  file_name: assets/images/device/logi-rally-plus.png
+  asset_type: image
+  storage_type: google_drive
+  url: https://drive.google.com/thumbnail?id=1jr1ejsYtcSbPAnszELgxnBfVGQLZeP-V&sz=w1600
+  product: LOGI-RALLY-PLUS
+  feature: Hardware.Modular
+  view_mode: NONE
+  platform: ALL
+  purpose: 대형 회의실용 모듈형 시스템 Rally Plus 구성도
+  caption: 대형 회의실을 위한 모듈형 프리미엄 VC 시스템 Logitech Rally Plus
+  alt: 로지텍 랠리 플러스 대형 회의실 화상회의 솔루션
+  customer_message: 최대 7개 마이크 팟과 독립형 듀얼 스피커로 초대형 회의 공간도 완벽하게 커버합니다.
+  status: ACTIVE

@@ -1,0 +1,123 @@
+content_id: CNT-2026W39-004
+batch_id: BATCH-2026W39
+status: READY_FOR_WRITING
+created_at: "2026-09-22"
+topic: "노트북 연결 스트레스 없는 원터치 스마트 화상회의실 구축법"
+canonical_topic: "smart_meeting_room_touch_controller"
+one_line_purpose: "매번 회의 때마다 케이블 꽂고 세팅하느라 시간을 허비하지 않고 원터치로 회의를 시작하는 스마트 터치패널 구축 방식을 안내한다."
+funnel_stage: discovery
+audience:
+  level: intermediate
+  roles:
+    - 기업 IT 관리자
+    - 총무/경영지원팀장
+    - 스마트오피스 PM
+search:
+  primary_keyword: "화상회의 구축"
+  supporting_keywords:
+    - "스마트 회의실 터치패널"
+    - "로지텍 탭"
+    - "줌룸 팀즈룸 구축"
+  layman_terms:
+    - "터치스크린 회의실"
+    - "노트북 안 꽂는 화상회의"
+  technical_terms:
+    - "Logitech Tap IP"
+    - "PoE 단일 케이블"
+    - "CollabOS 어플라이언스"
+intent:
+  - problem_solving
+  - configuration
+content_type_mix:
+  problem: 20
+  mechanism: 35
+  howto: 30
+  comparison: 10
+  review: 5
+title_candidates:
+  - "화상회의 구축 시 회의 시작 10분 지연을 없애는 원터치 터치 컨트롤러 도입법"
+  - "복잡한 배선 없는 스마트 회의실 구축: 로지텍 탭(Tap / Tap IP) 설치 가이드"
+  - "Zoom Rooms & Teams Rooms 회의실 구축할 때 꼭 알아야 할 전용 터치패널 세팅 팁"
+questions:
+  - "회의 시작할 때마다 케이블 찾고 디스플레이 복제하느라 시간이 걸리는 이유는 무엇인가요?"
+  - "로지텍 탭(Tap)과 탭 IP(Tap IP)의 가장 큰 기술적 차이점과 네트워크 연결 방식은 무엇인가요?"
+  - "테이블 타공 없이 깔끔하게 터치패널을 고정하고 배선하는 방법은 무엇인가요?"
+flow:
+  - "1. [HOOK] 회의 시작 전 10분간 지속되는 선 연결 딜레마와 업무 누수"
+  - "2. [CONCEPT] 어플라이언스 기반 원터치 참가(OBTJ) 메커니즘과 CollabOS"
+  - "3. [FEATURE] 로지텍 Tap vs Tap IP 10.1인치 하드웨어 규격 대조"
+  - "4. [OPERATING_CONDITIONS] 14.0도 저각 프로필과 케이블 배선 허용 거리"
+  - "5. [PLATFORM] Zoom Rooms, Microsoft Teams Rooms 인증 및 계정 연동"
+  - "6. [HOWTO] 단일 PoE 랜선 및 라이저/테이블 마운트 3단계 시공 매뉴얼"
+  - "7. [LIMITATIONS] Tap IP 모델의 물리 HDMI In 단자 부재 및 무선 공유 가이드"
+  - "8. [CTA] 우리 회사 회의실에 맞는 맞춤형 화상회의 구축 무료 상담"
+required_sources:
+  - SRC-LOGI-LOGI_TAP
+  - SRC-LOGI-LOGI_TAP_IP
+product_bridge:
+  product: "Logitech Tap"
+  reason: "회의실 테이블 위에서 터치 한 번으로 줌/팀즈 회의에 즉시 참가하는 10.1인치 터치 컨트롤러"
+  limitations: "Tap IP 모델은 HDMI Direct Ingest 미지원으로 무선 공유 또는 RoomMate 연동 필요"
+cta:
+  level: soft
+  target: "당사 전문 엔지니어와 우리 회사 회의실에 최적화된 화상회의 터치패널 구축 무료 컨설팅"
+
+research_requirements_ref: RR-CNT-2026W39-004
+
+knowledge_packs:
+  - KNW-PROD-LOGI-TAP
+  - KNW-PROD-LOGI-RALLYBAR
+  - KNW-PLAT-ZOOM-ROOMS
+
+sections:
+  - id: SEC-01
+    type: hook
+    objective: "회의 전 노트북 연결 및 화면 복제 지연으로 인한 생산성 저하 인식"
+    audience_question: "왜 회의를 시작할 때마다 케이블을 찾고 세팅하느라 10분씩 낭비되는가?"
+    required_knowledge: []
+
+  - id: SEC-02
+    type: concept
+    objective: "개인 노트북 의존 BYOD 방식과 상시 대기형 어플라이언스 원터치(OBTJ) 방식의 차이"
+    questions:
+      - "OBTJ(One-Touch Join)란 무엇인가?"
+      - "회의실 전용 계정과 개인 계정 연결의 차이"
+      - "CollabOS 전용 기기 관리 원리"
+    required_knowledge:
+      - KNW-PLAT-ZOOM-ROOMS
+
+  - id: SEC-03
+    type: feature
+    objective: "로지텍 Tap(USB형)과 Tap IP(네트워크형) 하드웨어 스펙 비교"
+    required_facts:
+      - FACT-TAP-001
+      - FACT-TAP-002
+      - FACT-TAP-003
+      - FACT-TAP-005
+      - FACT-TAP-006
+      - FACT-TAP-007
+      - FACT-TAP-008
+
+  - id: SEC-04
+    type: operating_conditions
+    objective: "14.0도 시야각 및 배선 거리(40m vs 100m) 기준"
+    required_facts:
+      - FACT-TAP-004
+      - FACT-TAP-009
+      - FACT-TAP-010
+
+  - id: SEC-05
+    type: platform
+    objective: "Zoom Rooms 및 Teams Rooms 플랫폼 호환성과 클라우드 페어링"
+
+  - id: SEC-06
+    type: howto
+    objective: "테이블 매립 마운트 및 단일 PoE 배선 3단계 세팅 절차"
+
+  - id: SEC-07
+    type: product_bridge
+    objective: "후면 인터페이스 구성 및 Tap IP 모델 화면 공유 유의사항"
+
+  - id: SEC-08
+    type: cta
+    objective: "스마트 화상회의실 패키지 무료 도면 진단 안내"

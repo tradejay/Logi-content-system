@@ -1,0 +1,19 @@
+sources:
+- id: SRC-LOGI-LOGI_MEETUP_2
+  title: Logitech MeetUp 2 (밋업 2) 공식 기술 데이터시트
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-LOGI_MEETUP_2.md
+- id: SRC-LOGI-DOC-RIGHTSENSE
+  title: Logitech RightSense AI 기술 사양 및 버전별 비교 가이드
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-DOC-RIGHTSENSE.md
+- id: SRC-LOGI-LOGI_ACTIVE_USB_CABLE
+  title: Logitech Logitech Active USB Cable (액티브 USB 케이블) 공식 기술 데이터시트
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-LOGI_ACTIVE_USB_CABLE.md

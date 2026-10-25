@@ -1,0 +1,420 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Product recommendation article plan (design only)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "article_id",
+    "central_decision",
+    "groups"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "article_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "central_decision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/group"
+      }
+    }
+  },
+  "$defs": {
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product_id",
+        "role",
+        "acquisition"
+      ],
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "acquisition": {
+          "enum": [
+            "acquire",
+            "reuse",
+            "consider"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fit_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "compatibility_limits": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "fact_source_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "fact_id",
+              "source_ref"
+            ],
+            "properties": {
+              "fact_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "product_blog_url": {
+          "type": "string",
+          "pattern": "^https://[^\\s]+$"
+        }
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "group_id",
+        "decision_question",
+        "relationship",
+        "presentation",
+        "anchor_section_id",
+        "position",
+        "products",
+        "binding_status",
+        "unresolved_items"
+      ],
+      "properties": {
+        "group_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision_question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationship": {
+          "enum": [
+            "awareness",
+            "alternatives",
+            "configuration",
+            "conditional_additions"
+          ]
+        },
+        "presentation": {
+          "enum": [
+            "main",
+            "companion"
+          ]
+        },
+        "companion_node_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "anchor_section_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "position": {
+          "enum": [
+            "after_explanation",
+            "after_solution",
+            "after_recommendation",
+            "in_closing_next_action"
+          ]
+        },
+        "base_group_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "remaining_problem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "comparison_axes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "configuration_fact_source_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "fact_id",
+              "source_ref"
+            ],
+            "properties": {
+              "fact_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/product"
+          }
+        },
+        "binding_status": {
+          "enum": [
+            "pending",
+            "ready",
+            "blocked"
+          ]
+        },
+        "unresolved_items": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "presentation": {
+                "const": "companion"
+              }
+            },
+            "required": [
+              "presentation"
+            ]
+          },
+          "then": {
+            "required": [
+              "companion_node_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "binding_status": {
+                "const": "ready"
+              }
+            },
+            "required": [
+              "binding_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "products": {
+                "minItems": 1,
+                "items": {
+                  "required": [
+                    "name",
+                    "reason",
+                    "fit_conditions",
+                    "compatibility_limits",
+                    "fact_source_bindings",
+                    "product_blog_url"
+                  ],
+                  "properties": {
+                    "fact_source_bindings": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              },
+              "unresolved_items": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "binding_status": {
+                "enum": [
+                  "pending",
+                  "blocked"
+                ]
+              }
+            },
+            "required": [
+              "binding_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unresolved_items": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship": {
+                "const": "alternatives"
+              },
+              "binding_status": {
+                "const": "ready"
+              }
+            },
+            "required": [
+              "relationship",
+              "binding_status"
+            ]
+          },
+          "then": {
+            "required": [
+              "comparison_axes"
+            ],
+            "properties": {
+              "comparison_axes": {
+                "minItems": 1
+              },
+              "products": {
+                "minItems": 2
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship": {
+                "const": "configuration"
+              },
+              "binding_status": {
+                "const": "ready"
+              }
+            },
+            "required": [
+              "relationship",
+              "binding_status"
+            ]
+          },
+          "then": {
+            "required": [
+              "configuration_fact_source_bindings"
+            ],
+            "properties": {
+              "configuration_fact_source_bindings": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship": {
+                "const": "conditional_additions"
+              },
+              "binding_status": {
+                "const": "ready"
+              }
+            },
+            "required": [
+              "relationship",
+              "binding_status"
+            ]
+          },
+          "then": {
+            "required": [
+              "base_group_id",
+              "remaining_problem"
+            ],
+            "properties": {
+              "products": {
+                "items": {
+                  "properties": {
+                    "fit_conditions": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "relationship": {
+                "enum": [
+                  "alternatives",
+                  "configuration",
+                  "conditional_additions"
+                ]
+              },
+              "binding_status": {
+                "const": "ready"
+              }
+            },
+            "required": [
+              "relationship",
+              "binding_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "products": {
+                "items": {
+                  "properties": {
+                    "fit_conditions": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+content_id: CNT-2026W39-001
+strategy_version: 1
+created_at: '2026-09-23'
+primary_playbook: PB-MECHANISM-EXPLAINER
+secondary_playbooks:
+- PB-PRODUCT-SELECTION
+- PB-CONFIG-HOWTO
+reader:
+  state: 말하는 사람을 알아서 비춰주는 카메라를 찾고 있으나 모드 차이나 내부 원리는 잘 모름
+  questions:
+  - 말하는 사람을 알아서 비춰주는 카메라가 진짜 있나요? (실제 화면 데모)
+  - Group View, Speaker View, Grid View는 무엇이 다르고 내 회의실엔 무엇이 맞나요?
+  - 기침 소리나 펜 떨어뜨리는 소리에도 카메라가 휙휙 돌아가지 않나요? (센서 퓨전 원리)
+  - 우리 회의실이 세로로 길거나 통유리벽인데도 잘 될까요? (거리 및 잔향 대처)
+  - 우리는 Zoom(또는 Teams)을 쓰는데 관리자 메뉴에서 쉽게 켤 수 있나요?
+  - 이 기능을 쓰려면 어떤 제품을 사야 하고, 마이크 팟 확장이 필요한가요?
+article_goal: 화자 추적 카메라의 작동 화면과 원리를 쉽게 이해하고 회의실에 필요한 모드를 판단하게 한다.
+suggested_flow:
+- 불편 공감 및 실제 발언자 전환 화면 확인 (GIF 시연)
+- 우리 팀 회의에 맞는 뷰 모드 선택 가이드 (결정 트리)
+- 기침 소리를 거르고 사람을 찾는 듀얼 센서 작동 원리
+- 우리 회의실 환경 셀프 점검 (거리 4.5m 및 통유리벽 대응법)
+- Zoom Rooms 및 기기 온스크린 1분 세팅 매뉴얼
+- 화자 추적을 구현하는 대표 장비 및 마이크 팟 확장 팁
+- 회의실 평면도 기반 무료 화각 진단 안내 (Soft CTA)
+must_cover:
+- 말하는 사람 따라가는 카메라 (일상어 인트로)
+- Speaker View vs Group View vs Grid View 체감 차이
+- 음향 빔포밍 도달 시간차(TDoA)와 비전 센서 융합
+- 화자 추적 권장 거리(4.5m) 및 테이블 끝자리 대응
+- 통유리벽 잔향 발생 시 마이크 팟(Mic Pod) 보완책
+- Zoom Rooms 연동 및 BYOD 모드 독립 작동
+- Logitech Rally Bar 듀얼 렌즈(AI 뷰파인더) 하드웨어
+can_omit:
+- 전원 어댑터 전압(19V/4.74A) 및 소비전력
+- 후면 HDMI 포트 핀맵
+- 패키징 나사 규격
+avoid:
+- 'FACT: ... WHAT IT MEANS: 기계적 레이블 박스'
+- 첫머리부터 TDoA 등 약어 도배
+- 완벽한/최적의 등 미사여구
+technical_depth:
+  overall: medium
+asset_strategy:
+  preferred_roles:
+  - DEMONSTRATE
+  - COMPARE
+  - EXPLAIN
+  - PROVE
+cta_intent: room_fit_consultation

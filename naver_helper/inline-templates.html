@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>네이버 블로그 복사용 템플릿 라이브러리</title>
+    <style>
+        body {
+            padding: 40px;
+            background-color: #f5f5f7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+        }
+        .container {
+            max-w-4xl: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .template-section {
+            margin-bottom: 50px;
+            border-bottom: 2px dashed #e2e2e2;
+            padding-bottom: 30px;
+        }
+        .template-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: #005ac2;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .copy-box {
+            border: 1px solid #e2e2e2;
+            background-color: #fafafa;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 10px;
+        }
+        .desc {
+            font-size: 13px;
+            color: #666666;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="font-size: 28px; font-weight: 900; text-align: center; margin-bottom: 10px; color: #1a1a1a;">
+        Naver Blog Copy-Paste Template Component Library
+    </h1>
+    <p style="text-align: center; font-size: 14px; color: #666666; margin-bottom: 40px;">
+        각 컴포넌트의 박스 내부 콘텐츠를 <b>마우스 드래그로 선택하여 복사(Ctrl+C)</b>한 후 네이버 블로그에 붙여넣기하세요.
+    </p>
+
+    <!-- 1. 타이틀 & 헤더 -->
+    <div class="template-section">
+        <div class="template-title">1. 문서 타이틀 및 메인 헤더</div>
+        <p class="desc">블로그 글 최상단에 배치되는 대제목과 작성 정보 레이아웃입니다.</p>
+        <div class="copy-box">
+            <!-- 복사 시작 영역 -->
+            <div style="font-family: '나눔고딕', NanumGothic, sans-serif; padding: 20px 0; border-bottom: 1px solid #e2e2e2; margin-bottom: 30px; line-height: 1.6;">
+                <div style="display: inline-block; padding: 3px 10px; background-color: #1a1a1a; color: #ffffff; font-size: 10px; font-weight: 900; border-radius: 5px; tracking-widest: 0.1em; margin-bottom: 12px; text-transform: uppercase;">
+                    TECH SPECIFICATION
+                </div>
+                <h1 style="font-family: '나눔고딕', NanumGothic, sans-serif; font-size: 32px; font-weight: 900; color: #141414; margin: 0 0 10px 0; letter-spacing: -0.03em;">
+                    Logitech Rally Bar 기술 분석 및 배선 설계
+                </h1>
+                <p style="font-family: '나눔고딕', NanumGothic, sans-serif; font-size: 16px; font-weight: bold; color: #0078cb; margin: 0 0 20px 0;">
+                    로지텍의 기술적 정수와 스마트 미팅룸 표준 설계 가이드
+                </p>
+                <div style="font-family: '나눔고딕', NanumGothic, sans-serif; font-size: 12px; color: #999999; font-weight: bold;">
+                    <span>📅 작성일: 2026.06.29</span>
+                    <span style="margin: 0 10px; color: #e2e2e2;">|</span>
+                    <span>✔️ 검증: Logitech Certified Engineer Approved</span>
+                </div>
+            </div>
+            <!-- 복사 끝 영역 -->
+        </div>
+    </div>
+
+    <!-- 2. 본문 텍스트 & 부분 강조 -->
+    <div class="template-section">
+        <div class="template-title">2. 본문 단락 및 부분 스타일링</div>
+        <p class="desc">가독성 높은 줄간격(1.8)이 적용된 표준 문장과 파란색 강조, 형광펜 효과 템플릿입니다.</p>
+        <div class="copy-box">
+            <!-- 복사 시작 영역 -->
+            <div style="font-family: '나눔고딕', NanumGothic, sans-serif; font-size: 15px; line-height: 1.8; color: #333333;">
+                <p style="margin: 0 0 15px 0;">
+                    현대적인 하이브리드 업무 환경에서 화상회의 장비는 직관적이고 안정적이어야 합니다. 
+                    <span style="color: #0078cb; font-weight: bold;">Logitech Rally Bar</span>는 올인원 비디오 바의 표준으로서 중대형 회의실 환경에 맞게 데이터 경로와 전원 공급 방식을 획기적으로 개선했습니다.
+                </p>
+                <p style="margin: 0;">
+                    특히 배선 설계 시 가장 핵심이 되는 부분은 <span style="background-color: #fff8b2; font-weight: bold; padding: 2px 4px; border-radius: 4px;">싱글 케이블 연결 규격</span>을 만족하여 사용자의 랩톱 연결 편의성을 극대화하고, 불필요한 연장 케이블 구성을 차단하여 신호 감쇄율을 최저 수준으로 유지하는 것입니다.
+                </p>
+            </div>
+            <!-- 복사 끝 영역 -->
+        </div>
+    </div>
+
+    <!-- 3. 수직 여백 구분선 -->
+    <div class="template-section">
+        <div class="template-title">3. 수직 여백 구분선 (Whitespace Separators)</div>
+        <p class="desc">복사-붙여넣기 시 에디터 자체 버그로 가로 실선이 화면 끝까지 이어지는 오류를 막기 위해, 실선 대신 물리적인 수직 공백을 삽입하여 섹션을 나눕니다.</p>
+        <div class="copy-box">
+            <div>
+                <p style="font-size: 12px; color: #999999; margin: 0 0 5px 0;">[섹션 구분용 대형 여백 - 80px 높이]</p>
+                <!-- 복사 시작 영역 (대형) -->
+                <div style="height: 80px; width: 100%; clear: both; display: block; margin: 0; padding: 0;"></div>
+                <!-- 복사 끝 영역 -->
+                
+                <p style="font-size: 12px; color: #999999; margin: 15px 0 5px 0;">[챕터 구분용 중형 여백 - 64px 높이]</p>
+                <!-- 복사 시작 영역 (중형) -->
+                <div style="height: 64px; width: 100%; clear: both; display: block; margin: 0; padding: 0;"></div>
+                <!-- 복사 끝 영역 -->
+
+                <p style="font-size: 12px; color: #999999; margin: 15px 0 5px 0;">[세부구분용 소형 여백 - 48px 높이]</p>
+                <!-- 복사 시작 영역 (소형) -->
+                <div style="height: 48px; width: 100%; clear: both; display: block; margin: 0; padding: 0;"></div>
+                <!-- 복사 끝 영역 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. 인용구 및 Callout 박스 -->
+    <div class="template-section">
+        <div class="template-title">4. 인용구 및 Callout 박스 스타일</div>
+        <p class="desc">블로그 본문 중간에 들어가는 리포트 요약이나 엔지니어 의견 강조용 블록입니다.</p>
+        <div class="copy-box">
+            
+            <p style="font-size: 12px; color: #999999; margin-bottom: 5px;">A. 왼쪽 파란색 두꺼운 라인 스타일 (quotation_line)</p>
+            <!-- 복사 시작 영역 (라인형) -->
+            <div style="font-family: '나눔고딕', NanumGothic, sans-serif; border-left: 4px solid #0078cb; padding: 5px 0 5px 20px; margin: 25px 0; line-height: 1.6;">
+                <div style="font-size: 18px; font-weight: 800; color: #141414; margin-bottom: 6px;">
+                    엔지니어 정밀 분석 요약
+                </div>
+                <div style="font-size: 15px; color: #666666; font-style: italic;">
+                    "Rally Bar 시스템은 내장 콜랩OS(CollabOS)를 통해 PC 없는 단독 어플라이언스 모드 구동이 가능하므로 복잡한 전선 연결 구조가 획기적으로 정리됩니다."
+                </div>
+            </div>
+            <!-- 복사 끝 영역 -->
+
+            <p style="font-size: 12px; color: #999999; margin: 30px 0 5px 0;">B. 소프트 배경 카드 박스형 (quotation_postit)</p>
+            <!-- 복사 시작 영역 (포스트잇형) -->
+            <div style="font-family: '나눔고딕', NanumGothic, sans-serif; background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 16px; padding: 24px; margin: 25px 0; line-height: 1.7;">
+                <div style="font-size: 12px; font-weight: 900; color: #999999; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">
+                    INSTALLATION CHECKLIST
+                </div>
+                <div style="font-size: 14px; color: #495057; font-weight: 500;">
+                    • 장비 설치 전 이중 천장 내 전원 케이블 포설이 불가능할 경우, 액티브 USB 케이블(5m) 매립 경로를 미리 확보하십시오.<br>
+                    • 터치 컨트롤러 Tap IP는 허브 포트가 아닌 이더넷 PoE 단자에 직접 직결 연결되어야 시스템이 동기화됩니다.
+                </div>
+            </div>
+            <!-- 복사 끝 영역 -->
+
+        </div>
+    </div>
+
+    <!-- 5. 격자 구조 표 -->
+    <div class="template-section">
+        <div class="template-title">5. 격자형 제품 사양 표 (Full Grid Table)</div>
+        <p class="desc">표 테두리가 누락되지 않도록 모든 th와 td 태그에 직접 인라인 보더 스타일을 부여한 테이블입니다.</p>
+        <div class="copy-box">
+            <!-- 복사 시작 영역 -->
+            <div style="width: 100%; overflow-x: auto; margin: 20px 0;">
+                <table style="width: 100%; border-collapse: collapse; border: 1px solid #d4d4d8; font-family: '나눔고딕', NanumGothic, sans-serif; font-size: 14px; table-layout: fixed; background-color: #ffffff;">
+                    <colgroup>
+                        <col style="width: 30%;">
+                        <col style="width: 25%;">
+                        <col style="width: 45%;">
+                    </colgroup>
+                    <thead>
+                        <tr style="background-color: #e2e2e2;">
+                            <th style="border: 1px solid #d4d4d8; padding: 12px; font-weight: bold; text-align: left; color: #1a1a1a;">구성품 명칭</th>
+                            <th style="border: 1px solid #d4d4d8; padding: 12px; font-weight: bold; text-align: center; color: #1a1a1a;">제공 수량 / 길이</th>
+                            <th style="border: 1px solid #d4d4d8; padding: 12px; font-weight: bold; text-align: left; color: #1a1a1a;">세부 사양 정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #ffffff;">
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; color: #27272a; font-weight: bold;">Rally Bar 본체</td>
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; text-align: center; color: #27272a;">1대</td>
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; color: #71717a;">올인원 화상회의 카메라 및 스피커폰 시스템</td>
+                        </tr>
+                        <tr style="background-color: #f9fafb;">
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; color: #27272a; font-weight: bold;">HDMI 1.4 케이블</td>
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; text-align: center; color: #27272a;">2개 (각 2m)</td>
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; color: #71717a;">듀얼 디스플레이 송출용 고속 HDMI 케이블</td>
+                        </tr>
+                        <tr style="background-color: #ffffff;">
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; color: #27272a; font-weight: bold;">USB 3.0 A to C 케이블</td>
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; text-align: center; color: #27272a;">1개 (2.2m)</td>
+                            <td style="border: 1px solid #d4d4d8; padding: 12px; color: #71717a;">BYOD 모드 연동용 초고속 데이터 케이블</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 복사 끝 영역 -->
+        </div>
+    </div>
+
+    <!-- 6. MSRP 및 옵션 상품 카드 -->
+    <div class="template-section">
+        <div class="template-title">6. 구매 정보 및 MSRP 카드 레이아웃</div>
+        <p class="desc">정밀하게 계산된 레이아웃 표 구조를 활용하여 제품 가격 및 정보 카드를 표 형태로 구현했습니다. (블로그 복사 완벽 호환)</p>
+        <div class="copy-box">
+            <!-- 복사 시작 영역 -->
+            <div style="width: 100%; margin: 20px 0;">
+                <table style="width: 100%; border-collapse: collapse; border: 1px solid #d4d4d8; table-layout: fixed; background-color: #ffffff; font-family: '나눔고딕', NanumGothic, sans-serif;">
+                    <tbody>
+                        <!-- Row 1: 기본 정보 및 이미지 -->
+                        <tr>
+                            <!-- 썸네일 이미지 공간 (기본 로고 또는 제품 대표 이미지 대체용) -->
+                            <td rowspan="2" style="width: 25%; border: 1px solid #d4d4d8; padding: 16px; text-align: center; vertical-align: middle; background-color: #f9fafb;">
+                                <div style="font-weight: bold; font-size: 14px; color: #0078cb;">LOGITECH</div>
+                                <div style="font-size: 11px; color: #999999; margin-top: 4px;">Rally Accessory</div>
+                            </td>
+                            <td colspan="2" style="width: 50%; border: 1px solid #d4d4d8; padding: 16px 20px; vertical-align: top;">
+                                <div style="font-size: 10px; font-weight: 900; color: #0078cb; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">AUDIO EXPANSION</div>
+                                <div style="font-size: 16px; font-weight: 800; color: #18181b;">Rally Mic Pod (Graphite)</div>
+                                <div style="font-size: 11px; color: #a1a1aa; margin-top: 2px;">Part Number: 989-000430</div>
+                            </td>
+                            <td style="width: 25%; border: 1px solid #d4d4d8; padding: 16px 20px; text-align: right; vertical-align: middle; background-color: #f9fafb;">
+                                <div style="font-size: 9px; font-weight: 900; color: #71717a; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;">MSRP (VAT Incl.)</div>
+                                <div style="font-size: 18px; font-weight: 900; color: #0078cb;">₩570,000</div>
+                            </td>
+                        </tr>
+                        <!-- Row 2: 보증 정책 및 추가 사항 -->
+                        <tr>
+                            <td colspan="3" style="border: 1px solid #d4d4d8; padding: 12px 20px; background-color: #ffffff; font-size: 12px; color: #52525b; line-height: 1.5;">
+                                <div style="margin-bottom: 2px;">• <b>보증 서비스:</b> 2년 기본 제한 하드웨어 보증 적용</div>
+                                <div>• <b>시스템 매칭:</b> Rally Bar 및 Rally Bar Mini 기기당 최대 3대(마이크 허브 장착 시 최대 4대)까지 음성 범위 팽창 가능</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 복사 끝 영역 -->
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

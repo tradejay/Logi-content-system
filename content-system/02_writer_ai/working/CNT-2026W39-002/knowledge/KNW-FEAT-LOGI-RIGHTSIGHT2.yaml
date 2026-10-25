@@ -1,0 +1,266 @@
+knowledge_id: KNW-FEAT-LOGI-RIGHTSIGHT2
+name: "Logitech RightSight 2"
+vendor: "Logitech"
+knowledge_type: feature
+status: VERIFIED
+last_verified: "2026-09-23"
+
+definition:
+  summary: >
+    로지텍 회의실 비디오 바 및 카메라 제품군에서 제공되는 2세대 온디바이스 AI
+    자동 프레이밍 및 지능형 화자 추적 영상 구성 기술군.
+  scope:
+    applies_to:
+      - LOGI-RALLY-BAR
+      - LOGI-RALLY-BAR-MINI
+      - LOGI-MEETUP-2
+    does_not_imply:
+      - 모든 RightSight 2 제품이 동일한 듀얼 렌즈(AI Viewfinder) 구조를 사용함 (MeetUp 2는 단일 렌즈 NPU 크롭)
+      - 화자 추적 권장 거리가 마이크 수음 반경과 동일함 (화자 추적 권장 거리는 4.5m, 마이크 픽업 거리는 7m)
+      - Teams Rooms 클라우드 IntelliFrame과 온디바이스 RightSight 2가 동일한 기능임
+      - RightSight 2 화자추적 기능을 사용하려면 Zoom Rooms 또는 Teams Rooms 유료 라이선스가 필수적임 (BYOD USB 모드 및 로컬 어플라이언스에서 독립 동작)
+      - Rally Mic Pod 증설이 RightSight 2 카메라 화자 추적(트래킹) 위치 정보를 제공하거나 추적 거리를 연장함 (Mic Pod는 단순 오디오 수음 장치이며, 카메라 추적 공간 좌표를 일체 제공하지 않음)
+
+facts:
+  - id: FACT-RS2-001
+    subject: RightSight2.SpeakerView
+    property: speaker_tracking_recommended_distance
+    canonical_property: speaker_tracking_recommended_distance
+    value: 4.5
+    unit: m
+    applies_to:
+      - LOGI-RALLY-BAR
+      - LOGI-RALLY-BAR-MINI
+    does_not_imply:
+      - 마이크 오디오 픽업 최대 거리와 동일함
+    source:
+      id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "Operating Distances for RightSight 2"
+        section: "Speaker View"
+        url: "https://prosupport.logi.com/hc/en-us/articles/rightsight-2"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RS2-002
+    subject: RightSight2.SpeakerView
+    property: speaker_tracking_recommended_min_distance
+    canonical_property: speaker_tracking_recommended_distance
+    value: 1.0
+    unit: m
+    source:
+      id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "Operating Distances for RightSight 2"
+        section: "Speaker View"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RS2-003
+    subject: RightSight2.GroupView
+    property: camera_framing_distance
+    canonical_property: camera_framing_distance
+    value: 7.0
+    unit: m
+    source:
+      id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "Operating Distances for RightSight 2"
+        section: "Group View"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RS2-004
+    subject: RightSight2.GridView
+    property: camera_framing_distance
+    canonical_property: camera_framing_distance
+    value: 6.0
+    unit: m
+    source:
+      id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "Operating Distances for RightSight 2"
+        section: "Grid View"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RS2-005
+    subject: RightSight2.CollabOSConfig
+    property: menu_path
+    value: "Settings > Camera > RightSight 2"
+    source:
+      id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "On-device Configuration via CollabOS"
+        section: "Camera Settings"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RS2-006
+    subject: RightSight2.Mechanism
+    property: sensor_fusion
+    value: "Acoustic TDoA + Computer Vision (AI Viewfinder)"
+    applies_to:
+      - LOGI-RALLY-BAR
+      - LOGI-RALLY-BAR-MINI
+    prohibited_products:
+      - LOGI-MEETUP-2
+      - LOGI-MEETUP
+    does_not_imply:
+      - MeetUp 2 또는 타사 장비에 AI Viewfinder 하드웨어가 존재함
+    source:
+      id: SRC-LOGI-DOC-RIGHTSENSE
+      locator:
+        heading: "Sensor Fusion Architecture"
+        section: "Dual Camera System"
+        captured_at: "2026-09-23"
+
+derived_knowledge:
+  - id: DKNW-RS2-001
+    type: DERIVED_RELATION
+    subject: RightSight2.SpeakerView.max_distance
+    relation: compares_with
+    object: RightSight2.GroupView.max_distance
+    operator: "<"
+    statement: "Speaker View의 권장 최대 거리는 Group View보다 짧다."
+    derived_from:
+      - FACT-RS2-001
+      - FACT-RS2-003
+    derivation_type: numerical_comparison
+    confidence: VERIFIED
+    rationale: "화자 뷰 권장 거리(4.5m)는 그룹 뷰(7.0m)보다 물리적 유효 반경이 보수적으로 설정됨."
+
+  - id: DKNW-RS2-002
+    type: DERIVED_RELATION
+    subject: speaker_tracking_recommended_distance
+    relation: disjoint_with
+    object: microphone_pickup_range
+    statement: "화자추적 권장 거리와 마이크 픽업 거리는 일치하지 않는다."
+    derived_from:
+      - FACT-RS2-001
+      - FACT-RB-001
+    derivation_type: cross_domain_distinction
+    confidence: VERIFIED
+    rationale: "카메라 화자추적 유효거리(4.5m)와 마이크 음향 수음거리(7m)는 상호 배타적 측정 기준임."
+
+terminology:
+  device_feature: "RightSight 2"
+  underlying_suite: "Logitech RightSense"
+  modes:
+    - name: "Group View"
+      description: "회의실 내 모든 참석자를 감지하여 단일 프레임 안에 전체 그룹이 잘리지 않도록 화각을 최적화"
+    - name: "Speaker View"
+      description: "현재 발화 중인 발표자를 실시간 추적하여 상반신 중심의 타이트한 클로즈업 앵글로 자동 전환"
+    - name: "Grid View"
+      description: "회의실 내 최대 4명의 개별 참석자를 개별 서브 프레임으로 분할 크롭하여 동일한 크기로 그리드 배치"
+
+concept_relationships:
+  PTZ:
+    relation: "PTZ(Pan-Tilt-Zoom)는 카메라 렌즈의 기계적 구동 능력을 의미하며, Speaker View는 PTZ 렌즈를 제어하는 AI 알고리즘 모드 중 하나임."
+  Speaker_Tracking:
+    relation: "일반 명사로서의 화자 추적 기술을 로지텍의 독자적 알고리즘으로 브랜드화한 것이 RightSight 2 Speaker View임."
+  Auto_Framing:
+    relation: "인원수 기반 그룹 프레이밍을 의미하며, RightSight 2의 Group View가 이에 해당함."
+
+compatibility:
+  source_of_truth: "SRC-LOGI-DOC-RIGHTSENSE"
+  products:
+    rally_bar:
+      supported: true
+      dual_camera_sensor_fusion: true
+      supported_modes: ["Group View", "Speaker View", "Grid View"]
+      camera_architecture: "AI Viewfinder(초광각 174° DFOV / 150° HFOV 고정) + 메인 4K 전동 PTZ(15배 줌)"
+    rally_bar_mini:
+      supported: true
+      dual_camera_sensor_fusion: true
+      supported_modes: ["Group View", "Speaker View", "Grid View"]
+      camera_architecture: "AI Viewfinder(초광각 174° DFOV / 150° HFOV 고정) + 메인 4K 전동 PTZ(4배 줌)"
+    meetup_2:
+      supported: true
+      dual_camera_sensor_fusion: false
+      supported_modes: ["Group View", "Speaker View", "Grid View"]
+      camera_architecture: "단일 4K 120° 광각 렌즈 기반 NPU 디지털 크롭"
+    rally_plus:
+      supported: true
+      supported_modes: ["Group View"]
+      note: "독립 Rally Camera는 물리적 모터 기반 RightSight 1(Group View) 지원"
+
+mechanism:
+  speaker_view:
+    applies_to: ["rally_bar", "rally_bar_mini"]
+    detection_inputs:
+      - input: "acoustic_tdoa"
+        component: "6개 MEMS 빔포밍 마이크 어레이"
+        function: "음파 도달 시간차(TDoA)를 마이크로초 단위로 계산하여 음원의 방위각(Azimuth)을 특정"
+      - input: "computer_vision"
+        component: "AI Viewfinder 보조 렌즈"
+        function: "방 전체(초광각 174° DFOV / 150° HFOV)를 상시 스캔하여 인물 안면 및 상반신 랜드마크 위치 좌표 매칭"
+    decision_pipeline:
+      1: "TDoA 음원 방향 감지"
+      2: "AI 뷰파인더 비전 좌표와 교차 검증 (센서 퓨전)"
+      3: "유효 발화 지속 시간(약 1.5초 이상) 확인 후 기침/잡음 필터링"
+      4: "메인 전동 PTZ 렌즈로 서보 모터 구동 및 발화자 화면 중앙 자동 클로즈업"
+    confidence: "official_documented"
+
+operating_conditions:
+  group_view:
+    recommended_distance:
+      min_m: 1.0
+      max_m: 7.0
+  speaker_view:
+    recommended_distance:
+      min_m: 1.0
+      max_m: 4.5
+    switching_latency_sec: 1.5
+  grid_view:
+    recommended_distance:
+      min_m: 1.0
+      max_m: 6.0
+
+limitations:
+  environmental:
+    - condition: "high_reverberation"
+      effect: "잔향 시간(RT60)이 0.7초를 초과하는 유리벽/콘크리트 룸에서는 음원 방향 감지 오류 가능성"
+      remedy: "벽면 흡음재 설치 및 실내 음향 반사 억제 (Rally Mic Pod는 단순 오디오 수음용일 뿐 카메라 추적을 위한 음원 위치 좌표를 일체 제공하지 않음)"
+    - condition: "multiple_simultaneous_speakers"
+      effect: "2명 이상이 동시에 대화할 경우 카메라가 빠르게 스위칭하지 않고 Group View로 자동 폴백"
+    - condition: "distance_beyond_4_5m"
+      effect: "4.5m를 초과하는 장거리 발화자의 경우 Speaker View 전환 반응 속도가 둔화될 수 있음"
+  unverified_numbers_warning: "공식 문서에 명시되지 않은 '정확도 99%', '반응속도 0.2초' 등의 임의 수치는 날조 금지"
+
+platform_integrations:
+  zoom_rooms:
+    deployment: ["Zoom Rooms Appliance", "Zoom Rooms Windows/Mac"]
+    device_feature_control: "CollabOS 관리 메뉴 또는 Sync에서 활성화"
+    platform_modes:
+      - name: "Speaker Focus"
+        note: "RightSight 2 Speaker View와 1:1 매핑 연동"
+      - name: "Auto-Framing"
+        note: "RightSight 2 Group View와 연동"
+      - name: "Multi-Stream / Smart Gallery"
+        note: "Zoom Rooms 자체 플랫폼 기능으로 카메라가 각 참석자 피드를 분할 전송"
+  microsoft_teams_rooms:
+    deployment: ["Teams Rooms on Android", "Teams Rooms on Windows"]
+    platform_modes:
+      - name: "IntelliFrame"
+        note: "MTR 클라우드 AI 또는 디바이스 프레이밍 연동"
+
+configuration:
+  collabos_on_device:
+    menu_path:
+      - "설정 (Settings)"
+      - "카메라 (Camera)"
+      - "RightSight 2"
+    options:
+      - "Group View (그룹 뷰)"
+      - "Speaker View (화자 뷰)"
+      - "Grid View (그리드 뷰)"
+  sync_portal:
+    menu_path:
+      - "Logitech Sync 관리 콘솔"
+      - "디바이스 선택 (Rally Bar)"
+      - "Camera 탭"
+      - "RightSight 2 활성화 및 기본 뷰 모드 지정"
+  zoom_rooms_admin:
+    menu_path:
+      - "Zoom Rooms 웹 관리자 포털 (zoom.us)"
+      - "Room Management"
+      - "Zoom Rooms"
+      - "대상 회의실 선택"
+      - "Devices 탭"
+      - "Camera Control Mode ➔ Speaker Focus 선택"

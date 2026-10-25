@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Product companion selection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "node_id",
+    "selected_choice",
+    "selection_origin",
+    "selection_reason",
+    "anchor_section_id",
+    "position",
+    "product_ids",
+    "binding_status",
+    "unresolved_items"
+  ],
+  "properties": {
+    "node_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selected_choice": {
+      "enum": [
+        "none",
+        "product_awareness",
+        "product_recommendation"
+      ]
+    },
+    "selection_origin": {
+      "enum": [
+        "explicit_user_choice",
+        "article_plan_choice",
+        "template_default"
+      ]
+    },
+    "selection_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "anchor_section_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "position": {
+      "enum": [
+        "after_explanation",
+        "after_solution",
+        "after_recommendation",
+        "in_closing_next_action",
+        null
+      ]
+    },
+    "product_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "binding_status": {
+      "enum": [
+        "not_required",
+        "pending",
+        "ready",
+        "blocked"
+      ]
+    },
+    "unresolved_items": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "selected_choice": {
+            "const": "none"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "anchor_section_id": {
+            "type": "null"
+          },
+          "position": {
+            "type": "null"
+          },
+          "product_ids": {
+            "maxItems": 0
+          },
+          "binding_status": {
+            "const": "not_required"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "anchor_section_id": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "binding_status": {
+            "const": "ready"
+          },
+          "selected_choice": {
+            "enum": [
+              "product_awareness",
+              "product_recommendation"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "product_ids": {
+            "minItems": 1
+          },
+          "unresolved_items": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "binding_status": {
+            "enum": [
+              "pending",
+              "blocked"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unresolved_items": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "selected_choice": {
+            "enum": [
+              "product_awareness",
+              "product_recommendation"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "binding_status": {
+            "enum": [
+              "pending",
+              "ready",
+              "blocked"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

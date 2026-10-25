@@ -1,0 +1,25 @@
+knowledge_packs:
+- id: KNW-FEAT-LOGI-RIGHTSIGHT2
+  name: Logitech RightSight 2
+  knowledge_type: feature
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-FEAT-LOGI-RIGHTSIGHT2.yaml
+- id: KNW-PROD-LOGI-RALLYBAR
+  name: Logitech Rally Bar
+  knowledge_type: product
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-PROD-LOGI-RALLYBAR.yaml
+- id: KNW-PLAT-ZOOM-ROOMS
+  name: Zoom Rooms Intelligent Camera Integration
+  knowledge_type: platform
+  vendor: Zoom
+  status: VERIFIED
+  local_path: knowledge/KNW-PLAT-ZOOM-ROOMS.yaml
+- id: KNW-CONC-SPEAKER-TRACKING
+  name: 화자 추적 카메라 (Speaker Tracking Camera)
+  knowledge_type: concept
+  vendor: null
+  status: VERIFIED
+  local_path: knowledge/KNW-CONC-SPEAKER-TRACKING.yaml

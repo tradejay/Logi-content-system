@@ -1,0 +1,15 @@
+evidence_request_id: EVREQ-2026W39-001
+content_id: CNT-2026W39-001
+product: Logitech Tap
+missing_type: MISSING_CONFIG_DOC
+severity: HIGH
+question: Logitech Tap을 Zoom Rooms 환경에서 어떤 메뉴로 세팅하는가?
+needed_for: 본문 기술 설명 및 실무 세팅 근거 보강
+acceptable_sources:
+- 제조사 공식 데이터시트 (E1)
+- 공식 관리자 콘솔 가이드 (E2)
+- 실사 테스트 로그 (E4)
+status: OPEN
+created_at: '2026-09-22T16:30:53.094888'
+resolved_at: null
+resolved_source_id: null

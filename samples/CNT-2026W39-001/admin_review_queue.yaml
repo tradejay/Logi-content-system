@@ -1,0 +1,72 @@
+updated_at: '2026-09-30 10:09:16'
+total_pending: 6
+description: 로지텍 AI가 자체 RAG 범위 외(쇼룸 테스트, 인테리어 시공, 총판사 CTA 등)로 분류하여 인간 관리자의 최종 승인이
+  필요한 항목들입니다.
+items:
+- item_id: ADM-FACT-01
+  content_id: CNT-2026W39-001
+  category: 실무 엔지니어링 / 시공 팁
+  claim: '다음 수치들은 제공된 지식 소스에 전혀 등장하지 않으며, 사실 여부를 확인할 근거가 없습니다:'
+  ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+  admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+  status: PENDING
+  recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+  reviewer: null
+  reviewed_at: null
+- item_id: ADM-FACT-02
+  content_id: CNT-2026W39-001
+  category: 설치 및 배선 실무 (Installation & Cabling)
+  claim: AI Viewfinder 서브렌즈 130.0° DFOV 메인 카메라 DFOV 90.0° / HFOV 82.1° / VFOV 52.2°
+    팬 25° / 틸트 15° 구동 범위 광학 5.0배 + 디지털 결합 총 15.0배 줌 Rally Bar 마이크 수음 범위 "최대 7.0m"
+    Rally Mic Pod 수음 반경 "약 4.5m 직경"
+  ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+  admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+  status: PENDING
+  recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+  reviewer: null
+  reviewed_at: null
+- item_id: ADM-FACT-03
+  content_id: CNT-2026W39-001
+  category: 실무 엔지니어링 / 시공 팁
+  claim: 이 수치들에 대해서는 지식 소스에 근거가 없으므로 컨펌도 반박도 할 수 없다는 점을 명확히 안내드립니다. 정확한 스펙은 별도의 제품
+    데이터시트나 공식 지원팀을 통해 확인하시길 권장합니다.
+  ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+  admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+  status: PENDING
+  recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+  reviewer: null
+  reviewed_at: null
+- item_id: ADM-FACT-04
+  content_id: CNT-2026W39-001
+  category: 실무 엔지니어링 / 시공 팁
+  claim: '다음 항목들은 로지텍 공식 기술 문서에서 전혀 확인되지 않는 외부 삽입 내용입니다:'
+  ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+  admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+  status: PENDING
+  recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+  reviewer: null
+  reviewed_at: null
+- item_id: ADM-FACT-05
+  content_id: CNT-2026W39-001
+  category: 총판 실증 아키텍처 (Showroom Verification)
+  claim: '"오우션테크놀러지 본사 쇼룸 및 기술 랩 실증 테스트" 언급 — 공식 문서에 해당 업체나 실증 테스트 관련 언급이 전혀 없습니다.
+    특정 수입 총판사로의 링크(blog.naver.com/oceantec01) 및 "B2B 할인 구매·기업 전용 견적 상담" 안내, 배너 광고(oceantec.co.kr/board/inquiry)
+    — 이는 로지텍 공식 채널이 아닌 '
+  ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+  admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+  status: PENDING
+  recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+  reviewer: null
+  reviewed_at: null
+- item_id: ADM-FACT-06
+  content_id: CNT-2026W39-001
+  category: 총판 실증 아키텍처 (Showroom Verification)
+  claim: RightSight 2의 모드 명칭(Group View/Speaker View/Grid View), 권장 거리 수치(Group View
+    최대 7m, Speaker View 1~4.5m, Grid View 최대 6m), 호환 플랫폼, CollabOS 설정 경로는 공식 문서와 일치함을
+    확인하였습니다. 반면 세부 하드웨어 스펙 수치(화각, 줌 배율, 마이크/스피
+  ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+  admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+  status: PENDING
+  recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+  reviewer: null
+  reviewed_at: null

@@ -1,0 +1,56 @@
+# Relationship Ontology Taxonomy
+# Standardized relationship types between Concepts, Features, Products, Platforms, and Properties.
+# Prevents errors caused by loose natural language interpretation in Derived Knowledge.
+
+version: 1.0.0
+last_updated: "2026-09-23"
+
+relations:
+  integrates_with:
+    description: "한 플랫폼 또는 소프트웨어 계층이 다른 디바이스 기능과 명령/데이터를 연동·호출함"
+    subject_types: ["PLATFORM", "FEATURE"]
+    object_types: ["FEATURE", "PRODUCT"]
+    example: "ZoomRooms.SpeakerFocus integrates_with RightSight2.SpeakerView"
+
+  controls:
+    description: "상위 AI/소프트웨어 알고리즘 또는 제어기가 하위 하드웨어 기구물이나 설정을 제어함"
+    subject_types: ["FEATURE", "CONTROLLER"]
+    object_types: ["HARDWARE_COMPONENT", "FEATURE"]
+    example: "SpeakerTracking.Algorithm controls Camera.PTZMotor"
+
+  requires:
+    description: "기능 A가 동작하기 위해 컴포넌트 B(라이선스, 특정 펌웨어, 추가 하드웨어)가 필수적임"
+    subject_types: ["FEATURE", "PRODUCT"]
+    object_types: ["LICENSE", "FIRMWARE", "HARDWARE_COMPONENT"]
+    example: "SmartGallery requires ZoomRooms.EnterpriseLicense"
+
+  supports:
+    description: "디바이스 또는 플랫폼이 특정 기능, 규격, 모드를 지원함"
+    subject_types: ["PRODUCT", "PLATFORM"]
+    object_types: ["FEATURE", "SPEC", "PROTOCOL"]
+    example: "Logitech.RallyBar supports RightSight2.SpeakerView"
+
+  available_on:
+    description: "특정 기능이 배포되어 사용 가능한 제품군 또는 플랫폼 범위"
+    subject_types: ["FEATURE"]
+    object_types: ["PRODUCT", "PLATFORM"]
+    example: "RightSight2.SpeakerView available_on Logitech.RallyBar"
+
+  configured_via:
+    description: "특정 기능이나 파라미터를 설정하는 관리자 메뉴 또는 인터페이스 경로"
+    subject_types: ["FEATURE", "PLATFORM"]
+    object_types: ["ADMIN_PORTAL", "CONTROLLER_UI"]
+    example: "RightSight2 configured_via CollabOS.Settings"
+
+  disjoint_with:
+    description: "두 Property 또는 개념이 같은 물리적 수치나 단위를 가질 수 있으나 의미적으로 절대 동일시될 수 없음"
+    subject_types: ["PROPERTY", "CONCEPT"]
+    object_types: ["PROPERTY", "CONCEPT"]
+    example: "microphone_pickup_range disjoint_with speaker_tracking_recommended_distance"
+
+  compares_with:
+    description: "두 개 이상의 사실 수치 간에 성립하는 수학적/물리적 대소 또는 조건 비교"
+    subject_types: ["FACT", "PROPERTY"]
+    object_types: ["FACT", "PROPERTY"]
+    operators: ["<", "<=", ">", ">=", "==", "!="]
+    example: "RightSight2.SpeakerView.max_distance < RightSight2.GroupView.max_distance"

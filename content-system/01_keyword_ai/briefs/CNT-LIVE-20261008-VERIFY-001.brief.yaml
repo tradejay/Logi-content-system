@@ -1,0 +1,286 @@
+{
+  "content_id": "CNT-LIVE-20261008-VERIFY-001",
+  "status": "READY_FOR_WRITING",
+  "topic": "소형 회의실에서 양끝 참석자가 잘릴 때: 좌석 배치 점검과 MeetUp 2 선택 기준",
+  "one_line_purpose": "좌석 배치와 수평·대각 화각을 구분해 문제를 점검하고, 확인된 MeetUp 2 사양으로 도입 판단을 돕는다. 가상의 실증이나 무상 서비스 약속은 하지 않는다.",
+  "audience": {
+    "level": "beginner",
+    "roles": [
+      "IT 관리자",
+      "총무 담당자"
+    ]
+  },
+  "search": {
+    "primary_keyword": "소형 회의실 카메라",
+    "supporting_keywords": [
+      "로지텍 MeetUp 2",
+      "회의실 좌석 배치",
+      "수평 화각"
+    ]
+  },
+  "intent": [
+    "problem_solving",
+    "configuration"
+  ],
+  "questions": [
+    "양끝 참석자가 잘릴 때 먼저 무엇을 확인하나요?",
+    "수평 화각과 대각 화각은 어떻게 구분하나요?",
+    "MeetUp 2의 확인된 사양은 어떤 도입 판단에 도움이 되나요?"
+  ],
+  "product_bridge": {
+    "product": "Logitech MeetUp 2",
+    "reason": "회의실의 좌석 배치 조건을 먼저 확인하고 공식 사양과 대조한다."
+  },
+  "knowledge_packs": [
+    "KNW-PROD-LOGI-MEETUP2"
+  ],
+  "web_research": {
+    "enabled": true,
+    "query": "small meeting room camera seating layout field of view AVIXA PSNI planning guide"
+  },
+  "sections": [
+    {
+      "id": "SEC-PROBLEM",
+      "type": "problem",
+      "objective": "양끝 참석자 잘림과 좌석 배치 점검"
+    },
+    {
+      "id": "SEC-CRITERIA",
+      "type": "concept",
+      "objective": "수평·대각 화각 구분",
+      "required_facts": [
+        "FACT-MU2-001",
+        "FACT-MU2-002"
+      ]
+    },
+    {
+      "id": "SEC-PRODUCT",
+      "type": "product_bridge",
+      "objective": "MeetUp 2 소개와 적용 조건",
+      "required_facts": [
+        "FACT-MU2-005",
+        "FACT-MU2-006"
+      ]
+    },
+    {
+      "id": "SEC-CHECK",
+      "type": "howto",
+      "objective": "현장 점검 체크리스트와 상담 전 준비 정보"
+    }
+  ],
+  "fact_policy": {
+    "excluded_fact_ids": [
+      "FACT-MU2-012",
+      "FACT-MU2-013"
+    ],
+    "block_fact_ids": {
+      "BLK-SEC4-CHECKLIST": [
+        "FACT-MU2-006",
+        "FACT-MU2-011"
+      ]
+    }
+  },
+  "content_blocks": [
+    {
+      "id": "BLK-TITLE",
+      "roles": [
+        "title"
+      ],
+      "purpose": "독자의 실제 불편과 해결 방안을 집약한 블로그 메인 제목",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-OPENING-GREETING",
+      "roles": [
+        "opening.greeting",
+        "opening.business_notice"
+      ],
+      "purpose": "오우션 테크놀러지 총판 정중한 인사 및 기업 대상 B2B 견적/데모 시연 지원 안내",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-OPENING-TOPIC",
+      "roles": [
+        "opening.problem_topic",
+        "opening.answer"
+      ],
+      "purpose": "소형 회의실 양끝 잘림 현상 공감 및 좌석 배치 점검과 광각 카메라 선택 기준 안내",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-OPENING-BANNER",
+      "roles": [
+        "opening.inquiry_banner"
+      ],
+      "purpose": "도입부 오우션 테크놀러지 공식 문의 배너 렌더링",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-OPENING-TRANSITION",
+      "roles": [
+        "opening.transition"
+      ],
+      "purpose": "도입부에서 본문 1섹션 문제 분석으로의 자연스러운 연결",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-SEC1-PROBLEM",
+      "roles": [
+        "body.problem_statement",
+        "body.principle"
+      ],
+      "purpose": "소형 룸에서 끝자리 인원이 잘리는 공간적/기하학적 원인 규명",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-SEC1-MEDIA",
+      "roles": [
+        "media"
+      ],
+      "purpose": "소형 회의실 사각지대 발생 상황 시각화 카드 배치",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-SEC1-LAYOUT-ACTION",
+      "roles": [
+        "body.conditions",
+        "body.setup"
+      ],
+      "purpose": "장비 교체 전 즉시 시도할 수 있는 좌석 재배치 및 물리적 거리 확보 팁",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-SEC2-CRITERIA-FOV",
+      "roles": [
+        "body.definition",
+        "body.explanation"
+      ],
+      "purpose": "수평 화각(HFOV)과 대각 화각(DFOV)의 광학적 개념 차이 및 수치 왜곡 방지",
+      "fact_ids": [
+        "FACT-MU2-001",
+        "FACT-MU2-002",
+        "FACT-MU2-003"
+      ]
+    },
+    {
+      "id": "BLK-SEC2-MEDIA",
+      "roles": [
+        "media"
+      ],
+      "purpose": "HFOV vs DFOV 비교 다이어그램 카드 배치",
+      "fact_ids": [
+        "FACT-MU2-001",
+        "FACT-MU2-002"
+      ]
+    },
+    {
+      "id": "BLK-SEC2-COMPARISON-TABLE",
+      "roles": [
+        "body.comparison"
+      ],
+      "purpose": "일반 웹캠(90도)과 초광각 화상회의 바의 화각 및 허들룸 커버리지 비교",
+      "fact_ids": [
+        "FACT-MU2-001",
+        "FACT-MU2-002"
+      ]
+    },
+    {
+      "id": "BLK-SEC3-PRODUCT-DEF",
+      "roles": [
+        "body.definition",
+        "body.specification"
+      ],
+      "purpose": "로지텍 MeetUp 2 기본 정의 및 핵심 비디오/오디오 하드웨어 사양 소개",
+      "fact_ids": [
+        "FACT-MU2-001",
+        "FACT-MU2-002",
+        "FACT-MU2-004",
+        "FACT-MU2-005",
+        "FACT-MU2-006",
+        "FACT-MU2-007",
+        "FACT-MU2-008",
+        "FACT-MU2-009",
+        "FACT-MU2-010"
+      ]
+    },
+    {
+      "id": "BLK-SEC3-MEDIA",
+      "roles": [
+        "media"
+      ],
+      "purpose": "MeetUp 2 공식 제품 외관 이미지 배치",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-SEC3-PRODUCT-LINK",
+      "roles": [
+        "body.product_link"
+      ],
+      "purpose": "MeetUp 2 블로그 소개 페이지 연결",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-SEC3-CONDITIONS",
+      "roles": [
+        "body.conditions",
+        "body.configuration"
+      ],
+      "purpose": "외장 마이크 확장 불가, USB BYOD 전용 등 MeetUp 2 적용 한계 및 연결 구성 안내",
+      "fact_ids": [
+        "FACT-MU2-005",
+        "FACT-MU2-006",
+        "FACT-MU2-011",
+        "FACT-MU2-014"
+      ]
+    },
+    {
+      "id": "BLK-SEC4-CHECKLIST",
+      "roles": [
+        "body.setup",
+        "body.conditions"
+      ],
+      "purpose": "도입 전 회의실 환경 셀프 점검 4단계 체크리스트",
+      "fact_ids": [
+        "FACT-MU2-006",
+        "FACT-MU2-011"
+      ]
+    },
+    {
+      "id": "BLK-SEC4-MEDIA",
+      "roles": [
+        "media"
+      ],
+      "purpose": "현장 점검 체크리스트 인포그래픽 카드 배치",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-CLOSING-SUMMARY",
+      "roles": [
+        "closing.summary"
+      ],
+      "purpose": "소형 회의실 화각 문제 진단 및 장비 선택 기준 요약 정리",
+      "fact_ids": [
+        "FACT-MU2-002",
+        "FACT-MU2-006"
+      ]
+    },
+    {
+      "id": "BLK-CLOSING-CONSULTATION",
+      "roles": [
+        "closing.consultation",
+        "closing.greeting",
+        "closing.next_action"
+      ],
+      "purpose": "오우션 테크놀러지 맞춤 컨설팅 제안 및 따뜻한 마무리 인사",
+      "fact_ids": []
+    },
+    {
+      "id": "BLK-CLOSING-BANNER",
+      "roles": [
+        "closing.inquiry_banner"
+      ],
+      "purpose": "마무리 오우션 테크놀러지 공식 문의 배너 렌더링",
+      "fact_ids": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# 전략 응답 계약
+RULE-OCEANTECH-BRAND-LINKS에 따라 도입 인사·주제 예고, 제품 설명 문단의 소개 링크, 마무리 인사를 계획한다. asset_needs에는 도입과 마무리의 문의 배너 두 위치를 필수로 포함하며, 같은 공통 자산을 두 번 배치하는 의도된 구성으로 취급한다.
+제공된 v3 guides와 cautions를 따르며 JSON 객체만 반환한다. brief는 기획이지 사실 근거가 아니다. sources/knowledge에 없는 설명을 기획 요구만으로 사실화하지 않는다. 검색 진단은 저장된 관측값이며 실시간 진단으로 표현하지 않는다.
+필수 필드: article_goal(string), reader({questions:array}), primary_playbook(string), secondary_playbooks(array), must_cover(array), can_omit(array), avoid(array), technical_depth(object), opening(string), body(array), closing(string), asset_needs(array).
+playbooks에 등록된 ID에서 primary_playbook과 secondary_playbooks를 선택한다. 플레이북의 제품 예문은 스타일 참고이며 facts/sources를 대신하는 사실 근거가 아니다. v3 guides와 cautions가 기존 플레이북보다 우선한다.
+구매·도입 글은 고객 문제와 원하는 변화에서 제품의 기본 정의·기능 설명·기본 구성·구매 판단으로 연결한다. 기능 비교와 기본 사용 모습은 하나의 구매 결정을 뒷받침할 수 있으므로 별도 결정으로 세어 강제로 분리하지 않는다. 근거가 필요한 기능 차이는 비교표와 공식 동작 GIF·참고 링크를 계획한다. 설명 문단별 시각적 질문을 점검하고 실제 제품 사진, 공식 기능 자료, 생성 상황 사진/한글 설명 카드의 역할을 구분한다. 같은 섹션에도 서로 다른 역할의 자산을 배치할 수 있다.
+asset_needs 항목은 id, purpose, anchor, required(boolean), mode(existing 또는 generation_request), asset_id(후보가 있을 때), prompt(생성 요청일 때)를 갖는다. 제품 실물과 스펙을 생성 이미지로 입증하지 않는다. 후보는 assets에 제공된 것만 선택한다. 초안의 이미지 위치는 Need ID로 계획하고 승인 전 이미지는 자리 표시자로 남긴다. 본문 편집 확정 후 확보·제작·검토한다. 공식 자료가 없는 문단은 시각적 질문에 따라 회의 상황 사진 또는 한글 설명 카드를 계획하며, 실제 제품 구조·기능 동작의 증거는 생성 이미지로 대체하지 않는다. 인사·연결 문장·같은 시각적 질문의 반복은 새 이미지 생략이나 기존 자산 연결 이유를 기록한다.

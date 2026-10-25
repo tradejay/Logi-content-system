@@ -1,0 +1,182 @@
+knowledge_id: KNW-PROD-LOGI-MEETUP2
+name: "Logitech MeetUp 2"
+vendor: "Logitech"
+knowledge_type: product
+status: VERIFIED
+last_verified: "2026-09-23"
+
+overview:
+  tier: "huddle_and_small_room"
+  form_factor: "All-in-One USB Video Bar (4K 카메라, 6개 MEMS 마이크, 55mm 스피커, 온디바이스 AI 통합)"
+  target_room_size: "3~5인 허들룸, 소형 미팅룸, 폰부스 (최대 6인)"
+
+scope:
+  applies_to:
+    - LOGI-MEETUP-2
+  does_not_imply:
+    - Rally Bar / Rally Bar Mini와 같은 듀얼 렌즈(AI Viewfinder)를 탑재함
+    - Rally Mic Pod 또는 외장 마이크 확장을 지원함 (외장 마이크 확장 불가)
+    - 어플라이언스 단독 구동 모드 지원 (USB BYOD / PC 연결 전용)
+
+facts:
+  - id: FACT-MU2-001
+    subject: MeetUp2.Camera
+    property: diagonal_field_of_view
+    canonical_property: field_of_view
+    value: 120.0
+    unit: °
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "카메라 사양"
+        section: "대각선 시야각 (DFOV)"
+
+  - id: FACT-MU2-002
+    subject: MeetUp2.Camera
+    property: horizontal_field_of_view
+    canonical_property: field_of_view
+    value: 113.0
+    unit: °
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "카메라 사양"
+        section: "수평 시야각 (HFOV)"
+
+  - id: FACT-MU2-003
+    subject: MeetUp2.Camera
+    property: vertical_field_of_view
+    canonical_property: field_of_view
+    value: 80.0
+    unit: °
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "카메라 사양"
+        section: "수직 시야각 (VFOV)"
+
+  - id: FACT-MU2-004
+    subject: MeetUp2.Camera
+    property: digital_zoom
+    canonical_property: optical_zoom
+    value: 4.0
+    unit: 배
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "카메라 사양"
+        section: "디지털 줌"
+
+  - id: FACT-MU2-005
+    subject: MeetUp2.Microphone
+    property: microphone_count
+    canonical_property: microphone_pickup_range
+    value: 6.0
+    unit: 개
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "오디오 사양"
+        section: "마이크"
+
+  - id: FACT-MU2-006
+    subject: MeetUp2.Microphone
+    property: microphone_pickup_range
+    canonical_property: microphone_pickup_range
+    value: 7.0
+    unit: m
+    does_not_imply:
+      - 소형 회의실(3~5인) 권장 범위를 초과하여 15인 이상 대형룸 단독 사용 권장
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "오디오 사양"
+        section: "수음 범위"
+
+  - id: FACT-MU2-007
+    subject: MeetUp2.Speaker
+    property: speaker_driver_size
+    value: 55.0
+    unit: mm
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "오디오 사양"
+        section: "풀레인지 스피커"
+
+  - id: FACT-MU2-008
+    subject: MeetUp2.Dimensions
+    property: width
+    value: 469.2
+    unit: mm
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "가로"
+
+  - id: FACT-MU2-009
+    subject: MeetUp2.Dimensions
+    property: weight
+    value: 1.8
+    unit: kg
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "무게"
+
+  - id: FACT-MU2-010
+    subject: MeetUp2.AI
+    property: rightsight_version
+    value: 2.0
+    unit: version
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "RightSense™ AI 기술"
+        section: "RightSight"
+
+  - id: FACT-MU2-011
+    subject: MeetUp2.Connectivity
+    property: active_usb_cable_length
+    value: 5.0
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_ACTIVE_USB_CABLE
+      locator:
+        heading: "제품 사양"
+        section: "길이"
+
+  - id: FACT-MU2-012
+    subject: MeetUp2.Room
+    property: min_operating_distance
+    canonical_property: recommended_distance
+    value: 1.0
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "허들룸 배치 권장 기준"
+
+  - id: FACT-MU2-013
+    subject: MeetUp2.Room
+    property: recommended_speaker_distance
+    canonical_property: recommended_distance
+    value: 4.5
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "음향 유효 반경"
+
+  - id: FACT-MU2-014
+    subject: MeetUp2.Power
+    property: voltage
+    value: 19.0
+    unit: V
+    source:
+      id: SRC-LOGI-LOGI_MEETUP_2
+      locator:
+        heading: "포트 및 인터페이스"
+        section: "전원"

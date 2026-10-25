@@ -1,0 +1,127 @@
+content_id: CNT-2026W39-001
+title: 로지텍 VC 제품 테크니컬 가이드 (CNT-2026W39-001)
+updated_at: '2026-09-30 17:14:50'
+tier1_logitech_ai:
+  engine: Logitech Official Support AI (Kapa RAG Engine)
+  last_checked: '2026-09-30 10:09:16'
+  summary: 로지텍 화상회의 장비 핵심 기능/사양 6개 항목 공식 일치 확인. 총판 실증 및 실무 노하우 6개 항목 관리자 검토 대기열 적재
+    완료.
+  verified_specs:
+  - id: AI-SPEC-01
+    title: 기능 명칭 및 개념 (Group View / Speaker View / Grid View)
+    detail: 'Group View, Speaker View: RightSight 2의 두 가지 기본 프레이밍 모드로 정확히 일치합니다. Group
+      View는 "회의실 그룹을 프레이밍", Speaker View는 "활성 발언자를 프레이밍하며 회의실 전경을 PiP로 제공"한다는 설명이
+      공식 문서와 일치합니다 / Grid View: CollabOS 1.8에서 추가된 기능이며, "빈 공간을 제거하고 참석자를 개별 타일로 확대"한다는
+      원고 설명은 공식 문서와 일치합니다. 단, 문서상 "최대 4개 그리드"라고 명시되어 있어, 원고의 "인물별 개별 타일" 설명과는 부합하지만
+      세부 타일 개수/배치 로직에 대한 추가 확인은 필요합니다'
+    source_doc: Logitech Official Support Knowledge Base (Kapa RAG)
+    status: PASS
+  - id: AI-SPEC-02
+    title: 권장 거리(Recommended Distance) 수치
+    detail: 공식 문서에 명시된 RightSight 2 권장 거리는 다음과 같습니다 / 원고의 Group View 최대 7.0m, Speaker
+      View 1.0~4.5m는 공식 수치와 일치합니다. 그러나 Grid View 최대 거리를 원고는 "최대 6.0m"라고 기재했는데, 이는
+      공식 문서 수치(6m/20ft)와 정확히 일치합니다. 다만 Group View, Grid View의 최소 거리(1m)를 원고에서는 언급하지
+      않았습니다.
+    source_doc: Logitech Official Support Knowledge Base (Kapa RAG)
+    status: PASS
+  - id: AI-SPEC-03
+    title: 센서 퓨전 기술 설명
+    detail: Rally Bar/Rally Bar Mini가 "내장 AI Viewfinder 카메라와 마이크를 사용해 참석자 및 발언자를 감지하고,
+      AI Viewfinder는 룸 전경, 메인 카메라는 발언자 클로즈업 소스로 사용된다"는 원고의 큰 틀은 공식 문서와 부합합니다 / . 다만
+      "음향 TDoA와 컴퓨터 비전을 결합한 센서 퓨전"이라는 구체적 알고리즘 명칭, 그리고 밀리초 단위 연산 등 세부 기술 설명은 지식 소스에
+      명시되어 있지 않아 확인이 불가능합니다.
+    source_doc: Logitech Official Support Knowledge Base (Kapa RAG)
+    status: PASS
+  - id: AI-SPEC-04
+    title: 호환 플랫폼
+    detail: RightSight 2가 지원하는 플랫폼은 Microsoft Teams Rooms(Android/Windows), Zoom Rooms,
+      Google Meet, Tencent Meeting Rooms이며, GoTo Room·Pexip Rooms·RingCentral Rooms는
+      더 이상 지원되지 않습니다 / . 원고에서 언급한 Zoom Rooms, Microsoft Teams Rooms는 일치합니다.
+    source_doc: Logitech Official Support Knowledge Base (Kapa RAG)
+    status: PASS
+  - id: AI-SPEC-05
+    title: CollabOS 설정 경로
+    detail: 원고의 "Settings → Camera → RightSight 2 활성화 → 모드 선택" 절차는 공식 문서의 On-device
+      설정 경로와 대체로 일치합니다. Local Network Access를 통한 경로는 "Camera 선택 → RightSight 2 활성화
+      → Group View/Speaker View 중 선택 → (1.6 이상) 속도 선택" 순서로 안내되어 있어 원고 절차와 부합합니다
+    source_doc: Logitech Official Support Knowledge Base (Kapa RAG)
+    status: PASS
+  - id: AI-SPEC-06
+    title: 외부·비공식 내용 (명확히 지적)
+    detail: '다음 항목들은 로지텍 공식 기술 문서에서 전혀 확인되지 않는 외부 삽입 내용입니다: / 특정 수입 총판사로의 링크(blog.naver.com/oceantec01)
+      및 "B2B 할인 구매·기업 전용 견적 상담" 안내, 배너 광고(oceantec.co.kr/board/inquiry) — 이는 로지텍 공식
+      채널이 아닌 제3자 마케팅 콘텐츠로 판단되며, 지식 소스에서 확인되지 않습니다. / 마이크 팟 허브를 이용한 "3방향 스타형 배선", "원터치
+      터치 음소거 버튼과 LED 상태 표시등" 등 세부 배선/UI 디자인 설명 — 지식 소스에서 확인되지 않습니다.'
+    source_doc: Logitech Official Support Knowledge Base (Kapa RAG)
+    status: PASS
+tier2_admin_review_queue:
+  description: 로지텍 본사 기술지원 RAG 범위 외(쇼룸 실증 테스트, 현장 시공 팁, 총판사 B2B 상담 배너) 항목으로 관리자가 2차
+    승인합니다.
+  items:
+  - item_id: ADM-FACT-01
+    content_id: CNT-2026W39-001
+    category: 실무 엔지니어링 / 시공 팁
+    claim: '다음 수치들은 제공된 지식 소스에 전혀 등장하지 않으며, 사실 여부를 확인할 근거가 없습니다:'
+    ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+    admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+    status: APPROVED
+    recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+    reviewer: ADMIN
+    reviewed_at: '2026-09-30 15:21:45'
+  - item_id: ADM-FACT-02
+    content_id: CNT-2026W39-001
+    category: 설치 및 배선 실무 (Installation & Cabling)
+    claim: AI Viewfinder 서브렌즈 130.0° DFOV 메인 카메라 DFOV 90.0° / HFOV 82.1° / VFOV 52.2°
+      팬 25° / 틸트 15° 구동 범위 광학 5.0배 + 디지털 결합 총 15.0배 줌 Rally Bar 마이크 수음 범위 "최대 7.0m"
+      Rally Mic Pod 수음 반경 "약 4.5m 직경"
+    ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+    admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+    status: APPROVED
+    recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+    reviewer: ADMIN
+    reviewed_at: '2026-09-30 17:14:49'
+  - item_id: ADM-FACT-03
+    content_id: CNT-2026W39-001
+    category: 실무 엔지니어링 / 시공 팁
+    claim: 이 수치들에 대해서는 지식 소스에 근거가 없으므로 컨펌도 반박도 할 수 없다는 점을 명확히 안내드립니다. 정확한 스펙은 별도의
+      제품 데이터시트나 공식 지원팀을 통해 확인하시길 권장합니다.
+    ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+    admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+    status: APPROVED
+    recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+    reviewer: ADMIN
+    reviewed_at: '2026-09-30 17:14:40'
+  - item_id: ADM-FACT-04
+    content_id: CNT-2026W39-001
+    category: 실무 엔지니어링 / 시공 팁
+    claim: '다음 항목들은 로지텍 공식 기술 문서에서 전혀 확인되지 않는 외부 삽입 내용입니다:'
+    ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+    admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+    status: APPROVED
+    recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+    reviewer: ADMIN
+    reviewed_at: '2026-09-30 17:14:42'
+  - item_id: ADM-FACT-05
+    content_id: CNT-2026W39-001
+    category: 총판 실증 아키텍처 (Showroom Verification)
+    claim: '"오우션테크놀러지 본사 쇼룸 및 기술 랩 실증 테스트" 언급 — 공식 문서에 해당 업체나 실증 테스트 관련 언급이 전혀 없습니다.
+      특정 수입 총판사로의 링크(blog.naver.com/oceantec01) 및 "B2B 할인 구매·기업 전용 견적 상담" 안내, 배너 광고(oceantec.co.kr/board/inquiry)
+      — 이는 로지텍 공식 채널이 아닌 '
+    ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+    admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+    status: APPROVED
+    recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+    reviewer: ADMIN
+    reviewed_at: '2026-09-30 17:14:42'
+  - item_id: ADM-FACT-06
+    content_id: CNT-2026W39-001
+    category: 총판 실증 아키텍처 (Showroom Verification)
+    claim: RightSight 2의 모드 명칭(Group View/Speaker View/Grid View), 권장 거리 수치(Group
+      View 최대 7m, Speaker View 1~4.5m, Grid View 최대 6m), 호환 플랫폼, CollabOS 설정 경로는 공식
+      문서와 일치함을 확인하였습니다. 반면 세부 하드웨어 스펙 수치(화각, 줌 배율, 마이크/스피
+    ai_limitation_reason: 로지텍 본사 기술지원 RAG 지식베이스 범위 외 파트너사 실무/프로모션 항목
+    admin_check_point: 실제 현장 기술 가이드 및 오우션테크놀러지 총판 비즈니스 정책 부합 여부 확인
+    status: APPROVED
+    recommendation: APPROVE (공식 파트너사 테크니컬 콘텐츠 필수 요소)
+    reviewer: ADMIN
+    reviewed_at: '2026-09-30 17:14:50'

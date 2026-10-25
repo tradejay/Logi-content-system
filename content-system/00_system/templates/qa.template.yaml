@@ -1,0 +1,26 @@
+content_id: CNT-YYYYWww-NNN
+auditor_role: QA_AI
+audited_at: "YYYY-MM-DDTHH:MM:SS"
+
+verdict: PASS # PASS | REVISION_REQUIRED | BLOCKED
+overall_score: 92
+
+scores:
+  brief_fidelity: 9          # Brief 지침 및 필수 질문 충실도 (10점 만점)
+  technical_accuracy: 10     # 기술 용어 및 하드웨어 스펙 정확성
+  evidence_validity: 9       # 공인 출처(E1~E4) 뒷받침 여부
+  layer_separation: 9        # 사실(Fact), 테스트, 해석의 분리
+  intent_fulfillment: 9      # 검색 의도에 대한 명쾌한 솔루션 제공
+  keyword_density: 9         # 키워드 스터핑 없는 자연스러운 문맥
+  tone_advertorial: 9        # 70% 이상 정보성 유지 및 한계 기재
+  visual_structure: 9        # 표/다이어그램 배치 가독성
+  cta_fit: 9                 # 퍼널 단계에 맞는 소프트 CTA
+  missing_evidence_check: 10 # 무근거 날조 수치 배제 여부
+
+critical_issues: []
+
+revision_requests: []
+
+missing_evidence_items: []
+
+approved_for_publish: true

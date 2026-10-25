@@ -1,0 +1,94 @@
+content_id: CNT-2026W39-005
+bindings:
+- section_id: SEC-01
+  asset_id: AST-RS2-SPEAKER-001
+  asset_type: gif
+  placement: after_lead
+  caption: 발언자가 바뀔 때 음향 위치 감지와 AI 분석으로 새 화자를 부드럽게 클로즈업하는 Speaker View 동작
+  customer_message: 원격 참석자도 회의실에서 지금 누가 말하고 있는지 즉각 알아볼 수 있어 회의 몰입도가 극대화됩니다.
+- section_id: SEC-02
+  asset_id: AST-RS2-SPEAKER-001
+  asset_type: gif
+  placement: after_lead
+  caption: 발언자가 바뀔 때 음향 위치 감지와 AI 분석으로 새 화자를 부드럽게 클로즈업하는 Speaker View 동작
+  customer_message: 원격 참석자도 회의실에서 지금 누가 말하고 있는지 즉각 알아볼 수 있어 회의 몰입도가 극대화됩니다.
+- section_id: SEC-03
+  asset_id: AST-RS2-GROUP-001
+  asset_type: gif
+  placement: after_lead
+  caption: 참석자 구성이나 위치가 달라져도 회의실 전체를 자동으로 한 화면에 맞춰주는 Group View 동작
+  customer_message: 회의 시작 전 리모컨으로 카메라 각도를 맞출 필요 없이, 참석자 전원이 자연스럽게 화면에 들어옵니다.
+- section_id: SEC-03
+  asset_id: AST-RS2-SPEAKER-001
+  asset_type: gif
+  placement: after_lead
+  caption: 발언자가 바뀔 때 음향 위치 감지와 AI 분석으로 새 화자를 부드럽게 클로즈업하는 Speaker View 동작
+  customer_message: 원격 참석자도 회의실에서 지금 누가 말하고 있는지 즉각 알아볼 수 있어 회의 몰입도가 극대화됩니다.
+- section_id: SEC-03
+  asset_id: AST-RS2-GRID-001
+  asset_type: gif
+  placement: after_lead
+  caption: 각 참석자를 개별 타일로 감지하여 균등하게 배치하는 Grid View 다인 프레이밍
+  customer_message: 테이블 끝자리에 앉은 사람도 앞자리 사람과 동일한 크기의 타일로 표시되어 회의 평등성이 확보됩니다.
+- section_id: SEC-03
+  asset_id: AST-RS2-COMPARE-001
+  asset_type: diagram
+  placement: after_lead
+  caption: 회의 목적과 룸 크기에 따라 선택하는 RightSight 2의 3대 모드 (Group / Speaker / Grid View)
+  customer_message: 전체 보고에는 Group View, 토론 회의에는 Speaker View, 동등한 참여에는 Grid View를
+    선택하면 됩니다.
+- section_id: SEC-04
+  asset_id: AST-RS2-HARDWARE-001
+  asset_type: diagram
+  placement: after_lead
+  caption: 메인 4K PTZ 카메라와 인원 감지 전용 AI 뷰파인더의 듀얼 렌즈 퓨전 아키텍처
+  customer_message: 카메라가 화자를 비추는 동안에도 AI 뷰파인더가 룸 전체를 감시하므로 움직임에 딜레이 없이 반응합니다.
+- section_id: SEC-05
+  asset_id: AST-PROD-RALLY-BAR-001
+  asset_type: image
+  placement: after_lead
+  caption: 중대형 회의실을 위한 올인원 비디오 바 로지텍 랠리바 (Rally Bar)
+  customer_message: 스피커, 빔포밍 마이크, 듀얼 카메라가 하나로 통합되어 배선과 설치가 깔끔합니다.
+- section_id: SEC-05
+  asset_id: AST-PROD-RALLY-PLUS-001
+  asset_type: image
+  placement: after_lead
+  caption: 대형 회의실을 위한 모듈형 프리미엄 VC 시스템 Logitech Rally Plus
+  customer_message: 최대 7개 마이크 팟과 독립형 듀얼 스피커로 초대형 회의 공간도 완벽하게 커버합니다.
+- section_id: SEC-06
+  asset_id: AST-PROD-RALLY-BAR-001
+  asset_type: image
+  placement: after_lead
+  caption: 중대형 회의실을 위한 올인원 비디오 바 로지텍 랠리바 (Rally Bar)
+  customer_message: 스피커, 빔포밍 마이크, 듀얼 카메라가 하나로 통합되어 배선과 설치가 깔끔합니다.
+- section_id: SEC-06
+  asset_id: AST-PROD-RALLY-PLUS-001
+  asset_type: image
+  placement: after_lead
+  caption: 대형 회의실을 위한 모듈형 프리미엄 VC 시스템 Logitech Rally Plus
+  customer_message: 최대 7개 마이크 팟과 독립형 듀얼 스피커로 초대형 회의 공간도 완벽하게 커버합니다.
+- section_id: SEC-07
+  asset_id: AST-PROD-RALLY-BAR-001
+  asset_type: image
+  placement: after_lead
+  caption: 중대형 회의실을 위한 올인원 비디오 바 로지텍 랠리바 (Rally Bar)
+  customer_message: 스피커, 빔포밍 마이크, 듀얼 카메라가 하나로 통합되어 배선과 설치가 깔끔합니다.
+- section_id: SEC-07
+  asset_id: AST-PROD-RALLY-PLUS-001
+  asset_type: image
+  placement: after_lead
+  caption: 대형 회의실을 위한 모듈형 프리미엄 VC 시스템 Logitech Rally Plus
+  customer_message: 최대 7개 마이크 팟과 독립형 듀얼 스피커로 초대형 회의 공간도 완벽하게 커버합니다.
+- section_id: SEC-08
+  asset_id: AST-PROD-RALLY-BAR-001
+  asset_type: image
+  placement: after_lead
+  caption: 중대형 회의실을 위한 올인원 비디오 바 로지텍 랠리바 (Rally Bar)
+  customer_message: 스피커, 빔포밍 마이크, 듀얼 카메라가 하나로 통합되어 배선과 설치가 깔끔합니다.
+- section_id: SEC-08
+  asset_id: AST-PROD-RALLY-PLUS-001
+  asset_type: image
+  placement: after_lead
+  caption: 대형 회의실을 위한 모듈형 프리미엄 VC 시스템 Logitech Rally Plus
+  customer_message: 최대 7개 마이크 팟과 독립형 듀얼 스피커로 초대형 회의 공간도 완벽하게 커버합니다.
+unresolved_requirements: []

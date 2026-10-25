@@ -1,0 +1,130 @@
+content_id: CNT-AUDIT-20261008-001
+batch_id: BATCH-2026W39
+status: READY_FOR_WRITING
+created_at: "2026-09-22"
+topic: "소형 회의실 허들룸 전용 올인원 카메라 세팅법"
+canonical_topic: "huddle_room_conference_camera"
+one_line_purpose: "3~5인 허들룸 및 소형 회의실에서 양옆 사람 잘림 현상을 해결하고 컴팩트하게 화상회의를 세팅하는 MeetUp 2 활용법을 안내한다."
+funnel_stage: discovery
+audience:
+  level: beginner
+  roles:
+    - IT 관리자
+    - 총무팀 담당자
+    - 스타트업 운영자
+search:
+  primary_keyword: "소형 회의실 카메라"
+  supporting_keywords:
+    - "허들룸 화상회의"
+    - "로지텍 밋업 2"
+    - "화각 120도 카메라"
+  layman_terms:
+    - "작은 회의실 카메라"
+    - "양옆 안 잘리는 웹캠"
+  technical_terms:
+    - "FOV 120°"
+    - "RightSight 2 오토프레이밍"
+    - "BYOD"
+intent:
+  - problem_solving
+  - configuration
+content_type_mix:
+  problem: 25
+  mechanism: 30
+  howto: 30
+  comparison: 10
+  review: 5
+title_candidates:
+  - "소형 회의실 카메라 고를 때 양옆 사람이 잘리지 않는 120도 초광각 세팅법"
+  - "3~5인 허들룸 화상회의 카메라 추천과 로지텍 밋업 2(MeetUp 2) 설치 가이드"
+  - "좁은 회의실에서도 답답함 없는 올인원 화상회의 카메라 배치와 음향 최적화"
+questions:
+  - "소형 회의실이나 허들룸에서는 왜 일반 웹캠을 쓰면 양옆 사람이 잘리나요?"
+  - "로지텍 밋업 2는 좁은 방에서 어떤 방식으로 모든 참석자를 한 화면에 담나요?"
+  - "케이블 하나로 노트북과 연결하는 BYOD 모드는 어떻게 구성하나요?"
+flow:
+  - "1. [HOOK] 좁은 허들룸에서 흔히 겪는 양옆 참석자 잘림 문제"
+  - "2. [CONCEPT] 120도 초광각 광학계와 일반 90도 웹캠의 비교 메커니즘"
+  - "3. [FEATURE] 로지텍 MeetUp 2 핵심 하드웨어 스펙 및 온디바이스 NPU AI"
+  - "4. [OPERATING_CONDITIONS] 소형 공간 1m~4.5m 실측 거리 기준과 왜곡 보정"
+  - "5. [PLATFORM] BYOD 단일 USB-C 케이블 배선 및 CollabOS 설정"
+  - "6. [HOWTO] TV 상/하단 마운트 및 3단계 빠른 세팅 절차"
+  - "7. [LIMITATIONS] 6인 이상 확장 시 한계점 및 마이크 확장 불가 주의사항"
+  - "8. [CTA] 회의실 면적에 맞춘 최적 카메라 화각 무료 진단 안내"
+required_sources:
+  - SRC-LOGI-LOGI_MEETUP_2
+  - SRC-LOGI-DOC-RIGHTSENSE
+  - SRC-LOGI-LOGI_ACTIVE_USB_CABLE
+product_bridge:
+  product: "Logitech MeetUp 2"
+  reason: "소형 허들룸(최대 5인)에 최적화된 120° 광각 4K 올인원 비디오 바"
+  limitations: "유효 수음 반경 4.5m로 6인 이상 중회의실에서는 랠리바 또는 추가 마이크 필요 (외장 마이크 확장 미지원)"
+cta:
+  level: soft
+  target: "당사 전문 엔지니어와 우리 회사 소형 회의실에 맞는 카메라 화각 무료 진단 상담"
+
+research_requirements_ref: RR-CNT-AUDIT-20261008-001
+
+knowledge_packs:
+  - KNW-PROD-LOGI-MEETUP2
+  - KNW-FEAT-LOGI-RIGHTSIGHT2
+  - KNW-CONC-SPEAKER-TRACKING
+
+sections:
+  - id: SEC-01
+    type: hook
+    objective: "소형 회의실에서 양옆 사람이 잘리는 문제를 독자가 실무 문제로 인식"
+    audience_question: "작은 회의실에서 양끝 좌석 인원이 화면에 다 안 나오는 이유가 무엇인가?"
+    required_knowledge: []
+
+  - id: SEC-02
+    type: concept
+    objective: "90도 일반 화각과 120도 초광각의 기하학적 차이 및 왜곡 보정 원리"
+    questions:
+      - "FOV(화각)란 무엇인가?"
+      - "초근접 거리(1m)에서 120도 광각이 왜 필수적인가?"
+      - "디지털 줌과 광학 왜곡 보정의 결합 원리"
+    required_knowledge:
+      - KNW-CONC-SPEAKER-TRACKING
+
+  - id: SEC-03
+    type: feature
+    objective: "로지텍 MeetUp 2 핵심 하드웨어 스펙과 온디바이스 NPU AI"
+    required_facts:
+      - FACT-MU2-001
+      - FACT-MU2-002
+      - FACT-MU2-003
+      - FACT-MU2-004
+      - FACT-MU2-005
+      - FACT-MU2-007
+
+  - id: SEC-04
+    type: operating_conditions
+    objective: "거리 및 공간 규모별 운영 조건"
+    required_facts:
+      - FACT-MU2-006
+      - FACT-MU2-012
+      - FACT-MU2-013
+
+  - id: SEC-05
+    type: platform
+    objective: "단일 케이블 BYOD 배선 및 화상회의 플랫폼 호환성"
+    required_facts:
+      - FACT-MU2-010
+      - FACT-MU2-011
+
+  - id: SEC-06
+    type: howto
+    objective: "설치 및 공간 세팅 3단계 가이드"
+    required_facts:
+      - FACT-MU2-008
+      - FACT-MU2-009
+
+  - id: SEC-07
+    type: product_bridge
+    objective: "제품 한계점(외장 마이크 확장 불가)과 6인 초과 룸 대체 가이드"
+
+  - id: SEC-08
+    type: cta
+    objective: "엔지니어 룸 무료 진단 컨설팅 유도"
+

@@ -1,0 +1,61 @@
+audience:
+  level: beginner
+  roles:
+  - IT 관리자
+batch_id: BATCH-2026W39
+canonical_topic: 화자추적 카메라 원리 및 15인 회의실 설정 가이드
+content_id: CNT-2026W39-999
+content_type_mix:
+  comparison: 10
+  howto: 30
+  mechanism: 35
+  problem: 20
+  review: 5
+created_at: '2026-09-22'
+cta:
+  level: soft
+  target: 사전 진단 가이드
+flow:
+- 도입
+- 원리
+- 설정
+- 한계
+- 결론
+funnel_stage: discovery
+intent:
+- problem_solving
+- mechanism
+one_line_purpose: 15인 회의실에서 로지텍 랠리바를 활용한 최적의 화자추적 구성법을 설명한다.
+product_bridge:
+  limitations: 마이크 픽업 거리
+  product: Logitech Rally Bar
+  reason: 중형 회의실 표준
+questions:
+- 화자추적 카메라는 어떤 원리로 발화자를 감지하나요?
+- 15인 회의실에서 최적의 카메라 배치는 어떻게 되나요?
+- 음향과 영상 동기화는 어떻게 유지하나요?
+required_sources:
+- SRC-LOGI-RALLYBAR
+- SRC-LOGI-RIGHTSIGHT2
+knowledge_packs:
+- KNW-FEAT-LOGI-RIGHTSIGHT2
+- KNW-PROD-LOGI-RALLYBAR
+- KNW-PLAT-ZOOM-ROOMS
+- KNW-CONC-SPEAKER-TRACKING
+search:
+  layman_terms:
+  - 사람 따라가는 카메라
+  primary_keyword: 화자추적카메라
+  supporting_keywords:
+  - 회의실 카메라
+  - 로지텍 화상회의
+  technical_terms:
+  - TDoA
+  - RightSight 2
+status: READY_FOR_QA
+title_candidates:
+- 화자추적 카메라 원리와 설정 가이드
+- 로지텍 랠리바 15인 회의실 최적 세팅법
+- 발화자를 알아서 비춰주는 화상회의 카메라 구성 팁
+topic: 로지텍 랠리바 15인 회의실 최적 세팅
+updated_at: '2026-09-23'

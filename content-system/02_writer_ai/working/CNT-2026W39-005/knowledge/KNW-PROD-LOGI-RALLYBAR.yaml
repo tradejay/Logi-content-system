@@ -1,0 +1,337 @@
+knowledge_id: KNW-PROD-LOGI-RALLYBAR
+name: "Logitech Rally Bar"
+vendor: "Logitech"
+knowledge_type: product
+status: VERIFIED
+last_verified: "2026-09-23"
+
+overview:
+  tier: "medium_to_large_room"
+  form_factor: "All-in-One Video Bar (카메라, 빔포밍 마이크, 듀얼 스피커, CollabOS 컴퓨팅 통합)"
+  target_room_size: "최대 15~20인 (기본 본체는 8~12인, Mic Pod 확장 시 15인 이상 지원)"
+
+scope:
+  applies_to:
+    - LOGI-RALLY-BAR
+  does_not_imply:
+    - Rally Bar Mini 또는 MeetUp 2가 동일한 15배 줌이나 듀얼 70mm 스피커를 가짐
+    - 내장 마이크 픽업 거리(7m)가 Speaker View 권장 동작 거리(4.5m)까지 동일하게 추적 보장됨을 의미하지 않음
+
+facts:
+  - id: FACT-RB-001
+    subject: RallyBar.Microphone
+    property: microphone_pickup_range
+    canonical_property: microphone_pickup_range
+    value: 7.0
+    unit: m
+    does_not_imply:
+      - 화자추적 Speaker View 유효거리와 동일함 (화자추적은 4.5m 권장)
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "오디오 사양"
+        section: "수음 범위"
+        url: "https://www.logitech.com/ko-kr/products/video-conferencing/conference-cameras/rally-bar.html"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-002
+    subject: RallyBar.Camera
+    property: optical_zoom
+    canonical_property: optical_zoom
+    value: 5.0
+    unit: 배
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "광학 줌"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-003
+    subject: RallyBar.Camera
+    property: total_hd_zoom
+    canonical_property: optical_zoom
+    value: 15.0
+    unit: 배
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "총 줌 배율"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-004
+    subject: RallyBar.Camera
+    property: dfov
+    value: 90.0
+    unit: °
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "대각선 화각"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-015
+    subject: RallyBar.Camera
+    property: hfov
+    value: 82.1
+    unit: °
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "수평 화각"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-016
+    subject: RallyBar.Camera
+    property: vfov
+    value: 52.2
+    unit: °
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "수직 화각"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-017
+    subject: RallyBar.Camera
+    property: pan_range
+    value: 25
+    unit: °
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "전동 팬 범위"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-018
+    subject: RallyBar.Camera
+    property: tilt_range
+    value: 15
+    unit: °
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "전동 틸트 범위"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-005
+    subject: RallyBar.AIViewfinder
+    property: dfov
+    value: 174.0
+    unit: °
+    applies_to:
+      - LOGI-RALLY-BAR
+      - LOGI-RALLY-BAR-MINI
+    prohibited_products:
+      - LOGI-MEETUP-2
+      - LOGI-MEETUP
+    does_not_imply:
+      - MeetUp 2에 동일 뷰파인더가 탑재됨
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "AI Viewfinder 화각 (Viewfinder Camera Diagonal 174°)"
+        captured_at: "2026-09-30"
+
+  - id: FACT-RB-005-HFOV
+    subject: RallyBar.AIViewfinder
+    property: hfov
+    value: 150.0
+    unit: °
+    applies_to:
+      - LOGI-RALLY-BAR
+      - LOGI-RALLY-BAR-MINI
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "카메라 사양"
+        section: "AI Viewfinder 수평 화각 (Horizontal 150°)"
+        captured_at: "2026-09-30"
+
+  - id: FACT-RB-006
+    subject: RallyBar.Speaker
+    property: driver_size
+    value: 70
+    unit: mm
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "오디오 사양"
+        section: "스피커 (우퍼/풀레인지)"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-007
+    subject: RallyBar.Speaker
+    property: speaker_rated_power
+    canonical_property: speaker_rated_power
+    value: 8
+    unit: W
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "오디오 사양"
+        section: "정격 출력"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-008
+    subject: RallyBar.Power
+    property: rated_voltage
+    value: 19
+    unit: V
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "포트 및 인터페이스"
+        section: "전원"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-009
+    subject: RallyBar.Power
+    property: rated_current
+    value: 4.74
+    unit: A
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "포트 및 인터페이스"
+        section: "전원"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-010
+    subject: RallyBar.Power
+    property: system_power_consumption
+    canonical_property: system_power_consumption
+    value: 90
+    unit: W
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "전원 사양"
+        section: "소비 전력"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-011
+    subject: RallyBar.Ports
+    property: hdmi_out_count
+    value: 2
+    unit: 개
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "포트 및 인터페이스"
+        section: "HDMI 출력"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-012
+    subject: RallyBar.Ports
+    property: hdmi_in_count
+    value: 1
+    unit: 개
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "포트 및 인터페이스"
+        section: "HDMI 입력"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-013
+    subject: RallyBar.Ports
+    property: mic_pod_pin_count
+    value: 12
+    unit: 핀
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "포트 및 인터페이스"
+        section: "마이크 팟 확장 단자"
+        captured_at: "2026-09-23"
+
+  - id: FACT-RB-014
+    subject: RallyBar.Network
+    property: wifi_standard
+    value: "802.11"
+    unit: "ac"
+    source:
+      id: SRC-LOGI-RALLYBAR
+      locator:
+        heading: "네트워크 사양"
+        section: "무선 연결"
+        captured_at: "2026-09-23"
+
+derived_knowledge:
+  - id: DKNW-RB-001
+    statement: "Rally Bar의 마이크 수음 반경(7m)은 본체 단독 사용 시 최대 8~10인 규모 룸에 적합하다."
+    derived_from:
+      - FACT-RB-001
+    derivation_type: room_suitability_inference
+    rationale: "룸 길이 8m 이상 또는 15인 이상 룸에서는 테이블 중앙까지의 음향 감쇄를 보완하기 위해 추가 마이크 팟이 필요함."
+
+optics_and_camera:
+  main_camera:
+    resolution: "최대 4K Ultra HD @ 30fps"
+    zoom: "최대 15배 HD 줌 (광학 5배 + 무손실 디지털 3배)"
+    pan_tilt: "전동 팬 ±25°, 전동 틸트 ±15°"
+    field_of_view: "대각선(DFOV) 90°, 수평(HFOV) 82.1°, 수직(VFOV) 52.2°"
+  ai_viewfinder:
+    lens_type: "고정식 보조 컴퓨터 비전 카메라"
+    field_of_view: "초광각 대각선(DFOV) 174°, 수평(HFOV) 150°"
+    function: "방 전체 인원 상시 스캔 및 안면/신체 랜드마크 추적 좌표를 메인 카메라로 전달"
+
+audio_system:
+  microphones:
+    count: 6
+    type: "디지털 MEMS 적응형 빔포밍 마이크"
+    pickup_range: "공식 7미터 (수음 반경 4.5m ~ 최대 7m)"
+    expansion: "로지텍 전용 12핀 오디오 단자 탑재, Rally Mic Pod 최대 4대까지 직렬/허브 확장 가능"
+    frequency_response: "90Hz – 16kHz"
+  speakers:
+    count: 2
+    drivers: "2x 70mm (2.7 in) 우퍼 및 풀레인지 서스펜션 드라이버"
+    power: "정격 출력 8W"
+    output: "최대 90dB SPL @ 1W, 99dB SPL @ 8.0W (1/2m 기준)"
+    technology: "특허받은 안티 바이브레이션(Anti-vibration) 서스펜션 인클로저 탑재"
+    benefit: "저음 스피커 진동이 카메라 렌즈 및 마이크로 전달되지 않아 줌 상태에서도 화면 떨림 방지"
+
+ports_and_connectivity:
+  hdmi_out: "2개 (듀얼 디스플레이 지원, CEC 기능 포함)"
+  hdmi_in: "1개 (노트북 유선 콘텐츠 공유 Ingest)"
+  usb_ports:
+    - "USB-A 3개 (주변기기 확장용)"
+    - "USB-C 1개 (호스트 PC 또는 BYOD 연결용)"
+  network: "RJ45 Gigabit Ethernet (10/100/1000 Mbps) 및 Wi-Fi 802.11ac"
+  audio_port: "로지텍 전용 12핀 마이크 팟 확장 단자 1개"
+  security: "Kensington Security Slot (켄싱턴 락 슬롯) 2개 내장"
+
+power_and_electrical:
+  input: "100-240V 자동 감지형 외장 전원 어댑터"
+  output: "19V / 4.74A (최대 정격 전력 90W)"
+
+box_contents:
+  - "Rally Bar 본체 (Graphite 또는 White)"
+  - "전원 공급 장치 (어댑터 및 AC 전원 코드)"
+  - "HDMI 1.4 케이블 (2m)"
+  - "USB-A to USB-C 3.0 케이블 (2.2m)"
+  - "무선 BLE 리모컨 (페어링 기반)"
+  - "메인 렌즈용 캡 (프라이버시 셔터)"
+  - "본체 일체형 기본 테이블 스탠드"
+
+mounting_options:
+  wall_mount: "Wall Mount for Video Bars (벽면 밀착 설치 및 하단 배선 정리 지원)"
+  tv_mount: "TV Mount for Video Bars (VESA 규격 400x400 ~ 900x600 디스플레이 상/하단 장착)"
+  table_mount: "본체 기본 내장 테이블 스탠드 활용"
+
+supported_platforms:
+  appliance_mode:
+    - "Zoom Rooms Appliance"
+    - "Microsoft Teams Rooms on Android"
+    - "Google Meet (RoomMate/CollabOS)"
+    - "Tencent Rooms"
+  usb_mode:
+    - "모든 Windows 10/11, macOS 기반 화상회의 소프트웨어 (플러그 앤 플레이)"

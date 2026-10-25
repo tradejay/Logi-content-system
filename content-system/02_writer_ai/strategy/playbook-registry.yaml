@@ -1,0 +1,168 @@
+# Playbook Registry v1.0
+playbooks:
+  - id: PB-PROBLEM-DIAGNOSIS
+    name: "Problem Diagnosis (문제 진단형)"
+    version: "1.0"
+    path: "playbooks/problem/problem-diagnosis.md"
+    category: problem
+    intents:
+      - diagnose
+      - identify_cause
+      - problem_solving
+    suitable_for:
+      - "회의실 소리가 울려요"
+      - "카메라가 사람을 못 잡아요"
+      - "마이크가 멀리서 안 들려요"
+    reader_state: "문제는 겪고 있으나 정확한 기술적 원인을 모름"
+    recommended_assets:
+      - DEMONSTRATE
+      - EXPLAIN
+    compatible_secondary:
+      - PB-TROUBLESHOOTING
+      - PB-PRODUCT-SELECTION
+
+  - id: PB-MECHANISM-EXPLAINER
+    name: "Mechanism Explainer (원리 설명형)"
+    version: "1.0"
+    path: "playbooks/explain/mechanism-explainer.md"
+    category: explain
+    intents:
+      - explain
+      - understand_mechanism
+      - concept_understanding
+    suitable_for:
+      - "화자 추적 카메라 원리"
+      - "RightSight 2란?"
+      - "빔포밍 마이크 동작 방식"
+    reader_state: "기능을 검색했거나 도입을 고려 중이나 동작 원리와 차이를 모름"
+    recommended_assets:
+      - DEMONSTRATE
+      - EXPLAIN
+      - COMPARE
+    compatible_secondary:
+      - PB-PRODUCT-SELECTION
+      - PB-CONFIG-HOWTO
+      - PB-PRODUCT-COMPARISON
+
+  - id: PB-CONFIG-HOWTO
+    name: "Configuration How-to (설정 작업형)"
+    version: "1.0"
+    path: "playbooks/operation/configuration-howto.md"
+    category: operation
+    intents:
+      - configure
+      - setup
+      - enable
+      - howto
+    suitable_for:
+      - "RightSight 2 설정법"
+      - "Zoom Rooms 카메라 제어 설정"
+      - "Logitech Sync 프로비저닝"
+    reader_state: "장비는 보유 중이며 올바른 설정 메뉴와 옵션을 찾고 있음"
+    recommended_assets:
+      - SCREENSHOT
+      - PROVE
+    compatible_secondary:
+      - PB-TROUBLESHOOTING
+      - PB-PLATFORM-INTEGRATION
+
+  - id: PB-PRODUCT-COMPARISON
+    name: "Product Comparison (제품 대조 비교형)"
+    version: "1.0"
+    path: "playbooks/selection/product-comparison.md"
+    category: selection
+    intents:
+      - compare
+      - evaluate
+    suitable_for:
+      - "Rally Bar vs MeetUp 2 비교"
+      - "Rally Bar Mini vs Rally Bar"
+    reader_state: "2개 이상의 후보 제품을 알고 있으나 우리 환경에 어떤 것이 맞는지 차이를 모름"
+    recommended_assets:
+      - COMPARE
+      - PROVE
+    compatible_secondary:
+      - PB-PRODUCT-SELECTION
+      - PB-MECHANISM-EXPLAINER
+
+  - id: PB-PRODUCT-SELECTION
+    name: "Product Selection (룸 환경별 제품 선택형)"
+    version: "1.0"
+    path: "playbooks/selection/product-selection.md"
+    category: selection
+    intents:
+      - select
+      - purchase_guide
+      - room_fit
+    suitable_for:
+      - "우리 회의실에 맞는 화상 카메라 선택 가이드"
+      - "10인 회의실 장비 추천"
+    reader_state: "내 회의실 환경(크기, 인원, 마감재)에 어떤 스펙과 장비가 맞는지 찾고 있음"
+    recommended_assets:
+      - COMPARE
+      - PROVE
+      - DEMONSTRATE
+    compatible_secondary:
+      - PB-PRODUCT-COMPARISON
+      - PB-MECHANISM-EXPLAINER
+
+  - id: PB-FIELD-REVIEW
+    name: "Field Review / Test (현장 실측 테스트형)"
+    version: "1.0"
+    path: "playbooks/field/field-review.md"
+    category: field
+    intents:
+      - review
+      - test_report
+      - field_test
+    suitable_for:
+      - "Rally Bar 실환경 화자추적 테스트 후기"
+      - "통유리 회의실 마이크 수음 실측 리포트"
+    reader_state: "공식 카탈로그 스펙 외에 실제 현장에서의 동작 한계와 체감을 알고 싶어 함"
+    recommended_assets:
+      - DEMONSTRATE
+      - PROVE
+    compatible_secondary:
+      - PB-PRODUCT-SELECTION
+      - PB-TROUBLESHOOTING
+
+  - id: PB-TROUBLESHOOTING
+    name: "Troubleshooting (장애 해결형)"
+    version: "1.0"
+    path: "playbooks/problem/troubleshooting.md"
+    category: problem
+    intents:
+      - fix
+      - troubleshoot
+      - error_recovery
+    suitable_for:
+      - "화자추적 안 될 때 점검 순서"
+      - "마이크 인식 끊김 해결"
+    reader_state: "기존에 잘 쓰던 기능이 오작동하거나 멈춰서 당장 회의 진행이 급함"
+    recommended_assets:
+      - SCREENSHOT
+      - PROVE
+    compatible_secondary:
+      - PB-PROBLEM-DIAGNOSIS
+      - PB-CONFIG-HOWTO
+
+  - id: PB-PLATFORM-INTEGRATION
+    name: "Platform Integration (플랫폼 연동형)"
+    version: "1.0"
+    path: "playbooks/platform/platform-integration.md"
+    category: platform
+    intents:
+      - integrate
+      - platform_compatibility
+    suitable_for:
+      - "Zoom Rooms + Rally Bar 연동"
+      - "Teams Rooms IntelliFrame 연동"
+      - "BYOD 노트북 직결 모드"
+    reader_state: "특정 화상회의 플랫폼(Zoom, Teams)을 쓰고 있으며 하드웨어와의 연동 범위가 궁금함"
+    recommended_assets:
+      - EXPLAIN
+      - SCREENSHOT
+      - PROVE
+    compatible_secondary:
+      - PB-CONFIG-HOWTO
+      - PB-PRODUCT-SELECTION

@@ -1,0 +1,42 @@
+content_id: CNT-2026W39-005
+strategy_version: 1
+created_at: '2026-09-23'
+primary_playbook: PB-PRODUCT-SELECTION
+secondary_playbooks:
+- PB-PRODUCT-COMPARISON
+- PB-CONFIG-HOWTO
+reader:
+  state: 15~30인 이상 대형 이사회실을 구축해야 하는데 올인원 비디오 바의 물리적 한계에 부딪힘
+  questions:
+  - 왜 15인 이상 대형 룸에서는 올인원 비디오 바 하나로 커버하기 어려운가요?
+  - 카메라, 스피커, 마이크가 분리된 모듈형 시스템(Rally Plus)의 장점은 무엇인가요?
+  - Table Hub와 Display Hub로 테이블-디스플레이 사이 배선을 어떻게 단순화하나요?
+  - 대형 룸에서 듀얼 디스플레이와 다중 마이크를 구축할 때 필수 고려사항은 무엇인가요?
+  - 우리 회사 임원 회의실 규모에 맞는 최적의 시스템 레이아웃은 어떻게 짜야 하나요?
+article_goal: 15~30인 대형 회의실에서 분리형 카메라와 듀얼 스피커, 허브 배선으로 완성하는 랠리 플러스 설계법을 제시한다.
+suggested_flow:
+- 대형 이사회실의 특수성 (먼 거리, 큰 스피커 볼륨, 다수 참석자) 및 올인원 바의 한계
+- 모듈형 분리 시스템 로지텍 랠리 플러스(Rally Plus) 아키텍처
+- Table Hub와 Display Hub를 통한 배선 정리 (Cat6A 단일 케이블 링크)
+- '대형 룸 음향 설계: 듀얼 독립 스피커와 다중 마이크 팟 확장'
+- 이사회실 구축 체크리스트 및 엔지니어링 1:1 방문 실사 컨설팅 안내
+must_cover:
+- 15~30인 대형 회의실에서 일체형 바의 물리적 한계
+- Logitech Rally Plus 분리형 모듈 아키텍처
+- Table Hub & Display Hub 배선 단순화
+- 독립 듀얼 스피커와 확장 마이크 팟 구성
+can_omit:
+- 소형 허들룸 전용 액세서리 스펙
+- 나사 규격 및 패키징 박스 크기
+avoid:
+- 기계적 레이블 박스
+- 소형 룸 장비와 혼동 유발
+- 근거 없는 찬양 일색 문체
+technical_depth:
+  overall: advanced
+asset_strategy:
+  preferred_roles:
+  - EXPLAIN
+  - PROVE
+  - COMPARE
+cta_intent: boardroom_site_survey

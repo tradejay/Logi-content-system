@@ -1,0 +1,19 @@
+sources:
+- id: SRC-LOGI-RALLYBAR
+  title: Logitech Rally Bar 공식 기술 사양서
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-RALLYBAR.md
+- id: SRC-LOGI-RIGHTSIGHT2
+  title: Logitech RightSight 2 자동 프레이밍 및 화자 추적 기술 백서
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-RIGHTSIGHT2.md
+- id: SRC-ZOOM-CAMERA-MODES
+  title: Zoom Rooms 지능형 카메라 제어 및 프레이밍 모드 설정 가이드
+  vendor: Zoom
+  evidence_level: E2
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-ZOOM-CAMERA-MODES.md

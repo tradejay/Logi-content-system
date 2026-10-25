@@ -1,0 +1,19 @@
+batch_id: BATCH-YYYYWww
+
+week:
+  year: 2026
+  number: 39
+
+status: ACTIVE # ACTIVE | COMPLETED | ARCHIVED
+
+targets:
+  keyword_briefs: 8
+  drafts: 4
+  publish: 4
+
+contents:
+  - CNT-YYYYWww-001
+  - CNT-YYYYWww-002
+
+started_at: "YYYY-MM-DD"
+closed_at: null

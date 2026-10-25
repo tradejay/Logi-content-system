@@ -1,0 +1,51 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "ProviderSearchResultSchema"
+description: "Standard canonical schema for search results returned by any source provider"
+type: object
+required:
+  - query
+  - provider_id
+  - results
+
+properties:
+  query:
+    type: string
+    description: "The search query executed"
+
+  provider_id:
+    type: string
+    description: "Provider identifier that produced these results"
+
+  results:
+    type: array
+    items:
+      type: object
+      required:
+        - document_id
+        - title
+        - document_type
+        - snippet
+        - source_location
+      properties:
+        document_id:
+          type: string
+        title:
+          type: string
+        document_type:
+          type: string
+        section:
+          type: string
+        snippet:
+          type: string
+        source_location:
+          type: string
+        version:
+          type: string
+        published_at:
+          type: string
+        updated_at:
+          type: string
+        relevance_score:
+          type: number
+          minimum: 0.0
+          maximum: 1.0

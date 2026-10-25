@@ -1,0 +1,19 @@
+sources:
+- id: SRC-LOGI-LOGI_RALLY_MIC_POD
+  title: Logitech Rally Mic Pod (랠리 마이크 팟) 공식 기술 데이터시트
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-LOGI_RALLY_MIC_POD.md
+- id: SRC-LOGI-DOC-MIC-POD-COMPAT
+  title: Logitech 랠리 마이크 팟 연결 및 토폴로지 가이드
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-DOC-MIC-POD-COMPAT.md
+- id: SRC-LOGI-LOGI_RALLY_MIC_POD_HUB
+  title: Logitech Rally Mic Pod Hub (랠리 마이크 팟 허브) 공식 기술 데이터시트
+  vendor: Logitech
+  evidence_level: E1
+  last_verified: '2026-09-22'
+  local_path: sources/SRC-LOGI-LOGI_RALLY_MIC_POD_HUB.md

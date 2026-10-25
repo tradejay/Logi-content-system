@@ -1,0 +1,313 @@
+{
+  "reviewed_at": "2026-10-06T05:56:25.283852+00:00",
+  "version": "1.1.0",
+  "findings": [
+    {
+      "template_id": "product-introduction",
+      "finding": "기본 설명·주의사항이 고정된 독립 장으로 읽힐 수 있음",
+      "applied_change": "필요한 위치의 역할로 변경; 독립 개요 장·주의사항 장 강제 제거",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 82,
+          "excerpt": "고객 문제보다 앞에 모든 용어 정의를 모아 놓는 고정 개요 장은 요구하지 않는다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 66,
+          "excerpt": "한 덩어리는 한 질문을 해결한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "product-introduction",
+      "finding": "시각 자산 지시가 공통 슬롯 수준에 머무름",
+      "applied_change": "각 설명 슬롯에 시각적 질문·AssetNeed 필드·공식 자료 우선·생성 금지 범위를 연결",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 40,
+          "excerpt": "실제 제품 소개는 공식 제품 사진, 실제 기능 설명은 공식 GIF·영상, 고객 문제와 환경은 생성 이미지로 역할을 구분한다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 9,
+          "excerpt": "각 이미지 요구는 `need_id`, `question_id`, `section_key`, `placement_anchor`, `purpose`, `asset_type`, `entity_ids`, `fact_ids`, `required`, `fallback`을 가진다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "product-introduction",
+      "finding": "제품 소개에서 기능·모드 비교를 선택할 수 없었음",
+      "applied_change": "단일 구매 판단에 필요한 기능 비교를 조건부 추가; 배선 상세 강제 제거",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 37,
+          "excerpt": "구매·도입 글은 **고객 장면과 불편 → 필요한 변화 → 기능의 쉬운 설명과 근거 → 기본 구성과 사용 모습 → 적용 조건 → 구매·재사용 결론**으로 전개한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 72,
+          "excerpt": "| 비교 | 둘 이상의 선택지를 비교 | 동일 기준, 확인된 차이, 적합 조건과 한계 |",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "product-comparison",
+      "finding": "기본 설명·주의사항이 고정된 독립 장으로 읽힐 수 있음",
+      "applied_change": "필요한 위치의 역할로 변경; 독립 개요 장·주의사항 장 강제 제거",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 82,
+          "excerpt": "고객 문제보다 앞에 모든 용어 정의를 모아 놓는 고정 개요 장은 요구하지 않는다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 66,
+          "excerpt": "한 덩어리는 한 질문을 해결한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "product-comparison",
+      "finding": "시각 자산 지시가 공통 슬롯 수준에 머무름",
+      "applied_change": "각 설명 슬롯에 시각적 질문·AssetNeed 필드·공식 자료 우선·생성 금지 범위를 연결",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 40,
+          "excerpt": "실제 제품 소개는 공식 제품 사진, 실제 기능 설명은 공식 GIF·영상, 고객 문제와 환경은 생성 이미지로 역할을 구분한다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 9,
+          "excerpt": "각 이미지 요구는 `need_id`, `question_id`, `section_key`, `placement_anchor`, `purpose`, `asset_type`, `entity_ids`, `fact_ids`, `required`, `fallback`을 가진다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "product-comparison",
+      "finding": "비교군과 비교표의 선택 조건이 약했음",
+      "applied_change": "동일 결정 질문·공통 전제·기준을 명시하고 표는 이해에 필요한 경우 선택",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 72,
+          "excerpt": "| 비교 | 둘 이상의 선택지를 비교 | 동일 기준, 확인된 차이, 적합 조건과 한계 |",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 37,
+          "excerpt": "구매·도입 글은 **고객 장면과 불편 → 필요한 변화 → 기능의 쉬운 설명과 근거 → 기본 구성과 사용 모습 → 적용 조건 → 구매·재사용 결론**으로 전개한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "room-configuration",
+      "finding": "기본 설명·주의사항이 고정된 독립 장으로 읽힐 수 있음",
+      "applied_change": "필요한 위치의 역할로 변경; 독립 개요 장·주의사항 장 강제 제거",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 82,
+          "excerpt": "고객 문제보다 앞에 모든 용어 정의를 모아 놓는 고정 개요 장은 요구하지 않는다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 66,
+          "excerpt": "한 덩어리는 한 질문을 해결한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "room-configuration",
+      "finding": "시각 자산 지시가 공통 슬롯 수준에 머무름",
+      "applied_change": "각 설명 슬롯에 시각적 질문·AssetNeed 필드·공식 자료 우선·생성 금지 범위를 연결",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 40,
+          "excerpt": "실제 제품 소개는 공식 제품 사진, 실제 기능 설명은 공식 GIF·영상, 고객 문제와 환경은 생성 이미지로 역할을 구분한다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 9,
+          "excerpt": "각 이미지 요구는 `need_id`, `question_id`, `section_key`, `placement_anchor`, `purpose`, `asset_type`, `entity_ids`, `fact_ids`, `required`, `fallback`을 가진다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "room-configuration",
+      "finding": "구매·도입 설명과 설치 절차가 하나의 순서로 섞임",
+      "applied_change": "같은 템플릿 안에 구매·도입/설치 의도별 배열 지침을 구분",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 37,
+          "excerpt": "구매·도입 글은 **고객 장면과 불편 → 필요한 변화 → 기능의 쉬운 설명과 근거 → 기본 구성과 사용 모습 → 적용 조건 → 구매·재사용 결론**으로 전개한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 73,
+          "excerpt": "| 설정 방법 | 독자가 직접 작업해야 함 | 제품/버전, 공식 메뉴·절차, 확인 방법 |",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "feature-explanation",
+      "finding": "기본 설명·주의사항이 고정된 독립 장으로 읽힐 수 있음",
+      "applied_change": "필요한 위치의 역할로 변경; 독립 개요 장·주의사항 장 강제 제거",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 82,
+          "excerpt": "고객 문제보다 앞에 모든 용어 정의를 모아 놓는 고정 개요 장은 요구하지 않는다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 66,
+          "excerpt": "한 덩어리는 한 질문을 해결한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "feature-explanation",
+      "finding": "시각 자산 지시가 공통 슬롯 수준에 머무름",
+      "applied_change": "각 설명 슬롯에 시각적 질문·AssetNeed 필드·공식 자료 우선·생성 금지 범위를 연결",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 40,
+          "excerpt": "실제 제품 소개는 공식 제품 사진, 실제 기능 설명은 공식 GIF·영상, 고객 문제와 환경은 생성 이미지로 역할을 구분한다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 9,
+          "excerpt": "각 이미지 요구는 `need_id`, `question_id`, `section_key`, `placement_anchor`, `purpose`, `asset_type`, `entity_ids`, `fact_ids`, `required`, `fallback`을 가진다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "feature-explanation",
+      "finding": "기능 설명이면 항상 원리 설명을 필수로 요구했음",
+      "applied_change": "원리 모듈을 질문·근거에 따라 선택하도록 변경",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 70,
+          "excerpt": "| 원리 설명 | 왜/어떻게 작동하는가가 핵심 | 공식 확인된 입력·동작·결과·확인 범위 |",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 66,
+          "excerpt": "다음 모듈을 필요에 따라 선택한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "troubleshooting",
+      "finding": "기본 설명·주의사항이 고정된 독립 장으로 읽힐 수 있음",
+      "applied_change": "필요한 위치의 역할로 변경; 독립 개요 장·주의사항 장 강제 제거",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 82,
+          "excerpt": "고객 문제보다 앞에 모든 용어 정의를 모아 놓는 고정 개요 장은 요구하지 않는다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 66,
+          "excerpt": "한 덩어리는 한 질문을 해결한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "troubleshooting",
+      "finding": "시각 자산 지시가 공통 슬롯 수준에 머무름",
+      "applied_change": "각 설명 슬롯에 시각적 질문·AssetNeed 필드·공식 자료 우선·생성 금지 범위를 연결",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 40,
+          "excerpt": "실제 제품 소개는 공식 제품 사진, 실제 기능 설명은 공식 GIF·영상, 고객 문제와 환경은 생성 이미지로 역할을 구분한다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/04-images.md",
+          "line": 9,
+          "excerpt": "각 이미지 요구는 `need_id`, `question_id`, `section_key`, `placement_anchor`, `purpose`, `asset_type`, `entity_ids`, `fact_ids`, `required`, `fallback`을 가진다.",
+          "sha256": "4f094347cd37ec437251c0821c14ceb1bc45c7103e4b63a4f3a3be7cc3c47a9e"
+        }
+      ],
+      "status": "applied_to_design"
+    },
+    {
+      "template_id": "troubleshooting",
+      "finding": "원인별 조치만 강조돼 제품·버전과 정상 확인·구매 비강요 기준이 약했음",
+      "applied_change": "공식 절차·제품/버전·조치 후 확인·미해결 기록과 다음 행동을 명시",
+      "sources": [
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 73,
+          "excerpt": "| 설정 방법 | 독자가 직접 작업해야 함 | 제품/버전, 공식 메뉴·절차, 확인 방법 |",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/rules/reader-and-style.md",
+          "line": 17,
+          "excerpt": "문제가 설정·배치 조정으로 해결되면 구매를 강요하지 않는다.",
+          "sha256": "51d874e1b9ac1d64d99ba7db925e0c40c2daf0948019ed19865204ce7c742c40"
+        },
+        {
+          "path": "content-system/02_writer_ai/authoring/03-opening-body-closing.md",
+          "line": 96,
+          "excerpt": "초반 질문에 대한 답을 짧게 회수한다.",
+          "sha256": "2bb3c241a4a995367a4df1d40a8c2619ea8210dafbede84f5539280e9dd97454"
+        }
+      ],
+      "status": "applied_to_design"
+    }
+  ],
+  "source_basis": "authoring MD 현재 본문; 실행 입력의 활성 릴리스는 변경하지 않음"
+}

@@ -1,0 +1,19 @@
+knowledge_packs:
+- id: KNW-PROD-LOGI-MEETUP2
+  name: Logitech MeetUp 2
+  knowledge_type: product
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-PROD-LOGI-MEETUP2.yaml
+- id: KNW-FEAT-LOGI-RIGHTSIGHT2
+  name: Logitech RightSight 2
+  knowledge_type: feature
+  vendor: Logitech
+  status: VERIFIED
+  local_path: knowledge/KNW-FEAT-LOGI-RIGHTSIGHT2.yaml
+- id: KNW-CONC-SPEAKER-TRACKING
+  name: 화자 추적 카메라 (Speaker Tracking Camera)
+  knowledge_type: concept
+  vendor: null
+  status: VERIFIED
+  local_path: knowledge/KNW-CONC-SPEAKER-TRACKING.yaml

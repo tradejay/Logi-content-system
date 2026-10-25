@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0.0",
+  "guide_version": "3.1.0",
+  "implementation_status": "connected_to_content_pipeline",
+  "rules": [
+    {
+      "id": "RULE-OCEANTECH-BRAND-LINKS",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "oceantech-brand-and-links.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 5,
+      "stages": [
+        "strategy",
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "오션텍 브랜드 정체성 표기 및 제품 공식 블로그 링크 필수 바인딩 준수",
+      "owner": "content-team",
+      "change_note": "v3.0 modular rule integration",
+      "depends_on": [],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": []
+      }
+    },
+    {
+      "id": "RULE-EVIDENCE-BOUNDARY",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "evidence-boundary.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 10,
+      "stages": [
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "승인된 Fact 소스 범위 내 주장 제한 및 추측성 서술 금지",
+      "owner": "content-team",
+      "change_note": "v3.0 modular rule integration",
+      "depends_on": [],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": []
+      }
+    },
+    {
+      "id": "RULE-NUMERIC-SCOPE",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "numeric-scope.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 20,
+      "stages": [
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "숫자 스펙 및 수치 범위, 단위, 측정 조건의 정확한 전달",
+      "owner": "content-team",
+      "change_note": "v3.0 modular rule integration",
+      "depends_on": [
+        "RULE-EVIDENCE-BOUNDARY"
+      ],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": [
+          {
+            "field": "claim_kinds",
+            "op": "intersects",
+            "values": [
+              "numeric_spec"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RULE-COMPONENT-ROLE",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "component-role.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 30,
+      "stages": [
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "시스템 컴포넌트 역할 및 기능 관계 명확화",
+      "owner": "content-team",
+      "change_note": "v3.0 modular rule integration",
+      "depends_on": [
+        "RULE-EVIDENCE-BOUNDARY"
+      ],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": [
+          {
+            "field": "claim_kinds",
+            "op": "intersects",
+            "values": [
+              "functional_relation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RULE-PLATFORM-SCOPE",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "platform-scope.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 40,
+      "stages": [
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "플랫폼 호환성(Zoom, Teams, BYOD 등) 지원 범위 및 조건 명시",
+      "owner": "content-team",
+      "change_note": "v3.0 modular rule integration",
+      "depends_on": [
+        "RULE-EVIDENCE-BOUNDARY"
+      ],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": [
+          {
+            "field": "claim_kinds",
+            "op": "intersects",
+            "values": [
+              "compatibility"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RULE-CONFIGURATION-SOURCE",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "configuration-source.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 50,
+      "stages": [
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "설정 가이드 및 조작 단계의 소스 근거 준수",
+      "owner": "content-team",
+      "change_note": "v3.0 modular rule integration",
+      "depends_on": [
+        "RULE-EVIDENCE-BOUNDARY"
+      ],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": [
+          {
+            "field": "claim_kinds",
+            "op": "intersects",
+            "values": [
+              "configuration"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RULE-EXPERIENCE-BUSINESS",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "experience-and-business.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 60,
+      "stages": [
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "현장 체감 및 비즈니스 정책(데모룸, 도입 프로세스 등) 구분 표기",
+      "owner": "content-team",
+      "change_note": "v3.0 modular rule integration",
+      "depends_on": [
+        "RULE-OCEANTECH-BRAND-LINKS"
+      ],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": [
+          {
+            "field": "claim_kinds",
+            "op": "intersects",
+            "values": [
+              "field_test",
+              "business_policy"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RULE-ASSET-TRUTH",
+      "version": "1.2.0",
+      "status": "active",
+      "path": "asset-truth.md",
+      "required": true,
+      "severity": "blocking",
+      "priority": 70,
+      "stages": [
+        "strategy",
+        "write",
+        "feedback",
+        "official"
+      ],
+      "description": "에셋 진실성 검증 및 캡션-본문 맥락 일치",
+      "owner": "content-team",
+      "change_note": "2026-10-06 초안 Need ID 자리 표시와 본문 확정 후 확보·제작·승인, 최종 승인 binding 출력 구분",
+      "depends_on": [],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": [
+          {
+            "field": "claim_kinds",
+            "op": "intersects",
+            "values": [
+              "asset_claim"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "RULE-READER-STYLE",
+      "version": "1.2.0",
+      "status": "active",
+      "path": "reader-and-style.md",
+      "required": true,
+      "severity": "review",
+      "priority": 80,
+      "stages": [
+        "strategy",
+        "write",
+        "feedback"
+      ],
+      "description": "독자 친화적 문체, 고객 문제에서 구매·재사용 결론으로 이어지는 전개와 편집 검토",
+      "owner": "content-team",
+      "change_note": "2026-10-02 테스트베드 피드백: 단일 구매 결정 해석, 직접 설명, 개요·기능 비교 및 내부 지시 분리",
+      "depends_on": [],
+      "references_rule_ids": [],
+      "match": {
+        "all": [],
+        "any": []
+      }
+    }
+  ]
+}

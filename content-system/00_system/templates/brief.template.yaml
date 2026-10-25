@@ -1,0 +1,84 @@
+content_id: CNT-YYYYWww-NNN
+batch_id: BATCH-YYYYWww
+
+status: READY_FOR_WRITING
+
+created_at: "YYYY-MM-DD"
+updated_at: "YYYY-MM-DD"
+
+topic: "주제 한글 명칭"
+canonical_topic: "표준_토픽_코드"
+one_line_purpose: "독자에게 제공하는 핵심 가치 한 줄 요약"
+
+funnel_stage: discovery
+
+audience:
+  level: beginner_to_intermediate
+  roles:
+    - IT 관리자
+    - 총무 담당자
+
+search:
+  primary_keyword: "대표키워드"
+  supporting_keywords:
+    - "보조키워드1"
+    - "보조키워드2"
+  layman_terms:
+    - "일반인 검색 표현 1"
+    - "일반인 검색 표현 2"
+  technical_terms:
+    - "전문 기술 용어 1"
+    - "전문 기술 용어 2"
+
+intent:
+  - problem_solving
+  - concept_understanding
+
+content_type_mix:
+  problem: 20
+  mechanism: 35
+  howto: 30
+  comparison: 10
+  review: 5
+
+title_candidates:
+  - "제목 후보 1 (일상어 중심)"
+  - "제목 후보 2 (기술 브릿지형)"
+  - "제목 후보 3 (실무 가이드형)"
+
+questions:
+  - "독자가 가장 궁금해하는 핵심 질문 1?"
+  - "기술적 원리를 규명하는 핵심 질문 2?"
+  - "실제 세팅 및 적용과 관련된 질문 3?"
+
+flow:
+  - "1. 회의실 실제 문제 및 증상 공감 (Hook)"
+  - "2. 3줄 빠른 핵심 결론 (Quick Answer)"
+  - "3. 기술 원리 및 작동 메커니즘 (Concept & Mechanism)"
+  - "4. 실제 하드웨어 구현 사례 (Product Bridge)"
+  - "5. 실무 환경 세팅 및 구성 가이드 (How-to)"
+  - "6. 공간 크기별 한계 및 주의사항 (Limitations)"
+  - "7. 다음 단계 조언 및 전환 권유 (Soft CTA)"
+
+required_sources:
+  - SRC-VENDOR-PRODUCT
+
+required_assets:
+  - ASSET-VENDOR-TYPE-SLUG
+
+product_bridge:
+  product: "제품명"
+  reason: "해당 제품이 이 글의 기술 원리를 대표하는 이유"
+  limitations: "이 제품이 가진 스펙상 명확한 제약 사항"
+
+cta:
+  level: soft
+  target: "회의실 맞춤형 솔루션 무료 컨설팅"
+
+internal_links:
+  target_content: []
+
+history:
+  - date: "YYYY-MM-DD"
+    role: KEYWORD
+    action: CREATED

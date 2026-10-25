@@ -1,0 +1,601 @@
+sources:
+  - id: SRC-LOGI-DOC-AI-COMMAND
+    title: "로지텍 AI 커맨드 및 CollabOS 통합 가이드"
+    vendor: "Logitech"
+    type: "official_whitepaper"
+    path: "docs/ai-command-api.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "collabos sync lna device_management"
+  - id: SRC-LOGI-DOC-MASTER-DESIGN
+    title: "화상회의 회의실 표준 배선 및 케이블링 종합 설계 가이드"
+    vendor: "Logitech"
+    type: "official_whitepaper"
+    path: "docs/master_design_guide.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "wiring_diagram cabling power_hdmi_usb byod appliance"
+  - id: SRC-LOGI-DOC-MIC-POD-COMPAT
+    title: "Logitech 랠리 마이크 팟 연결 및 토폴로지 가이드"
+    vendor: "Logitech"
+    type: "official_whitepaper"
+    path: "docs/mic_pod_compatibility.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "audio_topology mic_pod cat_coupler daisy_chain"
+  - id: SRC-LOGI-DOC-RALLY-BAR-GUIDE
+    title: "Logitech 랠리 바 룸 설계 및 공간 표준 가이드"
+    vendor: "Logitech"
+    type: "official_whitepaper"
+    path: "docs/rally_bar_guide.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "rally_bar room_fit placement camera_fov"
+  - id: SRC-LOGI-DOC-RIGHTSENSE
+    title: "Logitech RightSense AI 기술 사양 및 버전별 비교 가이드"
+    vendor: "Logitech"
+    type: "official_whitepaper"
+    path: "docs/rightsense_compatibility.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "rightsight rightsound rightlight speaker_view group_view grid_view"
+  - id: SRC-LOGI-GENERIC_3RD_PARTY_DSP
+    title: "Logitech 3rd Party DSP (타사 오디오 DSP) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/generic-3rd-party-dsp.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "generic_3rd_party_dsp mic logitech_vc audio dsp 3rd-party processor Logitech3rd Party DSP"
+  - id: SRC-LOGI-GENERIC_DISPLAY
+    title: "Logitech TV/모니터 (Generic Display) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/generic-display.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "generic_display display logitech_vc display monitor tv Logitech TV/모니터 로지텍Generic Display"
+  - id: SRC-LOGI-GENERIC_LAPTOP
+    title: "Logitech 노트북 (Generic Laptop) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/generic-laptop.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "generic_laptop personal logitech_vc byod source laptop 노트북 Logitech 노트북"
+  - id: SRC-LOGI-GENERIC_MTR_PC
+    title: "Logitech 회의실 전용 PC (MTR-PC) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/generic-mtr-pc.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "generic_mtr_pc compute logitech_vc compute mtr-pc dedicated-pc 로지텍MTR-PC 로지텍 MTR-PC"
+  - id: SRC-LOGI-GENERIC_TOUCH_DISPLAY
+    title: "Logitech 터치 디스플레이 (Touch Display) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/generic-touch-display.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "generic_touch_display display logitech_vc display monitor touch whiteboard Logitech터치 디스플레이"
+  - id: SRC-LOGI-LOGI_100W_USBC_CHARGER
+    title: "Logitech Logitech 100W USB-C Charger (로지텍 100W USB-C 충전기) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-100w-usbc-charger.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_100w_usbc_charger accessory logitech_vc accessory 로지텍 100W USB-C 충전기 Logitech100W USB-C Charger Logitech 100W USB-C Charger 로지텍100W USB-C 충전기"
+  - id: SRC-LOGI-LOGI_ACTIVE_USB_CABLE
+    title: "Logitech Logitech Active USB Cable (액티브 USB 케이블) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-active-usb-cable.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_active_usb_cable cable logitech_vc cable active usb-c-to-c Active USB Cable 액티브 USB 케이블"
+  - id: SRC-LOGI-LOGI_BOARD_65
+    title: "Logitech Rally Board 65 (랠리 보드 65) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-board-65.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_board_65 core logitech_vc all-in-one touch-display ai-camera collabos board-65"
+  - id: SRC-LOGI-LOGI_COMPUTE_MOUNT
+    title: "Logitech Logitech Compute Mount (로지텍 컴퓨트 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-compute-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_compute_mount mount logitech_vc accessory mount 로지텍컴퓨트 마운트 Compute Mount LogitechCompute Mount"
+  - id: SRC-LOGI-LOGI_DUAL_RALLY_CAMERA
+    title: "Logitech Dual Rally Camera (듀얼 랠리 카메라) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-dual-rally-camera.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_dual_rally_camera camera logitech_vc accessory camera ptz dual-camera rally-camera"
+  - id: SRC-LOGI-LOGI_DUAL_SIGHT
+    title: "Logitech Dual Sight (듀얼 사이트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-dual-sight.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_dual_sight camera logitech_vc accessory ai-camera table-camera poe-plus dual-sight"
+  - id: SRC-LOGI-LOGI_EXPANSION_MIC_MEETUP
+    title: "Logitech Expansion Mic for MeetUp (밋업 확장 마이크) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-expansion-mic-meetup.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_expansion_mic_meetup mic logitech_vc accessory microphone meetup-only 로지텍밋업 확장 마이크 Logitech Expansion Mic for MeetUp"
+  - id: SRC-LOGI-LOGI_EXTEND
+    title: "Logitech Logitech Extend (로지텍 익스텐드) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-extend.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_extend extender logitech_vc connectivity byod single-display-only Extend 로지텍 로지텍 익스텐드"
+  - id: SRC-LOGI-LOGI_MEETUP
+    title: "Logitech MeetUp (밋업) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-meetup.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_meetup core logitech_vc usb-mode compact huddle-room 밋업 Logitech MeetUp"
+  - id: SRC-LOGI-LOGI_MEETUP_2
+    title: "Logitech MeetUp 2 (밋업 2) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-meetup-2.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_meetup_2 core logitech_vc usb-mode compact huddle-room 밋업 2 로지텍 밋업 2"
+  - id: SRC-LOGI-LOGI_MEETUP_MIC_EXT_CABLE
+    title: "Logitech MeetUp Mic Extension Cable (밋업 마이크 연장 케이블) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-meetup-mic-ext-cable.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_meetup_mic_ext_cable cable logitech_vc accessory cable extension LogitechMeetUp Mic Extension Cable 밋업 마이크 연장 케이블"
+  - id: SRC-LOGI-LOGI_MIC_POD_MOUNT
+    title: "Logitech Mic Pod Mount (마이크 팟 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-mic-pod-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_mic_pod_mount mount logitech_vc mount mic-pod Logitech Mic Pod Mount 마이크 팟 마운트 로지텍마이크 팟 마운트"
+  - id: SRC-LOGI-LOGI_MIC_POD_PENDANT_MOUNT
+    title: "Logitech Mic Pod Pendant Mount (마이크 팟 펜던트 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-mic-pod-pendant-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_mic_pod_pendant_mount mount logitech_vc mount mic-pod pendant 로지텍 마이크 팟 펜던트 마운트 로지텍마이크 팟 펜던트 마운트"
+  - id: SRC-LOGI-LOGI_PENDANT_MOUNT
+    title: "Logitech Rally Mic Pod Pendant Mount (랠리 마이크 팟 펜던트 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-pendant-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_pendant_mount mount logitech_vc accessory mount 랠리 마이크 팟 펜던트 마운트 Logitech Rally Mic Pod Pendant Mount 로지텍 랠리 마이크 팟 펜던트 마운트"
+  - id: SRC-LOGI-LOGI_POE_INJECTOR
+    title: "Logitech Logitech PoE Injector (로지텍 PoE 인젝터) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-poe-injector.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_poe_injector accessory logitech_vc accessory PoE Injector PoE 인젝터 LogitechPoE Injector 로지텍 로지텍 PoE 인젝터"
+  - id: SRC-LOGI-LOGI_RALLY_BAR
+    title: "Logitech Rally Bar (랠리 바) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-bar.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_bar core logitech_vc appliance usb-mode byod dual-display ai-camera"
+  - id: SRC-LOGI-LOGI_RALLY_BAR_HUDDLE
+    title: "Logitech Rally Bar Huddle (랠리 바 허들) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-bar-huddle.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_bar_huddle core logitech_vc appliance usb-mode byod single-display huddle-room"
+  - id: SRC-LOGI-LOGI_RALLY_BAR_MINI
+    title: "Logitech Rally Bar Mini (랠리 바 미니) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-bar-mini.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_bar_mini core logitech_vc appliance usb-mode byod dual-display ai-camera"
+  - id: SRC-LOGI-LOGI_RALLY_CAMERA
+    title: "Logitech Rally Camera (랠리 카메라) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-camera.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_camera camera logitech_vc camera ptz 4k standalone 로지텍랠리 카메라"
+  - id: SRC-LOGI-LOGI_RALLY_CAMERA_STREAMLINE_KIT
+    title: "Logitech Rally Camera Streamline Kit (랠리 카메라 스트림라인 키트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-camera-streamline-kit.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_camera_streamline_kit extender logitech_vc connectivity camera-extension cat-cable Logitech Rally Camera Streamline Kit LogitechRally Camera Streamline Kit"
+  - id: SRC-LOGI-LOGI_RALLY_MIC_POD
+    title: "Logitech Rally Mic Pod (랠리 마이크 팟) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-mic-pod.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_mic_pod mic logitech_vc accessory microphone daisy-chain Logitech Rally Mic Pod Rally Mic Pod"
+  - id: SRC-LOGI-LOGI_RALLY_MIC_POD_CAT_COUPLER
+    title: "Logitech Rally Mic Pod CAT Coupler (랠리 마이크 팟 CAT 커플러) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-mic-pod-cat-coupler.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_mic_pod_cat_coupler cable logitech_vc accessory extension cat-cable max-20m Rally Mic Pod CAT Coupler"
+  - id: SRC-LOGI-LOGI_RALLY_MIC_POD_EXT_CABLE
+    title: "Logitech Rally Mic Pod Extension Cable (랠리 마이크 팟 연장 케이블) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-mic-pod-ext-cable.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_mic_pod_ext_cable cable logitech_vc accessory cable extension LogitechRally Mic Pod Extension Cable 로지텍랠리 마이크 팟 연장 케이블"
+  - id: SRC-LOGI-LOGI_RALLY_MIC_POD_HUB
+    title: "Logitech Rally Mic Pod Hub (랠리 마이크 팟 허브) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-mic-pod-hub.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_mic_pod_hub mic logitech_vc accessory microphone-hub Rally Mic Pod Hub 로지텍 랠리 마이크 팟 허브 로지텍랠리 마이크 팟 허브"
+  - id: SRC-LOGI-LOGI_RALLY_MOUNTING_KIT
+    title: "Logitech Rally Mounting Kit (랠리 마운팅 키트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-mounting-kit.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_mounting_kit mount logitech_vc accessory mount LogitechRally Mounting Kit 로지텍랠리 마운팅 키트 Logitech Rally Mounting Kit"
+  - id: SRC-LOGI-LOGI_RALLY_PLUS
+    title: "Logitech Rally Plus (랠리 플러스) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-rally-plus.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_rally_plus core logitech_vc usb-mode modular ptz-camera xlr-speaker Rally Plus"
+  - id: SRC-LOGI-LOGI_ROOMMATE
+    title: "Logitech Logitech RoomMate (로지텍 룸메이트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-roommate.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_roommate compute logitech_vc appliance compute android collabos 로지텍 룸메이트"
+  - id: SRC-LOGI-LOGI_SCRIBE
+    title: "Logitech Logitech Scribe (로지텍 스크라이브) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-scribe.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_scribe camera logitech_vc accessory whiteboard-camera 로지텍 스크라이브 로지텍 로지텍 스크라이브 Logitech Scribe"
+  - id: SRC-LOGI-LOGI_SCRIBE_GLASS_MOUNT
+    title: "Logitech Logitech Scribe Glass Mount (스크라이브 글래스 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-scribe-glass-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_scribe_glass_mount mount logitech_vc accessory mount Scribe Glass Mount 로지텍 스크라이브 글래스 마운트 LogitechScribe Glass Mount"
+  - id: SRC-LOGI-LOGI_SCRIBE_POLARIZER
+    title: "Logitech Logitech Scribe Polarizer (스크라이브 편광 필터) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-scribe-polarizer.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_scribe_polarizer accessory logitech_vc accessory LogitechScribe Polarizer Scribe Polarizer 로지텍스크라이브 편광 필터 스크라이브 편광 필터"
+  - id: SRC-LOGI-LOGI_SECOND_RALLY_CAMERA
+    title: "Logitech Second Rally Camera (세컨드 랠리 카메라) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-second-rally-camera.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_second_rally_camera camera logitech_vc accessory camera dual-camera rally-plus 로지텍세컨드 랠리 카메라"
+  - id: SRC-LOGI-LOGI_SIGHT
+    title: "Logitech Logitech Sight (로지텍 사이트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-sight.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_sight camera logitech_vc accessory ai-camera table-camera poe-plus 사이트"
+  - id: SRC-LOGI-LOGI_SPOT
+    title: "Logitech Logitech Spot (로지텍 스팟) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-spot.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_spot accessory logitech_vc presenter wireless meeting-control 스팟 로지텍 로지텍 스팟"
+  - id: SRC-LOGI-LOGI_STRONG_USB
+    title: "Logitech Logitech Strong USB (스트롱 USB 케이블) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-strong-usb.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_strong_usb cable logitech_vc cable fiber long-distance usb-a-to-c Logitech Strong USB"
+  - id: SRC-LOGI-LOGI_SWYTCH
+    title: "Logitech Logitech Swytch (로지텍 스위치) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-swytch.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_swytch extender logitech_vc connectivity byod Logitech Swytch 로지텍 로지텍 스위치 LogitechSwytch"
+  - id: SRC-LOGI-LOGI_TAP
+    title: "Logitech Logitech Tap (로지텍 탭) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tap.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tap tap logitech_vc control touch hdmi-ingest cat5e 탭"
+  - id: SRC-LOGI-LOGI_TAP_IP
+    title: "Logitech Logitech Tap IP (로지텍 탭 IP) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tap-ip.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tap_ip tap logitech_vc control touch poe no-hdmi-in Tap IP"
+  - id: SRC-LOGI-LOGI_TAP_RISER_MOUNT
+    title: "Logitech Tap Riser Mount (탭 라이저 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tap-riser-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tap_riser_mount mount logitech_vc mount riser tap 로지텍 탭 라이저 마운트 Logitech Tap Riser Mount"
+  - id: SRC-LOGI-LOGI_TAP_SCHEDULER
+    title: "Logitech Logitech Tap Scheduler (로지텍 탭 스케줄러) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tap-scheduler.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tap_scheduler tap logitech_vc control scheduler poe 로지텍 탭 스케줄러 탭 스케줄러"
+  - id: SRC-LOGI-LOGI_TAP_SCHEDULER_ANGLE_MOUNT
+    title: "Logitech Tap Scheduler Angle Mount (탭 스케줄러 앵글 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tap-scheduler-angle-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tap_scheduler_angle_mount mount logitech_vc accessory mount Logitech Tap Scheduler Angle Mount LogitechTap Scheduler Angle Mount 로지텍탭 스케줄러 앵글 마운트"
+  - id: SRC-LOGI-LOGI_TAP_TABLE_MOUNT
+    title: "Logitech Tap Table Mount (탭 테이블 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tap-table-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tap_table_mount mount logitech_vc mount table tap 로지텍 탭 테이블 마운트 로지텍탭 테이블 마운트"
+  - id: SRC-LOGI-LOGI_TAP_WALL_MOUNT
+    title: "Logitech Tap Wall Mount (탭 월 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tap-wall-mount.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tap_wall_mount mount logitech_vc mount wall tap 로지텍탭 월 마운트 LogitechTap Wall Mount"
+  - id: SRC-LOGI-LOGI_TV_MOUNT_MEETUP
+    title: "Logitech TV Mount for MeetUp (밋업 TV 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tv-mount-meetup.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tv_mount_meetup mount logitech_vc mount tv meetup TV Mount for MeetUp 밋업 TV 마운트"
+  - id: SRC-LOGI-LOGI_TV_MOUNT_VIDEO_BARS
+    title: "Logitech TV Mount for Video Bars (비디오 바 TV 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tv-mount-video-bars.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tv_mount_video_bars mount logitech_vc mount tv vesa Logitech TV Mount for Video Bars 비디오 바 TV 마운트"
+  - id: SRC-LOGI-LOGI_TV_MOUNT_XL_MEETUP
+    title: "Logitech TV Mount XL for MeetUp (밋업 TV 마운트 XL) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-tv-mount-xl-meetup.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_tv_mount_xl_meetup mount logitech_vc accessory mount Logitech TV Mount XL for MeetUp 밋업 TV 마운트 XL 로지텍 밋업 TV 마운트 XL"
+  - id: SRC-LOGI-LOGI_WALL_MOUNT_RALLY_CAMERA
+    title: "Logitech Wall Mount for Rally Camera (랠리 카메라 월 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-wall-mount-rally-camera.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_wall_mount_rally_camera mount logitech_vc mount wall rally-camera 로지텍 랠리 카메라 월 마운트 Logitech Wall Mount for Rally Camera"
+  - id: SRC-LOGI-LOGI_WALL_MOUNT_VIDEO_BARS
+    title: "Logitech Wall Mount for Video Bars (비디오 바 월 마운트) 공식 기술 데이터시트"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "devices/logi-wall-mount-video-bars.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "logi_wall_mount_video_bars mount logitech_vc mount wall Logitech Wall Mount for Video Bars LogitechWall Mount for Video Bars Wall Mount for Video Bars"
+  - id: SRC-LOGI-RALLYBAR
+    title: "Logitech Rally Bar 공식 기술 사양서"
+    vendor: "Logitech"
+    type: "official_datasheet"
+    path: "logitech/rallybar.md"
+    evidence_level: "E1"
+    freshness_limit_days: 180
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "all_in_one_bar medium_to_large_room beamforming_mic dual_camera_ptz appliance_mode byod_mode"
+  - id: SRC-LOGI-RIGHTSIGHT2
+    title: "Logitech RightSight 2 자동 프레이밍 및 화자 추적 기술 백서"
+    vendor: "Logitech"
+    type: "official_whitepaper"
+    path: "logitech/rightsight2.md"
+    evidence_level: "E1"
+    freshness_limit_days: 90
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "speaker_tracking auto_framing group_view speaker_view tdoa_audio_triangulation"
+  - id: SRC-ZOOM-CAMERA-MODES
+    title: "Zoom Rooms 지능형 카메라 제어 및 프레이밍 모드 설정 가이드"
+    vendor: "Zoom"
+    type: "platform_guide"
+    path: "zoom/camera-modes.md"
+    evidence_level: "E2"
+    freshness_limit_days: 90
+    last_verified: "2026-09-22"
+    status: "VALID"
+    topics: "zoom_rooms camera_control speaker_focus multi_stream"

@@ -1,0 +1,181 @@
+knowledge_id: KNW-PROD-LOGI-TAP
+name: "Logitech Tap & Tap IP"
+vendor: "Logitech"
+knowledge_type: product
+status: VERIFIED
+last_verified: "2026-09-23"
+
+overview:
+  tier: "smart_room_touch_controller"
+  form_factor: "10.1인치 전용 화상회의 터치스크린 패널 (원터치 회의 참가 OBTJ)"
+  target_room_size: "소형, 중형, 대형 모든 회의실 (Zoom Rooms, Teams Rooms, Google Meet)"
+
+scope:
+  applies_to:
+    - LOGI-TAP
+    - LOGI-TAP-IP
+  does_not_imply:
+    - Tap IP 모델에 물리 HDMI In 단자가 탑재됨 (Tap IP는 순수 PoE 네트워크 제어 방식)
+    - 자체적으로 화상회의 컴퓨팅 엔진(RoomMate 등) 없이 단독으로 구동됨
+
+facts:
+  - id: FACT-TAP-001
+    subject: Tap.Display
+    property: screen_size
+    value: 10.1
+    unit: 인치
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "디스플레이 및 터치"
+        section: "화면 크기"
+
+  - id: FACT-TAP-002
+    subject: Tap.Display
+    property: resolution_horizontal
+    value: 1280.0
+    unit: px
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "디스플레이 및 터치"
+        section: "해상도"
+
+  - id: FACT-TAP-003
+    subject: Tap.Display
+    property: resolution_vertical
+    value: 800.0
+    unit: px
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "디스플레이 및 터치"
+        section: "해상도"
+
+  - id: FACT-TAP-004
+    subject: Tap.Display
+    property: display_angle
+    value: 14.0
+    unit: °
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "디스플레이 및 터치"
+        section: "시야각"
+
+  - id: FACT-TAP-005
+    subject: Tap.Dimensions
+    property: width
+    value: 244.0
+    unit: mm
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "가로"
+
+  - id: FACT-TAP-006
+    subject: Tap.Dimensions
+    property: weight
+    value: 1.25
+    unit: kg
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "무게"
+
+  - id: FACT-TAP-007
+    subject: TapIP.Dimensions
+    property: width
+    value: 246.2
+    unit: mm
+    source:
+      id: SRC-LOGI-LOGI_TAP_IP
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "가로"
+
+  - id: FACT-TAP-008
+    subject: TapIP.Dimensions
+    property: weight
+    value: 1.0
+    unit: kg
+    source:
+      id: SRC-LOGI-LOGI_TAP_IP
+      locator:
+        heading: "제품 크기 및 무게"
+        section: "무게"
+
+  - id: FACT-TAP-009
+    subject: TapIP.Connectivity
+    property: max_cable_length
+    value: 100.0
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_TAP_IP
+      locator:
+        heading: "포트 및 연결"
+        section: "최대 케이블 길이"
+
+  - id: FACT-TAP-010
+    subject: Tap.Connectivity
+    property: usb_cat5e_max_length
+    value: 40.0
+    unit: m
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "포트 및 연결 방식"
+        section: "Cat5e 연장 키트"
+
+  - id: FACT-TAP-011
+    subject: Tap.Connectivity
+    property: hdmi_ingest_ports
+    canonical_property: hdmi_in_port_count
+    value: 1.0
+    unit: 개
+    notes: "콘텐츠 공유용 HDMI 1.4a 1포트 탑재 (최대 1080p 해상도 수신 지원)"
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "포트 및 연결 방식"
+        section: "HDMI In"
+
+  - id: FACT-TAP-012
+    subject: TapIP.Power
+    property: power_over_ethernet
+    canonical_property: poe_standard
+    value: "PoE (IEEE 802.3af Class 3)"
+    source:
+      id: SRC-LOGI-LOGI_TAP_IP
+      locator:
+        heading: "포트 및 연결"
+        section: "전원 방식"
+
+  - id: FACT-TAP-013
+    subject: TapIP.Connectivity
+    property: hdmi_in_port_count
+    canonical_property: hdmi_in_port_count
+    value: 0.0
+    unit: 개
+    notes: "Tap IP 모델은 순수 PoE 네트워크 제어 방식으로 물리적 HDMI In 포트 미탑재"
+    source:
+      id: SRC-LOGI-LOGI_TAP_IP
+      locator:
+        heading: "포트 및 연결"
+        section: "연결 방식"
+
+  - id: FACT-TAP-014
+    subject: Tap.Mounting
+    property: riser_mount_angle
+    canonical_property: tilt_angle
+    value: 30.0
+    unit: °
+    notes: "라이저 마운트 사용 시 30도 시야각 상승 및 180도 회전 지원"
+    source:
+      id: SRC-LOGI-LOGI_TAP
+      locator:
+        heading: "설치 방식 및 마운팅 가이드"
+        section: "라이저 마운트"
+
